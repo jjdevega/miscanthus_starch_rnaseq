@@ -1,6 +1,6 @@
 # Transcriptional differences between Miscanthus hybrids with contrasting starch and sucrose concentrations and biomass production
 
-This repository contains the code of the RNA-seq analysis of our paper on transcriptional differences between Miscanthus hybrids with contrasting starch and sucrose concentrations and biomass production. A preprint of the paper is available in X.
+This repository contains the code of the RNA-seq analysis from our paper on transcriptional differences between Miscanthus hybrids with contrasting starch and sucrose concentrations and biomass production. A preprint of the paper is available in X.
 
 **The R notebook (rnaseq_analysis.Rmd) is fully run here with all the figures:
 https://joseja.github.io/miscanthus_starch_rnaseq/
