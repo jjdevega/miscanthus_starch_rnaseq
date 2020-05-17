@@ -20,9 +20,9 @@ knit: (function(input_file, encoding) {
 knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8, fig.path='figures/')
 ```
 
-#SUMMARY
+# SUMMARY
 
-Miscanthus is a commercial lignocellulosic biomass crop owing to its high biomass productivity and low chemical input requirements. In previous work, we have shown that interspecific Miscanthus hybrids with high biomass yield had low concentrations of starch and sucrose in the stem, and high ratio of sucrose to starch, which were consistent across years and growing sites. Here, we have performed a transcriptional RNA¬-seq analysis between selected Miscanthus hybrids with contrasting values in these phenotypes to clarify how these phenotypes are genetically controlled. Our results support that the gene expression of crucial enzymatic genes in specific genotypes would allow for high metabolic rates and low non-structural carbohydrates accumulation leading to high biomass production. Our work shows the strong interconnectivity between genotype, chemotype and complex phenotypes.
+**Miscanthus is a commercial lignocellulosic biomass crop owing to its high biomass productivity and low chemical input requirements. In previous work, we have shown that interspecific Miscanthus hybrids with high biomass yield had low concentrations of starch and sucrose in the stem, and high ratio of sucrose to starch, which were consistent across years and growing sites. Here, we have performed a transcriptional RNA¬-seq analysis between selected Miscanthus hybrids with contrasting values in these phenotypes to clarify how these phenotypes are genetically controlled. Our results support that the gene expression of crucial enzymatic genes in specific genotypes would allow for high metabolic rates and low non-structural carbohydrates accumulation leading to high biomass production. Our work shows the strong interconnectivity between genotype, chemotype and complex phenotypes.
 
 
 ```{r load environment, message=FALSE, warning=FALSE}
@@ -33,9 +33,9 @@ setwd("~/analysis/miscanthus-rnaseq-Msin/miscanthus_starch_rnaseq")
 ```
 
 
-#tximport
+# tximport
 
-Kallisto count files, one from each of the 23 libraries, were imported in R using TXimport.
+**Kallisto count files, one from each of the 23 libraries, were imported in R using TXimport.
 
 ```{r TXImport Kallisto (aligner) abundance tables from HPC}
 
@@ -69,9 +69,9 @@ pheno
 colnames(mytxi$counts) == rownames(pheno) #check. TRUE!!
 ```
 
-#Explore the counts
+# Explore the counts
 
-##Counts distribution by sample
+## Counts distribution by sample
 
 ```{r check the counts distribution per library}
 #counts exploratory
@@ -86,7 +86,7 @@ plotDispEsts(dds)
 ```
 
 
-##PCA samples
+## PCA samples
 
 ```{r PCA samples by tissue and species}
 
@@ -113,7 +113,7 @@ ggplot(mypca, aes(PC1, PC2, shape=tissue)) +
   coord_fixed() + theme_linedraw()
 ```
 
-##Heatmap samples
+## Heatmap samples
 
 ```{r Heatmap/Clustering samples top1000 genes with greater variance among samples}
 
@@ -131,11 +131,11 @@ pheatmap(assay(ntd)[select,], cluster_rows=T, treeheight_row = 0, show_rownames=
 ```
 
 
-#Differential analysis (DE) two groups of hybrids
+# Differential analysis (DE) two groups of hybrids
 
-##DESeq2
+## DESeq2
 
-Differential analysis was performed using DESeq2 (REF) for each tissue (root, stem, leaf) independently. Genes with FDR < 0.05 were considered differentially expressed (DE). We compared the two groups of hybrids (“Low NSC” and “High NSC”) to each other. Each hybrid group was composed of two genotypes.
+**Differential analysis was performed using DESeq2 (REF) for each tissue (root, stem, leaf) independently. Genes with FDR < 0.05 were considered differentially expressed (DE). We compared the two groups of hybrids (“Low NSC” and “High NSC”) to each other. Each hybrid group was composed of two genotypes.
 
 ```{r Differential expr analysis within the hybrids based on contrasting phenotype -by tissue-}
 #####COMPARE HYBRIDS BY PHENOTYPE: FEWER TILLERS VS MANY TILLERS
@@ -181,7 +181,7 @@ dim(leaf_few_many.05)
 
 ```
 
-##Heatmap 
+## Heatmap 
 
 ```{r Heatmap/Clustering samples top1000 genes hybrids based on contrasting phenotype -by tissue-}
 
@@ -196,7 +196,7 @@ pheatmap(assay(ntd)[select,], cluster_rows=T, treeheight_row = 0, show_rownames=
 ```
 
 
-##Venn
+## Venn
 
 ```{r Venn diagram previous results -DEG hybrids-}
 library(UpSetR)
@@ -222,11 +222,11 @@ plot(euler(list.euler, shape = "ellipse"),legend = F, quantities = F, labels = F
 ```
 
 
-#Differential analysis (DE) hybrids vs each progenitor
+# Differential analysis (DE) hybrids vs each progenitor
 
 We also compared the hybrids against either the M. sacchariflorus or M. sinensis parent. A gene only was considered DE between hybrids and parents when it was DE against both parents.
 
-##DESeq2
+## DESeq2
 
 ```{r Hybrids DE against both progenitors}
 
@@ -295,7 +295,7 @@ length(stem_hyb_both)
 
 ```
 
-##Upset
+## Upset
 
 ```{r Upset individual hybrid-against-parent comparisons}
 
@@ -317,7 +317,7 @@ upset(list2, nsets = 3, number.angles = 0, point.size = 3, line.size = 1.2, main
 upset(list3, nsets = 3, number.angles = 0, point.size = 3, line.size = 1.2, mainbar.y.label = "Shared DEG", sets.x.label = "Total DEG", text.scale = c(2, 2, 2, 2, 2, 2), order.by = "freq")
 ```
 
-##Venn
+## Venn
 
 ```{r Venn previous results -Hybrids DE against both progenitors-}
 library(UpSetR)
@@ -340,7 +340,7 @@ plot(euler(list.euler, shape = "ellipse"),legend = F, quantities = F, labels = F
 ```
 
 
-##Compare progenitors
+## Compare progenitors
 
 A gene only was considered DE between hybrids and parents when it was DE against both parents.
 
@@ -362,11 +362,11 @@ upset(list, nsets = 6, number.angles = 0, point.size = 3, line.size = 1.2, mainb
 ```
 
 
-#Enrichment analysis
+# Enrichment analysis
 
-The enrichment analysis was based on an F-fisher test (FDR<0.05) using the library topGO with the “weight01” algorithm. Using the lists of DE genes and functional annotation as inputs, topGO compared the number of DEGs in each category with the expected number of genes for the whole transcriptome. The “weight01” algorithm resolves the relations between related GO ontology terms at different levels. Later, enriched categories were plotted using ggplot2.
+**The enrichment analysis was based on an F-fisher test (FDR<0.05) using the library topGO with the “weight01” algorithm. Using the lists of DE genes and functional annotation as inputs, topGO compared the number of DEGs in each category with the expected number of genes for the whole transcriptome. The “weight01” algorithm resolves the relations between related GO ontology terms at different levels. Later, enriched categories were plotted using ggplot2.
 
-##Functions
+## Functions
 
 ```{r FUNCTIONS FOR THE ENRICHMENT ANALYSIS, warning=FALSE}
 #PREFLIGHT
@@ -439,7 +439,7 @@ full.topgo.pipeline.MF <- function(mytemp) {
 ##END FUNCTIONS###
 ```
 
-##Compute enrichment analysis (DE hybrids)
+## Compute enrichment analysis (DE hybrids)
 
 ```{r COMPUTE ENRICHMENT ANALYSIS IN HYBRIDS, message=FALSE, warning=FALSE}
 #COMPUTE ENRICHMENT ANALYSIS
@@ -479,7 +479,7 @@ full_MF.stem_few_many.05 <- full.topgo.pipeline.MF(stem_few_many.05$rownames)
 ```
 
 
-##Plot SLIM GO
+## Plot SLIM GO
 
 ```{r Plot: EA hybrids SLIM GO terms}
 #BUBBLEPLOTS
@@ -601,7 +601,7 @@ p1
 
 
 
-##Plot FULL GO
+## Plot FULL GO
 
 ```{r Plot: EA hybrids FULL GO terms, fig.width=7}
 #BUBBLEPLOTS
@@ -697,7 +697,7 @@ p + theme_light()
 
 
 
-##Compute enrichment analysis hybrids vs progenitors
+## Compute enrichment analysis hybrids vs progenitors
 
 ```{r COMPUTE ENRICHMENT ANALYSIS IN -HYBRIDS DE IN BOTH PARENTS-, message=FALSE, warning=FALSE}
 #COMPUTE ENRICHMENT ANALYSIS
@@ -736,7 +736,7 @@ full_MF.stem_heterosis2.05 <- full.topgo.pipeline.MF(stem_hyb_both)
 
 ```
 
-##Plot SLIM GO
+## Plot SLIM GO
 
 ```{r plot SLIM hybrids DE both parents}
 #BUBBLEPLOTS
