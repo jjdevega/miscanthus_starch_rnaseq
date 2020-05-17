@@ -1,6 +1,14 @@
 ---
-title: "rnaseq_analysis"
+title: "Transcriptional differences between Miscanthus hybrids with contrasting starch and sucrose concentrations and biomass production"
 output: html_document
+html_document:
+toc: true
+number_sections: true
+
+theme: united
+highlight: tango
+df_print: paged
+
 knit: (function(input_file, encoding) {
   out_dir <- '.';
   rmarkdown::render(input_file,
@@ -8,27 +16,855 @@ knit: (function(input_file, encoding) {
  output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 ---
 
- 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8, fig.path='figure_')
+```
+
+#SUMMARY
+
+Miscanthus is a commercial lignocellulosic biomass crop owing to its high biomass productivity and low chemical input requirements. In previous work, we have shown that interspecific Miscanthus hybrids with high biomass yield had low concentrations of starch and sucrose in the stem, and high ratio of sucrose to starch, which were consistent across years and growing sites. Here, we have performed a transcriptional RNA¬-seq analysis between selected Miscanthus hybrids with contrasting values in these phenotypes to clarify how these phenotypes are genetically controlled. We observed that the carbohydrate and secondary metabolism, and the generation of related precursor metabolites and energy, were significantly enriched among differentially expressed genes. Particularly, genes directly involved in the synthesis of starch (AGP, SS2/3, SBE2) and sucrose (SPS5), and degradation of starch (AMY3, ISA3, SEX4, BAM1) and sucrose (SUS) were down¬-regulated in the stem of the hybrids with low starch concentrations and high biomass yielding, while triose phosphates exporting (TIM, PFK2) was not. Our results support that the gene expression of crucial enzymatic genes in specific genotypes would allow for high metabolic rates and low non-structural carbohydrates accumulation leading to high biomass production. Our work shows the strong interconnectivity between genotype, chemotype and complex phenotypes.
+
+
+```{r load environment, message=FALSE, warning=FALSE}
+library(DESeq2,quietly = T)
+library(dplyr,quietly = T)
+
+setwd("~/analysis/miscanthus-rnaseq-Msin/kallisto/deseq2-kallisto")
 ```
 
 
+#tximport
+
+Kallisto count files, one from each of the 23 libraries, were imported in R using TXimport.
+
+```{r TXImport Kallisto (aligner) abundance tables from HPC}
+
+#library(tximport)
+#library(rhdf5)
+#samples <- read.delim("/Volumes/Workarea/[...]/kallisto/_list.txt", header = FALSE)
+#samples
+#files <- file.path("/Volumes/Workarea/[...]/kallisto",unlist(samples),"abundance.h5")
+#names(files) <- unlist(samples)
+#files
+#mytxi <- tximport(files, type = "kallisto", txOut = TRUE)
+#save(mytxi,file="../txi_import.R")
+
+```
+
+
+```{r import the inputs}
+
+#####INPUTS
+load("../txi_import.R") #this loads the object 'mytxi' from the tximport step
+dim(mytxi$counts) 
+#View(mytxi$counts)
+counts <- as.data.frame(mytxi$counts)
+#write.csv(counts,file="txi_counts.csv")
+#write.csv(mytxi$abundance,file="txi_abundance.csv")
+
+pheno <- read.delim("../../pheno.txt", header = T, sep = '\t')
+rownames(pheno) <- pheno$id
+pheno
+
+colnames(mytxi$counts) == rownames(pheno) #check. TRUE!!
+```
+
+#Explore the counts
+
+##Counts distribution by sample
+
+```{r check the counts distribution per library}
+#counts exploratory
+dds <- DESeqDataSetFromTximport(mytxi, pheno, ~tissue + spp)
+dds <- DESeq(dds)
+boxplot(log10(assays(dds)[["cooks"]]), range=0, las=2)
+```
+
+```{r -cont- check the counts distribution total}
+plotDispEsts(dds)
+
+```
+
+
+##PCA samples
+
+```{r PCA samples by tissue and species}
+
+#####PCA SAMPLES
+library(ggplot2)
+library(DESeq2)
+mypca<-plotPCA(varianceStabilizingTransformation(dds,blind = T), intgroup=c("tissue","spp"), returnData=T)
+
+ggplot(mypca, aes(PC1, PC2, shape=spp)) + 
+  scale_shape_manual(values=c(23, 21, 22)) +
+  geom_point(aes(fill=tissue), size=6) +
+  xlab(paste0("PC1 ",attr(mypca,"percentVar")[1])) +
+  ylab(paste0("PC2 ",attr(mypca,"percentVar")[2])) + 
+  coord_fixed() + theme_linedraw()
+  
+  
+ggplot(mypca, aes(PC1, PC2, shape=tissue)) + 
+  scale_shape_manual(values=c(23, 21, 22)) +
+  geom_point(aes(fill=spp), size=6) + scale_fill_manual(values =c("#1a9850","#d53e4f","#3288bd")) +
+  xlab(paste0("PC1 ",attr(mypca,"percentVar")[1])) +
+  ylab(paste0("PC2 ",attr(mypca,"percentVar")[2])) + 
+  scale_y_continuous(limits=c(-75,75), breaks=c(-100,-50,0,50,100)) +
+    scale_x_continuous(limits=c(-100,100), breaks=c(-100,-50,0,50,100)) +
+  coord_fixed() + theme_linedraw()
+```
+
+##Heatmap samples
+
+```{r Heatmap/Clustering samples top1000 genes with greater variance among samples}
+
+###HEATMAP SAMPLES
+library("pheatmap")
+ntd <- varianceStabilizingTransformation(dds, blind = T)
+select <- order(rowSds(assay(ntd)),decreasing=TRUE)[1:1000]
+df <- as.data.frame(colData(dds)[,c("spp","tissue")])
+
+pheatmap(assay(ntd)[select,], cluster_rows=T, treeheight_row = 0, show_rownames=FALSE,
+         cluster_cols=T, annotation_col=df,clustering_distance_rows = "correlation", clustering_distance_cols = "correlation")
+
+
+
+```
+
+
+#Differential analysis (DE) two groups of hybrids
+
+##DESeq2
+
+Differential analysis was performed using DESeq2 (REF) for each tissue (root, stem, leaf) independently. Genes with FDR < 0.05 were considered differentially expressed (DE). We compared the two groups of hybrids (“Low NSC” and “High NSC”) to each other. Each hybrid group was composed of two genotypes.
+
+```{r Differential expr analysis within the hybrids based on contrasting phenotype -by tissue-}
+#####COMPARE HYBRIDS BY PHENOTYPE: FEWER TILLERS VS MANY TILLERS
+
+colnames(mytxi$counts) == rownames(pheno) #check
+dds <- DESeqDataSetFromTximport(mytxi, pheno, ~tissue + visual)
+dds$group<- factor(paste0(pheno$tissue,pheno$visual))
+model.matrix(~ dds$group)
+design(dds) <- ~ group
+dds <- DESeq(dds)
+resultsNames(dds)
+vst <- varianceStabilizingTransformation(dds, blind = T)
+
+#write.csv(vst,file="vst.csv")
+#continue...
+
+root_few_many <- lfcShrink(dds, contrast=c("group","rootfew","rootmany"), type="ashr")
+summary(root_few_many, alpha =0.05) 
+plotMA(root_few_many, ylim=c(-2,2), alpha =0.05)
+root_few_many.05 <- as.data.frame(root_few_many)
+root_few_many.05$rownames <- rownames(root_few_many)
+root_few_many.05 <- root_few_many.05 %>% filter(padj<0.05)
+dim(root_few_many)
+dim(root_few_many.05)
+
+stem_few_many <- lfcShrink(dds, contrast=c("group","stemfew","stemmany"), type="ashr")
+summary(stem_few_many, alpha =0.05)  
+plotMA(stem_few_many, ylim=c(-2,2), alpha =0.05) 
+stem_few_many.05 <- as.data.frame(stem_few_many)
+stem_few_many.05$rownames <- rownames(stem_few_many)
+stem_few_many.05 <- stem_few_many.05 %>% filter(padj<0.05)
+dim(stem_few_many)
+dim(stem_few_many.05)
+
+leaf_few_many <- lfcShrink(dds, contrast=c("group","leaffew","leafmany"), type="ashr")
+summary(leaf_few_many, alpha =0.05) 
+plotMA(leaf_few_many, ylim=c(-2,2), alpha =0.05) 
+leaf_few_many.05 <- as.data.frame(leaf_few_many)
+leaf_few_many.05$rownames <- rownames(leaf_few_many)
+leaf_few_many.05 <- leaf_few_many.05 %>% filter(padj<0.05)
+dim(leaf_few_many)
+dim(leaf_few_many.05)
+
+```
+
+##Heatmap 
+
+```{r Heatmap/Clustering samples top1000 genes hybrids based on contrasting phenotype -by tissue-}
+
+library("pheatmap")
+ntd <- varianceStabilizingTransformation(dds, blind = T) #same that vst
+select <- order(rowSds(assay(ntd)),decreasing=TRUE)[1:1000]
+df <- as.data.frame(colData(dds)[,c("tissue","visual")])
+
+pheatmap(assay(ntd)[select,], cluster_rows=T, treeheight_row = 0, show_rownames=FALSE,
+         cluster_cols=T, annotation_col=df,clustering_distance_rows = "correlation", clustering_distance_cols = "correlation")
+
+```
+
+
+##Venn
+
+```{r Venn diagram previous results -DEG hybrids-}
+library(UpSetR)
+library(eulerr)
+library(RColorBrewer)
+
+allgenes <- rownames(mytxi$counts)
+list <- as.data.frame(allgenes)
+list$root_few_many.05 <- as.integer(allgenes %in% root_few_many.05$rownames) 
+list$leaf_few_many.05 <- as.integer(allgenes %in% leaf_few_many.05$rownames) 
+list$stem_few_many.05 <- as.integer(allgenes %in% stem_few_many.05$rownames) 
+
+upset(list, nsets = 6, number.angles = 0, point.size = 3, line.size = 1.2, mainbar.y.label = "Shared DEG", sets.x.label = "Total DEG", text.scale = c(2, 2, 2, 2, 2, 2), order.by = "freq")
+
+
+#euler diagram
+list.euler<-list(root=as.vector(root_few_many.05$rownames),
+                 leaf=as.vector(leaf_few_many.05$rownames),
+                 stem=as.vector(stem_few_many.05$rownames))
+
+plot(euler(list.euler, shape = "ellipse"),legend = T, quantities = T, labels = T, fills = brewer.pal(n = 7,name = "Spectral"))
+plot(euler(list.euler, shape = "ellipse"),legend = F, quantities = F, labels = F, fills = brewer.pal(n = 7,name = "Spectral"))
+```
+
+
+#Differential analysis (DE) hybrids vs each progenitor
+
+We also compared the hybrids against either the M. sacchariflorus or M. sinensis parent. A gene only was considered DE between hybrids and parents when it was DE against both parents.
+
+##DESeq2
+
+```{r Hybrids DE against both progenitors}
+
+#alternative
+dds <- DESeqDataSetFromTximport(mytxi, pheno, ~tissue + spp)
+dds$group<- factor(paste0(pheno$tissue,pheno$spp))
+model.matrix(~ dds$group)
+design(dds) <- ~ group
+dds <- DESeq(dds)
+resultsNames(dds)
+
+#leaf
+leaf_hyb_msa <- lfcShrink(dds, contrast=c("group","leafhyb","leafmsa"), type="ashr", alpha =0.05)
+leaf_hyb_msi <- lfcShrink(dds, contrast=c("group","leafhyb","leafmsi"), type="ashr", alpha =0.05)
+summary(leaf_hyb_msa, alpha =0.05) 
+summary(leaf_hyb_msi, alpha =0.05) 
+plotMA(leaf_hyb_msa, ylim=c(-2,2), alpha =0.05) 
+plotMA(leaf_hyb_msi, ylim=c(-2,2), alpha =0.05) 
+
+leaf_hyb_msa.05 <- as.data.frame(leaf_hyb_msa)
+leaf_hyb_msa.05$rownames <- rownames(leaf_hyb_msa)
+leaf_hyb_msa.05 <- leaf_hyb_msa.05 %>% filter(padj<0.05)
+leaf_hyb_msi.05 <- as.data.frame(leaf_hyb_msi)
+leaf_hyb_msi.05$rownames <- rownames(leaf_hyb_msi)
+leaf_hyb_msi.05 <- leaf_hyb_msi.05 %>% filter(padj<0.05)
+
+leaf_hyb_both <- intersect(leaf_hyb_msa.05$rownames,leaf_hyb_msi.05$rownames)
+length(leaf_hyb_both)
+
+
+#root
+root_hyb_msa <- lfcShrink(dds, contrast=c("group","roothyb","rootmsa"), type="ashr", alpha =0.05)
+root_hyb_msi <- lfcShrink(dds, contrast=c("group","roothyb","rootmsi"), type="ashr", alpha =0.05)
+summary(root_hyb_msa, alpha =0.05) 
+summary(root_hyb_msi, alpha =0.05) 
+plotMA(root_hyb_msa, ylim=c(-2,2), alpha =0.05) 
+plotMA(root_hyb_msi, ylim=c(-2,2), alpha =0.05)
+
+root_hyb_msa.05 <- as.data.frame(root_hyb_msa)
+root_hyb_msa.05$rownames <- rownames(root_hyb_msa)
+root_hyb_msa.05 <- root_hyb_msa.05 %>% filter(padj<0.05)
+root_hyb_msi.05 <- as.data.frame(root_hyb_msi)
+root_hyb_msi.05$rownames <- rownames(root_hyb_msi)
+root_hyb_msi.05 <- root_hyb_msi.05 %>% filter(padj<0.05)
+
+root_hyb_both <- intersect(root_hyb_msa.05$rownames,root_hyb_msi.05$rownames)
+length(root_hyb_both)
+
+#stem
+stem_hyb_msa <- lfcShrink(dds, contrast=c("group","stemhyb","stemmsa"), type="ashr", alpha =0.05)
+stem_hyb_msi <- lfcShrink(dds, contrast=c("group","stemhyb","stemmsi"), type="ashr", alpha =0.05)
+summary(stem_hyb_msa, alpha =0.05) 
+summary(stem_hyb_msi, alpha =0.05) 
+plotMA(stem_hyb_msa, ylim=c(-2,2), alpha =0.05) 
+plotMA(stem_hyb_msi, ylim=c(-2,2), alpha =0.05) 
+
+stem_hyb_msa.05 <- as.data.frame(stem_hyb_msa)
+stem_hyb_msa.05$rownames <- rownames(stem_hyb_msa)
+stem_hyb_msa.05 <- stem_hyb_msa.05 %>% filter(padj<0.05)
+stem_hyb_msi.05 <- as.data.frame(stem_hyb_msi)
+stem_hyb_msi.05$rownames <- rownames(stem_hyb_msi)
+stem_hyb_msi.05 <- stem_hyb_msi.05 %>% filter(padj<0.05)
+
+stem_hyb_both <- intersect(stem_hyb_msa.05$rownames,stem_hyb_msi.05$rownames)
+length(stem_hyb_both)
+
+```
+
+##Upset
+
+```{r Upset individual hybrid-against-parent comparisons}
+
+library(UpSetR)
+allgenes <- rownames(mytxi$counts)
+list <- list2  <-list3  <- as.data.frame(allgenes)
+list$leaf.msin <- list2$leaf.msin <- as.integer(allgenes %in% leaf_hyb_msi.05$rownames)
+list$stem.msin <- list2$stem.msin <- as.integer(allgenes %in% stem_hyb_msi.05$rownames)
+list$root.msin <- list2$root.msin <- as.integer(allgenes %in% root_hyb_msi.05$rownames)
+list$leaf.msac <- list3$leaf.msac <-as.integer(allgenes %in% leaf_hyb_msa.05$rownames)
+list$stem.msac <- list3$stem.msac <- as.integer(allgenes %in% stem_hyb_msa.05$rownames)
+list$root.msac <- list3$root.msac <- as.integer(allgenes %in% root_hyb_msa.05$rownames)
+
+
+upset(list, nsets = 6, number.angles = 0, point.size = 3, line.size = 1.2, mainbar.y.label = "Shared DEG", sets.x.label = "Total DEG", text.scale = c(2, 2, 2, 2, 2, 2), order.by = "freq")
+
+upset(list2, nsets = 3, number.angles = 0, point.size = 3, line.size = 1.2, mainbar.y.label = "Shared DEG", sets.x.label = "Total DEG", text.scale = c(2, 2, 2, 2, 2, 2), order.by = "freq")
+
+upset(list3, nsets = 3, number.angles = 0, point.size = 3, line.size = 1.2, mainbar.y.label = "Shared DEG", sets.x.label = "Total DEG", text.scale = c(2, 2, 2, 2, 2, 2), order.by = "freq")
+```
+
+##Venn
+
+```{r Venn previous results -Hybrids DE against both progenitors-}
+library(UpSetR)
+allgenes <- rownames(mytxi$counts)
+list <- as.data.frame(allgenes)
+list$leaf.heterosis.05 <- as.integer(allgenes %in% leaf_hyb_both)
+list$stem.heterosis.05 <- as.integer(allgenes %in% stem_hyb_both)
+list$root.heterosis.05 <- as.integer(allgenes %in% root_hyb_both)
+
+upset(list, nsets = 3, number.angles = 0, point.size = 3, line.size = 1.2, mainbar.y.label = "Shared DEG", sets.x.label = "Total DEG", text.scale = c(2, 2, 2, 2, 2, 2), order.by = "freq")
+
+#euler diagram
+list.euler<-list(root=as.vector(root_hyb_both),
+                 leaf=as.vector(leaf_hyb_both),
+                 stem=as.vector(stem_hyb_both))
+
+plot(euler(list.euler, shape = "ellipse"),legend = T, quantities = T, labels = T, fills = brewer.pal(n = 7,name = "Spectral"))
+plot(euler(list.euler, shape = "ellipse"),legend = F, quantities = F, labels = F, fills = brewer.pal(n = 7,name = "Spectral"))
+
+```
+
+
+##Compare progenitors
+
+A gene only was considered DE between hybrids and parents when it was DE against both parents.
+
+```{r Overlaps between DE comparisons, fig.width=10}
+
+
+library(UpSetR)
+allgenes <- rownames(mytxi$counts)
+list <- as.data.frame(allgenes)
+list$leaf_hyb_both <- as.integer(allgenes %in% leaf_hyb_both)
+list$stem_hyb_both <- as.integer(allgenes %in% stem_hyb_both)
+list$root_hyb_both <- as.integer(allgenes %in% root_hyb_both)
+list$root_few_many.05 <- as.integer(allgenes %in% root_few_many.05$rownames) 
+list$leaf_few_many.05 <- as.integer(allgenes %in% leaf_few_many.05$rownames) 
+list$stem_few_many.05 <- as.integer(allgenes %in% stem_few_many.05$rownames) 
+
+upset(list, nsets = 6, number.angles = 0, point.size = 3, line.size = 1.2, mainbar.y.label = "Shared DEG", sets.x.label = "Total DEG", text.scale = c(2, 2, 2, 2, 2, 2), order.by = "freq")
+
+```
+
+
+#Enrichment analysis
+
+The enrichment analysis was based on an F-fisher test (FDR<0.05) using the library topGO with the “weight01” algorithm. Using the lists of DE genes and functional annotation as inputs, topGO compared the number of DEGs in each category with the expected number of genes for the whole transcriptome. The “weight01” algorithm resolves the relations between related GO ontology terms at different levels. Later, enriched categories were plotted using ggplot2.
+
+##Functions
+
+```{r FUNCTIONS FOR THE ENRICHMENT ANALYSIS, warning=FALSE}
+#PREFLIGHT
+library(topGO,quietly = T)
+library(data.table,quietly = T)
+
+run.topgo.pipeline.BP <- function(mytemp) {
+  #PIPE starts
+  list.mytemp <- factor(as.integer(allgenes %in% mytemp))
+  names(list.mytemp) <- allgenes
+  #BP
+  fdata.mytemp.BP <- new("topGOdata", ontology="BP", allGenes=list.mytemp, annot = annFUN.gene2GO, gene2GO = geneID2GO)
+#  results.fdata.mytemp.BP <- GenTable(fdata.mytemp.BP, weight_fisher = runTest(fdata.mytemp.BP, algorithm = "weight", statistic = "fisher"), elim_fisher = runTest(fdata.mytemp.BP, algorithm = "elim", statistic = "fisher"), weight01_fisher = runTest(fdata.mytemp.BP, algorithm = "weight01", statistic = "fisher"), topNodes=150)
+   results.fdata.mytemp.BP <- GenTable(fdata.mytemp.BP, weight01_fisher = runTest(fdata.mytemp.BP, algorithm = "weight01", statistic = "fisher"), topNodes=150)
+  #add genes to dataframe
+  results.fdata.mytemp.BP$genes <-   sapply(results.fdata.mytemp.BP$GO.ID, function(x) {
+    genes<- genesInTerm(fdata.mytemp.BP, x)  
+    genes[[1]][genes[[1]] %in% mytemp]
+  })
+  results.fdata.mytemp.BP  
+}
+
+#MF
+run.topgo.pipeline.MF <- function(mytemp) {
+  list.mytemp <- factor(as.integer(allgenes %in% mytemp))
+  names(list.mytemp) <- allgenes
+  fdata.mytemp.MF <- new("topGOdata", ontology="MF", allGenes=list.mytemp, annot = annFUN.gene2GO, gene2GO = geneID2GO)
+#  results.fdata.mytemp.MF <- GenTable(fdata.mytemp.MF, weight_fisher = runTest(fdata.mytemp.MF, algorithm = "weight", statistic = "fisher"), elim_fisher = runTest(fdata.mytemp.MF, algorithm = "elim", statistic = "fisher"), weight01_fisher = runTest(fdata.mytemp.MF, algorithm = "weight01", statistic = "fisher"), topNodes=50)
+    results.fdata.mytemp.MF <- GenTable(fdata.mytemp.MF, weight01_fisher = runTest(fdata.mytemp.MF, algorithm = "weight01", statistic = "fisher"), topNodes=50)
+  #add genes to dataframe
+  results.fdata.mytemp.MF$genes <-   sapply(results.fdata.mytemp.MF$GO.ID, function(x) {
+    genes<-genesInTerm(fdata.mytemp.MF, x) 
+    genes[[1]][genes[[1]] %in% mytemp]
+  })
+  results.fdata.mytemp.MF
+}
+
+
+full.topgo.pipeline.BP <- function(mytemp) {
+  #PIPE starts
+  list.mytemp <- factor(as.integer(allgenes %in% mytemp))
+  names(list.mytemp) <- allgenes
+  #BP
+  fdata.mytemp.BP <- new("topGOdata", ontology="BP", allGenes=list.mytemp, annot = annFUN.gene2GO, gene2GO = geneID2GO)
+#  results.fdata.mytemp.BP <- GenTable(fdata.mytemp.BP, weight_fisher = runTest(fdata.mytemp.BP, algorithm = "weight", statistic = "fisher"), elim_fisher = runTest(fdata.mytemp.BP, algorithm = "elim", statistic = "fisher"), weight01_fisher = runTest(fdata.mytemp.BP, algorithm = "weight01", statistic = "fisher"), topNodes=150)
+   results.fdata.mytemp.BP <- GenTable(fdata.mytemp.BP, weight01_fisher = runTest(fdata.mytemp.BP, algorithm = "weight01", statistic = "fisher"), topNodes=300)
+  #add genes to dataframe
+  results.fdata.mytemp.BP$genes <-   sapply(results.fdata.mytemp.BP$GO.ID, function(x) {
+    genes<- genesInTerm(fdata.mytemp.BP, x)  
+    genes[[1]][genes[[1]] %in% mytemp]
+  })
+  results.fdata.mytemp.BP  
+}
+
+#MF
+full.topgo.pipeline.MF <- function(mytemp) {
+  list.mytemp <- factor(as.integer(allgenes %in% mytemp))
+  names(list.mytemp) <- allgenes
+  fdata.mytemp.MF <- new("topGOdata", ontology="MF", allGenes=list.mytemp, annot = annFUN.gene2GO, gene2GO = geneID2GO)
+#  results.fdata.mytemp.MF <- GenTable(fdata.mytemp.MF, weight_fisher = runTest(fdata.mytemp.MF, algorithm = "weight", statistic = "fisher"), elim_fisher = runTest(fdata.mytemp.MF, algorithm = "elim", statistic = "fisher"), weight01_fisher = runTest(fdata.mytemp.MF, algorithm = "weight01", statistic = "fisher"), topNodes=50)
+    results.fdata.mytemp.MF <- GenTable(fdata.mytemp.MF, weight01_fisher = runTest(fdata.mytemp.MF, algorithm = "weight01", statistic = "fisher"), topNodes=100)
+  #add genes to dataframe
+  results.fdata.mytemp.MF$genes <-   sapply(results.fdata.mytemp.MF$GO.ID, function(x) {
+    genes<-genesInTerm(fdata.mytemp.MF, x) 
+    genes[[1]][genes[[1]] %in% mytemp]
+  })
+  results.fdata.mytemp.MF
+}
+
+##END FUNCTIONS###
+```
+
+##Compute enrichment analysis (DE hybrids)
+
+```{r COMPUTE ENRICHMENT ANALYSIS IN HYBRIDS, message=FALSE, warning=FALSE}
+#COMPUTE ENRICHMENT ANALYSIS
+library(topGO,quietly = T)
+library(data.table,quietly = T)
+
+#SLIM ANNOT IN HYBRIDS
+allgenes <- rownames(counts)
+topgo.file <- read.delim("../../Msin_b2go/slim_annot_TOPGO.annot", header = F)
+geneID2GO <- readMappings(file = "../../Msin_b2go/slim_annot_TOPGO.annot")
+
+slim_BP.leaf_few_many.05 <- run.topgo.pipeline.BP(leaf_few_many.05$rownames)
+slim_MF.leaf_few_many.05 <- run.topgo.pipeline.MF(leaf_few_many.05$rownames)
+
+slim_BP.root_few_many.05 <- run.topgo.pipeline.BP(root_few_many.05$rownames)
+slim_MF.root_few_many.05 <- run.topgo.pipeline.MF(root_few_many.05$rownames)
+
+slim_BP.stem_few_many.05 <- run.topgo.pipeline.BP(stem_few_many.05$rownames)
+slim_MF.stem_few_many.05 <- run.topgo.pipeline.MF(stem_few_many.05$rownames)
+
+
+#FULL GO ANNOTATION
+allgenes <- rownames(counts)
+topgo.file <- read.delim("../../Msin_b2go/full_annot_TOPGO.annot", header = F)
+geneID2GO <- readMappings(file = "../../Msin_b2go/full_annot_TOPGO.annot")
+
+full_BP.leaf_few_many.05 <- full.topgo.pipeline.BP(leaf_few_many.05$rownames)
+full_MF.leaf_few_many.05 <- full.topgo.pipeline.MF(leaf_few_many.05$rownames)
+
+full_BP.root_few_many.05 <- full.topgo.pipeline.BP(root_few_many.05$rownames)
+full_MF.root_few_many.05 <- full.topgo.pipeline.MF(root_few_many.05$rownames)
+
+full_BP.stem_few_many.05 <- full.topgo.pipeline.BP(stem_few_many.05$rownames)
+full_MF.stem_few_many.05 <- full.topgo.pipeline.MF(stem_few_many.05$rownames)
+
+
+```
+
+
+##Plot SLIM GO
+
+```{r Plot: EA hybrids SLIM GO terms}
+#BUBBLEPLOTS
+library(corrplot)
+library(reshape2)
+library(RColorBrewer)
+library(pheatmap)
+library(dplyr)
+library(ggplot2)
+
+#add tissue column to each table
+slim_BP.leaf_few_many.05$tissue <- "leaf"
+slim_BP.root_few_many.05$tissue <- "root"
+slim_BP.stem_few_many.05$tissue <- "stem"
+
+slim_MF.leaf_few_many.05$tissue <- "leaf"
+slim_MF.root_few_many.05$tissue <- "root"
+slim_MF.stem_few_many.05$tissue <- "stem"
+
+#join table:
+slim_BP.few_many.05 <- rbind(slim_BP.leaf_few_many.05,slim_BP.root_few_many.05,slim_BP.stem_few_many.05)
+#correct the scientific notation by converting from character to numeric:
+slim_BP.few_many.05$weight01_fisher <- as.numeric(slim_BP.few_many.05$weight01_fisher)
+write.table(as.matrix(slim_BP.few_many.05), file = "EA_slimGO_hybrids-few-vs-many.txt", sep = '\t')
+
+#join table:
+slim_MF.few_many.05 <- rbind(slim_MF.leaf_few_many.05,slim_MF.root_few_many.05,slim_MF.stem_few_many.05)
+#correct the scientific notation by converting from character to numeric:
+slim_MF.few_many.05$weight01_fisher <- as.numeric(slim_MF.few_many.05$weight01_fisher)
+write.table(as.matrix(slim_MF.few_many.05), file = "MF_slimGO_hybrids-few-vs-many.txt", sep = '\t')
+
+
+#list of GOs that are enrich in at least one analysis
+enriched.GOs <- slim_BP.few_many.05 %>% filter(weight01_fisher<0.05) %>% filter (Significant>=10) # %>% select(GO.ID) 
+#filter our enrich GOs by name
+table.merge.filter <- slim_BP.few_many.05 %>% filter(GO.ID %in% unlist(enriched.GOs)) 
+#PUT A BOTTOM CAP
+table.merge.filter$weight01_fisher[table.merge.filter$weight01_fisher<0.0001] <- 0.0001
+
+table.join <- table.merge.filter #save this object for later
+
+p <- ggplot(data=table.merge.filter, aes(x=tissue,y=Term)) 
+#p <- p + geom_point(data=table.merge.filter %>% filter(weight01_fisher>0.01), aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  stroke=1, alpha=0.7) 
+#p <- p + geom_point(data=table.merge.filter %>% filter(weight01_fisher<=0.01) %>% filter(weight01_fisher>0.01), aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  stroke=1, alpha=0.9) 
+#p <- p + geom_point(data=table.merge.filter %>% filter(weight01_fisher<=0.001), aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  stroke=1, alpha=1) 
+p <- p + geom_point(data=table.merge.filter, aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  stroke=1, alpha=1)
+
+#p <- p + scale_size(breaks = c(0.5,1,2,3,4,5), range=c(2,8))
+#p <- p + scale_color_gradientn(trans = "log2", colours = brewer.pal(9,"Blues"), breaks = c(0,1,5,10,20,50,100,200))
+p <- p + scale_size(breaks = c(10,20,30,40,50,60,70,80,90,100,500), range = (c(1,11)))
+#p <- p + scale_color_gradientn(colours = c(rev(brewer.pal(9,"Blues")),"white",brewer.pal(9,"Reds")), limits = c(-15,15), breaks = c(-15,-10,-5,-2.5,-1,0,1,2.5,5,10,15))
+#p <- p + scale_color_gradientn(colours = c(rev(brewer.pal(9,"Blues")),brewer.pal(9,"Reds")))
+p <- p + scale_color_gradientn(colours = rev(brewer.pal(9,"Blues")))
+#p <- p + scale_y_discrete(limits=rev(myTERMS))
+p + theme_light()
+
+
+
+
+#MF
+enriched.GOs <- slim_MF.few_many.05 %>% filter(weight01_fisher<0.05) %>% filter (Significant>=10) # %>% select(GO.ID) 
+table.merge.filter <- slim_MF.few_many.05 %>% filter(GO.ID %in% unlist(enriched.GOs)) 
+table.merge.filter$weight01_fisher[table.merge.filter$weight01_fisher<0.0001] <- 0.0001
+
+table.join <- rbind(table.join,table.merge.filter) #save this object for later
+
+p <- ggplot(data=table.merge.filter, aes(x=tissue,y=Term)) 
+p <- p + geom_point(data=table.merge.filter, aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  stroke=1, alpha=1)
+p <- p + scale_size(breaks = c(10,20,30,40,50,60,70,80,90,100,500), range = (c(1,11)))
+p <- p + scale_color_gradientn(colours = rev(brewer.pal(9,"Blues")))
+p + theme_light()
+
+
+
+
+#BP+MF (table.join)
+p <- ggplot(data=table.join, aes(x=tissue,y=Term)) 
+p <- p + geom_point(data=table.join, aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  alpha=1) +
+  geom_point(data=table.join, aes(x=tissue, y=Term, size=Significant), shape = 1, colour = "darkgrey") 
+p <- p + scale_size(breaks = c(10,20,30,40,50,60,70,80), range = (c(1,8)))
+p <- p + scale_color_gradientn(colours = c(rev(brewer.pal(9,"YlGn")),"white"))
+p <- p + scale_x_discrete(limits = c("root","stem","leaf"))
+p + theme_linedraw()
+
+
+#BP+MF (table.join)
+myterms <- c(
+    #MF                 
+                      "methyltransferase activity",
+    "phosphatase activity",
+                                 "kinase activity",
+                     "oxidoreductase activity",
+ "hydrolase activity, acting on glycosyl b...",
  
-## R Markdown
+ #BP
+                    "cofactor metabolic process",
+                       "lipid metabolic process",
+         "cellular amino acid metabolic process",
+            "sulfur compound metabolic process",
+   "generation of precursor metabolites and ...",
+ "carbohydrate metabolic process",
+ "secondary metabolic process",
+                            "response to stress")
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+p1 <- ggplot(data=table.join, aes(x=tissue,y=Term)) 
+p1 <- p1 + geom_point(data=table.join, aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  alpha=1) +
+  geom_point(data=table.join, aes(x=tissue, y=Term, size=Significant), shape = 1, colour = "darkgrey") 
+p1 <- p1 + scale_size(breaks = c(10,20,30,40,50,60,70,80), range = (c(2,10)))
+p1 <- p1 + scale_color_gradientn(colours = c(rev(brewer.pal(9,"YlGn")),"white"))
+p1 <- p1 + scale_x_discrete(limits = c("root","stem","leaf"))
+p1 <- p1 + scale_y_discrete(limits=myterms)
+p1 <- p1 + theme_linedraw()
+p1
 
-```{r cars}
-summary(cars)
+
 ```
 
-## Including Plots
 
 
-```{r pressure, echo=TRUE}
-plot(pressure)
+
+##Plot FULL GO
+
+```{r Plot: EA hybrids FULL GO terms, fig.width=7}
+#BUBBLEPLOTS
+library(corrplot)
+library(reshape2)
+library(RColorBrewer)
+library(pheatmap)
+library(dplyr)
+library(ggplot2)
+
+#add tissue column to each table
+full_BP.leaf_few_many.05$tissue <- "leaf"
+full_BP.root_few_many.05$tissue <- "root"
+full_BP.stem_few_many.05$tissue <- "stem"
+
+full_MF.leaf_few_many.05$tissue <- "leaf"
+full_MF.root_few_many.05$tissue <- "root"
+full_MF.stem_few_many.05$tissue <- "stem"
+
+
+#join table:
+full_BP.few_many.05 <- rbind(full_BP.leaf_few_many.05,full_BP.root_few_many.05,full_BP.stem_few_many.05)
+#correct the scientific notation by converting from character to numeric:
+full_BP.few_many.05$weight01_fisher <- as.numeric(full_BP.few_many.05$weight01_fisher)
+write.table(as.matrix(full_BP.few_many.05), file = "EA_fullGO_hybrids-few-vs-many.txt", sep = '\t')
+
+
+#join table:
+full_MF.few_many.05 <- rbind(full_MF.leaf_few_many.05,full_MF.root_few_many.05,full_MF.stem_few_many.05)
+#correct the scientific notation by converting from character to numeric:
+full_MF.few_many.05$weight01_fisher <- as.numeric(full_MF.few_many.05$weight01_fisher)
+write.table(as.matrix(full_MF.few_many.05), file = "MF_fullGO_hybrids-few-vs-many.txt", sep = '\t')
+
+
+
+
+#list of GOs that are enrich in at least one analysis
+enriched.GOs <- full_BP.few_many.05 %>% filter(weight01_fisher<0.05) %>% filter (Significant>=10) # %>% select(GO.ID) 
+#filter our enrich GOs by name
+table.merge.filter <- full_BP.few_many.05 %>% filter(GO.ID %in% unlist(enriched.GOs)) 
+#PUT A BOTTOM CAP
+table.merge.filter$weight01_fisher[table.merge.filter$weight01_fisher<0.0001] <- 0.0001
+
+table.join <- table.merge.filter
+
+p <- ggplot(data=table.merge.filter, aes(x=tissue,y=Term)) 
+#p <- p + geom_point(data=table.merge.filter %>% filter(weight01_fisher>0.01), aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  stroke=1, alpha=0.8) 
+#p <- p + geom_point(data=table.merge.filter %>% filter(weight01_fisher<=0.01) %>% filter(weight01_fisher>0.01), aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  stroke=1, alpha=0.8) 
+#p <- p + geom_point(data=table.merge.filter %>% filter(weight01_fisher<=0.001), aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  stroke=1, alpha=0.8) 
+p <- p + geom_point(data=table.join, aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  alpha=1) +
+  geom_point(data=table.join, aes(x=tissue, y=Term, size=Significant), shape = 1, colour = "darkgrey") 
+#p <- p + scale_size(breaks = c(0.5,1,2,3,4,5), range=c(2,8))
+#p <- p + scale_color_gradientn(trans = "log2", colours = brewer.pal(9,"Blues"), breaks = c(0,1,5,10,20,50,100,200))
+p <- p + scale_size(breaks = c(5,10,20,30,40,50,75,100), range = (c(2,9)))
+#p <- p + scale_color_gradientn(colours = c(rev(brewer.pal(9,"Blues")),"white",brewer.pal(9,"Reds")), limits = c(-15,15), breaks = c(-15,-10,-5,-2.5,-1,0,1,2.5,5,10,15))
+p <- p + scale_color_gradientn(colours = c(rev(brewer.pal(9,"YlGn")),"white"))
+p <- p + scale_x_discrete(limits = c("root","stem","leaf"))
+
+#p <- p + scale_y_discrete(limits=rev(myTERMS))
+p + theme_light()
+
+
+#MF
+enriched.GOs <- full_MF.few_many.05 %>% filter(weight01_fisher<0.05) %>% filter (Significant>=10) # %>% select(GO.ID) 
+table.merge.filter <- full_MF.few_many.05 %>% filter(GO.ID %in% unlist(enriched.GOs)) 
+table.merge.filter$weight01_fisher[table.merge.filter$weight01_fisher<0.0001] <- 0.0001
+
+table.join <- rbind(table.join,table.merge.filter)
+
+p <- ggplot(data=table.merge.filter, aes(x=tissue,y=Term)) 
+p <- p + geom_point(data=table.join, aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  alpha=1) +
+  geom_point(data=table.join, aes(x=tissue, y=Term, size=Significant), shape = 1, colour = "darkgrey") 
+p <- p + scale_size(breaks = c(10,20,30,40,50,60,70,80,90,100,500), range = (c(1,11)))
+p <- p + scale_color_gradientn(colours = c(rev(brewer.pal(9,"YlGn")),"white"))
+p <- p + scale_x_discrete(limits = c("root","stem","leaf"))
+
+p + theme_light()
+
+
+
+#BP+MF (table.join)
+p <- ggplot(data=table.join, aes(x=tissue,y=Term)) 
+p <- p + geom_point(data=table.join, aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  alpha=1) +
+  geom_point(data=table.join, aes(x=tissue, y=Term, size=Significant), shape = 1, colour = "darkgrey") 
+p <- p + scale_size(breaks = c(10,20,30,40,50,60,70,80,90,100,500), range = (c(1,11)))
+p <- p + scale_color_gradientn(colours = c(rev(brewer.pal(9,"YlGn")),"white"))
+p <- p + scale_x_discrete(limits = c("root","stem","leaf"))
+
+p + theme_light()
+
+
+```
+
+
+
+##Compute enrichment analysis hybrids vs progenitors
+
+```{r COMPUTE ENRICHMENT ANALYSIS IN -HYBRIDS DE IN BOTH PARENTS-, message=FALSE, warning=FALSE}
+#COMPUTE ENRICHMENT ANALYSIS
+library(topGO,quietly = T)
+library(data.table,quietly = T)
+
+#SLIM ANNOT IN HYBRIDS
+allgenes <- rownames(counts)
+topgo.file <- read.delim("../../Msin_b2go/slim_annot_TOPGO.annot", header = F)
+geneID2GO <- readMappings(file = "../../Msin_b2go/slim_annot_TOPGO.annot")
+
+slim_BP.leaf_heterosis2.05 <- run.topgo.pipeline.BP(leaf_hyb_both)
+slim_MF.leaf_heterosis2.05 <- run.topgo.pipeline.MF(leaf_hyb_both)
+
+slim_BP.root_heterosis2.05 <- run.topgo.pipeline.BP(root_hyb_both)
+slim_MF.root_heterosis2.05 <- run.topgo.pipeline.MF(root_hyb_both)
+
+slim_BP.stem_heterosis2.05 <- run.topgo.pipeline.BP(stem_hyb_both)
+slim_MF.stem_heterosis2.05 <- run.topgo.pipeline.MF(stem_hyb_both)
+
+
+#FULL GO ANNOTATION
+allgenes <- rownames(counts)
+topgo.file <- read.delim("../../Msin_b2go/full_annot_TOPGO.annot", header = F)
+geneID2GO <- readMappings(file = "../../Msin_b2go/full_annot_TOPGO.annot")
+
+full_BP.leaf_heterosis2.05 <- full.topgo.pipeline.BP(leaf_hyb_both)
+full_MF.leaf_heterosis2.05 <- full.topgo.pipeline.MF(leaf_hyb_both)
+
+full_BP.root_heterosis2.05 <- full.topgo.pipeline.BP(root_hyb_both)
+full_MF.root_heterosis2.05 <- full.topgo.pipeline.MF(root_hyb_both)
+
+full_BP.stem_heterosis2.05 <- full.topgo.pipeline.BP(stem_hyb_both)
+full_MF.stem_heterosis2.05 <- full.topgo.pipeline.MF(stem_hyb_both)
+
+
+```
+
+##Plot SLIM GO
+
+```{r plot SLIM hybrids DE both parents}
+#BUBBLEPLOTS
+library(corrplot)
+library(reshape2)
+library(RColorBrewer)
+library(pheatmap)
+library(dplyr)
+library(ggplot2)
+
+#add tissue column to each table
+slim_BP.leaf_heterosis2.05$tissue <- "leaf"
+slim_BP.root_heterosis2.05$tissue <- "root"
+slim_BP.stem_heterosis2.05$tissue <- "stem"
+
+slim_MF.leaf_heterosis2.05$tissue <- "leaf"
+slim_MF.root_heterosis2.05$tissue <- "root"
+slim_MF.stem_heterosis2.05$tissue <- "stem"
+
+#join table:
+slim_BP.heterosis2.05 <- rbind(slim_BP.leaf_heterosis2.05,slim_BP.root_heterosis2.05,slim_BP.stem_heterosis2.05)
+#correct the scientific notation by converting from character to numeric:
+slim_BP.heterosis2.05$weight01_fisher <- as.numeric(slim_BP.heterosis2.05$weight01_fisher)
+write.table(as.matrix(slim_BP.heterosis2.05), file = "EA_slimGO_heterosis_hyb-DE-both-progenitors.txt", sep = '\t')
+
+#join table:
+slim_MF.heterosis2.05 <- rbind(slim_MF.leaf_heterosis2.05,slim_MF.root_heterosis2.05,slim_MF.stem_heterosis2.05)
+#correct the scientific notation by converting from character to numeric:
+slim_MF.heterosis2.05$weight01_fisher <- as.numeric(slim_MF.heterosis2.05$weight01_fisher)
+write.table(as.matrix(slim_MF.heterosis2.05), file = "MF_slimGO_heterosis_hyb-DE-both-progenitors.txt", sep = '\t')
+
+
+#list of GOs that are enrich in at least one analysis
+enriched.GOs <- slim_BP.heterosis2.05 %>% filter(weight01_fisher<0.01) %>% filter (Significant>=20) # %>% select(GO.ID) 
+#filter our enrich GOs by name
+table.merge.filter <- slim_BP.heterosis2.05 %>% filter(GO.ID %in% unlist(enriched.GOs)) 
+#PUT A BOTTOM CAP
+table.merge.filter$weight01_fisher[table.merge.filter$weight01_fisher<0.0001] <- 0.0001
+
+table.join <- table.merge.filter #use later
+
+p <- ggplot(data=table.merge.filter, aes(x=tissue,y=Term)) 
+#p <- p + geom_point(data=table.merge.filter %>% filter(weight01_fisher>0.01), aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  stroke=1, alpha=0.7) 
+#p <- p + geom_point(data=table.merge.filter %>% filter(weight01_fisher<=0.01) %>% filter(weight01_fisher>0.01), aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  stroke=1, alpha=0.9) 
+#p <- p + geom_point(data=table.merge.filter %>% filter(weight01_fisher<=0.001), aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  stroke=1, alpha=1) 
+p <- p + geom_point(data=table.merge.filter, aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  stroke=1, alpha=1)
+
+#p <- p + scale_size(breaks = c(0.5,1,2,3,4,5), range=c(2,8))
+#p <- p + scale_color_gradientn(trans = "log2", colours = brewer.pal(9,"Blues"), breaks = c(0,1,5,10,20,50,100,200))
+p <- p + scale_size(breaks = c(10,20,30,40,50,60,70,80,90,100,500), range = (c(1,11)))
+#p <- p + scale_color_gradientn(colours = c(rev(brewer.pal(9,"Blues")),"white",brewer.pal(9,"Reds")), limits = c(-15,15), breaks = c(-15,-10,-5,-2.5,-1,0,1,2.5,5,10,15))
+#p <- p + scale_color_gradientn(colours = c(rev(brewer.pal(9,"Blues")),brewer.pal(9,"Reds")))
+p <- p + scale_color_gradientn(colours = rev(brewer.pal(9,"Blues")))
+#p <- p + scale_y_discrete(limits=rev(myTERMS))
+p + theme_light()
+
+
+#MF
+enriched.GOs <- slim_MF.heterosis2.05 %>% filter(weight01_fisher<0.01) %>% filter (Significant>=20) # %>% select(GO.ID) 
+table.merge.filter <- slim_MF.heterosis2.05 %>% filter(GO.ID %in% unlist(enriched.GOs)) 
+table.merge.filter$weight01_fisher[table.merge.filter$weight01_fisher<0.0001] <- 0.0001
+
+table.join <- rbind(table.join,table.merge.filter) #use later
+
+
+p <- ggplot(data=table.merge.filter, aes(x=tissue,y=Term)) 
+p <- p + geom_point(data=table.merge.filter, aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  stroke=1, alpha=1)
+p <- p + scale_size(breaks = c(10,20,30,40,50,60,70,80,90,100,500), range = (c(1,11)))
+p <- p + scale_color_gradientn(colours = rev(brewer.pal(9,"Blues")))
+p + theme_light()
+
+
+
+#BP+MF (table.join)
+p <- ggplot(data=table.join, aes(x=tissue,y=Term)) 
+p <- p + geom_point(data=table.join, aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  alpha=1) +
+  geom_point(data=table.join, aes(x=tissue, y=Term, size=Significant), shape = 1, colour = "darkgrey") 
+p <- p + scale_size(breaks = c(10,20,30,40,50,60,70,80), range = (c(1,8)))
+p <- p + scale_color_gradientn(colours = c(rev(brewer.pal(9,"YlGn")),"white"))
+p <- p + scale_x_discrete(limits = c("root","stem","leaf"))
+p + theme_linedraw()
+
+
+####
+myterms <-c(
+  "phosphatase activity",#
+"translation factor activity, RNA binding",#
+"ion binding",#
+"DNA binding",#
+  "helicase activity",#
+#"rRNA binding",#
+"structural constituent of ribosome",#
+"RNA binding",#
+  
+  
+  "tRNA metabolic process",
+"protein-containing complex assembly",
+"cellular amino acid metabolic process",
+
+"cellular nitrogen compound metabolic pro...",
+"small molecule metabolic process",
+"reproduction",
+"membrane organization",
+
+"biosynthetic process",
+#"ribonucleoprotein complex assembly",
+"generation of precursor metabolites and ...",
+"ribosome biogenesis",
+"photosynthesis",
+"translation")
+
+p2 <- ggplot(data=table.join, aes(x=tissue,y=Term)) 
+p2 <- p2 + geom_point(data=table.join, aes(x=tissue, y=Term, size=Significant, colour=log2(weight01_fisher)),  alpha=1) +
+  geom_point(data=table.join, aes(x=tissue, y=Term, size=Significant), shape = 1, colour = "darkgrey") 
+p2 <- p2 + scale_size(breaks = c(20,40,50,60,70,80,100,200,300,400), range = (c(4,14)))
+p2 <- p2 + scale_color_gradientn(colours = c(rev(brewer.pal(9,"YlGn")),"white"))
+p2 <- p2 + scale_x_discrete(limits = c("root","stem","leaf"))
+p2 <- p2 + scale_y_discrete(limits=myterms)
+p2 <- p2 + theme_linedraw()
+p2
+
+
+
+```
+
+
+```{r GRID, fig.width=6}
+library(gridExtra)
+grid.arrange(p1, p2,  layout_matrix=rbind(c(1,2),c(1,2),c(3,2)))
 ```
 
