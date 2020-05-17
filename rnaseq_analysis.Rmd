@@ -59,7 +59,7 @@ load("input/txi_import.R") #this loads the object 'mytxi' from the tximport step
 dim(mytxi$counts) 
 #View(mytxi$counts)
 counts <- as.data.frame(mytxi$counts)
-#write.csv(counts,file="txi_counts.csv")
+write.csv(counts,file="txi_counts.csv")
 #write.csv(mytxi$abundance,file="txi_abundance.csv")
 
 pheno <- read.delim("input/pheno.txt", header = T, sep = '\t')
