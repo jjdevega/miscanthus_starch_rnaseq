@@ -1,0 +1,994 @@
+"GO.ID"	"Term"	"Annotated"	"Significant"	"Expected"	"weight01_fisher"	"genes"	"tissue"
+"1"	GO:0055114	oxidation-reduction process	3524	63	41.22	6.8e-05	c("Misin01G012900.1", "Misin01G032000.1", "Misin01G055200.1", "Misin01G073700.1", "Misin01G078200.1", "Misin01G154400.1", "Misin01G258700.1", "Misin01G349900.1", "Misin02G486800.1", "Misin03G016900.1", "Misin04G105800.1", "Misin04G200300.1", "Misin05G193300.1", "Misin05G246000.1", "Misin05G295500.1", "Misin05G312600.1", "Misin06G138700.1", "Misin06G334400.1", "Misin06G403100.1", "Misin07G271500.1", "Misin07G299800.1", "Misin07G317300.1", "Misin07G320500.1", "Misin07G365700.1", "Misin08G228000.1", 
+"Misin08G264700.1", "Misin08G284800.1", "Misin08G295000.1", "Misin09G043300.1", "Misin09G104900.1", "Misin09G180200.1", "Misin09G192700.1", "Misin10G040500.1", "Misin10G103700.1", "Misin11G121200.1", "Misin11G222200.1", "Misin11G270000.1", "Misin12G051300.1", "Misin12G092100.1", "Misin12G096500.1", "Misin12G096700.1", "Misin12G160300.1", "Misin12G161800.1", "Misin12G201000.1", "Misin12G281500.1", "Misin13G198400.1", "Misin15G165600.1", "Misin16G048000.1", "Misin17G179400.1", "Misin17G189900.1", "Misin17G216100.1", 
+"Misin17G251700.1", "Misin18G011300.1", "Misin18G013600.1", "Misin18G013800.1", "Misin19G100700.1", "Misin19G196400.1", "MisinT014600.1", "MisinT014900.1", "MisinT029700.1", "MisinT182000.1", "MisinT219600.1", "MisinT439700.1")	leaf
+"2"	GO:0101030	tRNA-guanine transglycosylation	2	2	0.02	0.00014	c("Misin03G303800.1", "Misin04G340100.1")	leaf
+"3"	GO:0032259	methylation	957	20	11.19	0.00167	c("Misin01G025200.1", "Misin04G001600.1", "Misin04G379900.1", "Misin05G239800.1", "Misin07G316900.1", "Misin07G357300.1", "Misin07G405300.1", "Misin07G453500.1", "Misin07G474500.1", "Misin08G248700.1", "Misin09G108600.1", "Misin09G178500.1", "Misin09G180200.1", "Misin10G020200.1", "Misin10G064700.1", "Misin10G070600.1", "Misin10G196200.1", "Misin15G122100.1", "Misin19G236400.1", "MisinT087200.1")	leaf
+"4"	GO:0044550	secondary metabolite biosynthetic proces...	611	14	7.15	0.00441	c("Misin01G012900.1", "Misin01G047600.1", "Misin01G349900.1", "Misin03G032400.1", "Misin04G105800.1", "Misin05G312600.1", "Misin07G204200.1", "Misin09G192700.1", "Misin15G165600.1", "Misin17G203600.1", "Misin19G207900.1", "MisinT014600.1", "MisinT014900.1", "MisinT219600.1")	leaf
+"5"	GO:0009854	oxidative photosynthetic carbon pathway	11	2	0.13	0.007	c("Misin11G222200.1", "Misin12G201000.1")	leaf
+"6"	GO:0006027	glycosaminoglycan catabolic process	68	4	0.8	0.00833	c("Misin03G233500.1", "Misin03G316100.1", "Misin11G111200.1", "Misin18G076700.1")	leaf
+"7"	GO:0016311	dephosphorylation	741	18	8.67	0.00896	c("Misin01G029900.1", "Misin01G073700.1", "Misin01G389000.1", "Misin02G420500.1", "Misin02G490600.1", "Misin05G081700.1", "Misin05G303100.1", "Misin05G333500.1", "Misin06G406100.1", "Misin07G322000.1", "Misin09G149500.1", "Misin10G007600.1", "Misin10G020200.1", "Misin10G031100.1", "Misin12G158100.1", "Misin16G213000.1", "Misin17G179400.1", "MisinT244700.1")	leaf
+"8"	GO:0019048	modulation by virus of host morphology o...	13	2	0.15	0.00977	c("Misin11G222200.1", "Misin12G201000.1")	leaf
+"9"	GO:0005975	carbohydrate metabolic process	2716	43	31.77	0.01104	c("Misin01G337100.1", "Misin02G069000.1", "Misin02G205400.1", "Misin02G326400.1", "Misin02G341300.1", "Misin02G490600.1", "Misin02G497400.1", "Misin03G233500.1", "Misin03G316100.1", "Misin04G200300.1", "Misin04G207500.1", "Misin04G314200.1", "Misin05G078900.1", "Misin06G200500.1", "Misin06G202700.1", "Misin06G358300.1", "Misin07G105500.1", "Misin07G251100.1", "Misin07G271500.1", "Misin07G299800.1", "Misin07G322000.1", "Misin07G474100.1", "Misin07G474500.1", "Misin07G523300.1", "Misin08G144100.1", 
+"Misin10G020200.1", "Misin10G067800.1", "Misin10G086500.1", "Misin10G115700.1", "Misin11G111200.1", "Misin11G121200.1", "Misin11G126300.1", "Misin11G141900.1", "Misin12G113600.1", "Misin12G158100.1", "Misin15G122100.1", "Misin15G153000.1", "Misin16G118700.1", "Misin17G123500.1", "Misin17G216100.1", "Misin18G076700.1", "MisinT029700.1", "MisinT226600.1")	leaf
+"10"	GO:0019260	1,2-dichloroethane catabolic process	40	3	0.47	0.01139	c("Misin04G200300.1", "Misin07G299800.1", "Misin17G216100.1")	leaf
+"11"	GO:0019497	hexachlorocyclohexane metabolic process	77	4	0.9	0.01276	c("Misin01G029900.1", "Misin02G420500.1", "Misin05G303100.1", "Misin09G149500.1")	leaf
+"12"	GO:0046251	limonene catabolic process	42	3	0.49	0.01301	c("Misin04G200300.1", "Misin07G299800.1", "Misin17G216100.1")	leaf
+"13"	GO:0050790	regulation of catalytic activity	794	10	9.29	0.01449	c("Misin01G074800.1", "Misin01G389000.1", "Misin02G410800.1", "Misin03G032400.1", "Misin03G074500.1", "Misin08G106400.1", "Misin12G158100.1", "Misin17G012500.1", "MisinT004700.1", "MisinT087300.1")	leaf
+"14"	GO:0010109	regulation of photosynthesis	34	3	0.4	0.01463	c("Misin11G222200.1", "Misin12G201000.1", "Misin19G100700.1")	leaf
+"15"	GO:0006699	bile acid biosynthetic process	45	3	0.53	0.01567	c("Misin04G200300.1", "Misin07G299800.1", "Misin17G216100.1")	leaf
+"16"	GO:0006915	apoptotic process	129	5	1.51	0.01806	c("Misin17G229000.1", "MisinT011200.1", "MisinT136200.1", "MisinT211500.1", "MisinT323700.1")	leaf
+"17"	GO:0006529	asparagine biosynthetic process	18	2	0.21	0.01845	c("Misin01G050700.1", "Misin14G007100.1")	leaf
+"18"	GO:0019953	sexual reproduction	187	6	2.19	0.02127	c("Misin02G273300.1", "Misin02G273500.1", "Misin02G274300.1", "Misin02G515400.1", "Misin10G020200.1", "MisinT087200.1")	leaf
+"19"	GO:0006568	tryptophan metabolic process	237	6	2.77	0.02295	c("Misin01G055200.1", "Misin01G103100.1", "Misin04G200300.1", "Misin07G299800.1", "Misin17G216100.1", "Misin19G191900.1")	leaf
+"20"	GO:0019429	fluorene catabolic process	2	1	0.02	0.02326	Misin05G312600.1	leaf
+"21"	GO:0086010	membrane depolarization during action po...	2	1	0.02	0.02326	Misin05G216900.1	leaf
+"22"	GO:0034477	U6 snRNA 3'-end processing	2	1	0.02	0.02326	Misin07G428500.1	leaf
+"23"	GO:0010421	hydrogen peroxide-mediated programmed ce...	2	1	0.02	0.02326	Misin05G303700.1	leaf
+"24"	GO:0018916	nitrobenzene metabolic process	2	1	0.02	0.02326	Misin05G312600.1	leaf
+"25"	GO:0032928	regulation of superoxide anion generatio...	2	1	0.02	0.02326	Misin05G111300.1	leaf
+"26"	GO:2000630	positive regulation of miRNA metabolic p...	2	1	0.02	0.02326	Misin15G122100.1	leaf
+"27"	GO:2000636	positive regulation of primary miRNA pro...	2	1	0.02	0.02326	Misin15G122100.1	leaf
+"28"	GO:0080180	2-methylguanosine metabolic process	2	1	0.02	0.02326	Misin07G357300.1	leaf
+"29"	GO:0055064	chloride ion homeostasis	2	1	0.02	0.02326	Misin10G025400.1	leaf
+"30"	GO:0031640	killing of cells of other organism	24	2	0.28	0.03178	c("Misin07G137500.1", "Misin07G137600.1")	leaf
+"31"	GO:0046740	transport of virus in host, cell to cell	3	1	0.04	0.03468	Misin07G405700.1	leaf
+"32"	GO:0010133	proline catabolic process to glutamate	3	1	0.04	0.03468	Misin17G216100.1	leaf
+"33"	GO:0043447	alkane biosynthetic process	3	1	0.04	0.03468	Misin19G196400.1	leaf
+"34"	GO:0006771	riboflavin metabolic process	105	4	1.23	0.03505	c("Misin01G029900.1", "Misin02G420500.1", "Misin05G303100.1", "Misin09G149500.1")	leaf
+"35"	GO:0000271	polysaccharide biosynthetic process	454	7	5.31	0.04222	c("Misin02G069000.1", "Misin07G474500.1", "Misin07G523300.1", "Misin10G086500.1", "Misin12G158100.1", "Misin15G122100.1", "MisinT029700.1")	leaf
+"36"	GO:0009688	abscisic acid biosynthetic process	28	2	0.33	0.04222	c("Misin01G055200.1", "Misin05G111300.1")	leaf
+"37"	GO:0006554	lysine catabolic process	113	4	1.32	0.04397	c("Misin04G200300.1", "Misin07G299800.1", "Misin07G316900.1", "Misin17G216100.1")	leaf
+"38"	GO:0006810	transport	5179	44	60.57	0.04494	c("Misin01G015800.1", "Misin01G378600.1", "Misin02G031000.1", "Misin02G069000.1", "Misin02G403700.1", "Misin03G171700.1", "Misin04G155200.1", "Misin04G184000.1", "Misin04G239000.1", "Misin05G077400.1", "Misin05G193300.1", "Misin05G216900.1", "Misin06G159300.1", "Misin06G329800.1", "Misin07G250000.1", "Misin07G334300.1", "Misin07G377000.1", "Misin07G405700.1", "Misin07G429200.1", "Misin08G105700.1", "Misin08G126700.1", "Misin09G109400.1", "Misin10G025400.1", "Misin10G099900.1", "Misin10G100000.1", 
+"Misin10G100100.1", "Misin10G100600.1", "Misin12G129800.1", "Misin12G155200.1", "Misin12G156400.1", "Misin13G189000.1", "Misin13G192500.1", "Misin16G137900.1", "Misin17G223700.1", "Misin17G246200.1", "Misin18G004100.1", "Misin18G219600.1", "Misin18G232300.1", "Misin19G086300.1", "Misin19G236400.1", "MisinT087200.1", "MisinT244700.1", "MisinT287700.1", "MisinT392400.1")	leaf
+"39"	GO:0005983	starch catabolic process	29	2	0.34	0.04501	c("Misin04G207500.1", "Misin07G322000.1")	leaf
+"40"	GO:0042352	GDP-L-fucose salvage	4	1	0.05	0.04597	Misin02G490600.1	leaf
+"41"	GO:0031929	TOR signaling	4	1	0.05	0.04597	Misin19G049800.1	leaf
+"42"	GO:0010430	fatty acid omega-oxidation	4	1	0.05	0.04597	Misin07G317300.1	leaf
+"43"	GO:0071049	nuclear retention of pre-mRNA with aberr...	4	1	0.05	0.04597	Misin12G260000.1	leaf
+"44"	GO:0071034	CUT catabolic process	4	1	0.05	0.04597	Misin12G260000.1	leaf
+"45"	GO:1902476	chloride transmembrane transport	4	1	0.05	0.04597	Misin10G025400.1	leaf
+"46"	GO:0010117	photoprotection	4	1	0.05	0.04597	Misin05G111300.1	leaf
+"47"	GO:0080188	RNA-directed DNA methylation	4	1	0.05	0.04597	Misin15G122100.1	leaf
+"48"	GO:0006547	histidine metabolic process	69	3	0.81	0.04723	c("Misin04G200300.1", "Misin07G299800.1", "Misin17G216100.1")	leaf
+"49"	GO:0006749	glutathione metabolic process	285	7	3.33	0.05133	c("Misin05G156300.1", "Misin05G280300.1", "Misin08G228000.1", "Misin16G140000.1", "MisinT258000.1", "MisinT380000.1", "MisinT404400.1")	leaf
+"50"	GO:0006952	defense response	1110	17	12.98	0.05697	c("Misin01G025300.1", "Misin04G105300.1", "Misin05G216900.1", "Misin07G137500.1", "Misin07G137600.1", "Misin07G197000.1", "Misin07G332100.1", "Misin09G165900.1", "Misin09G166100.1", "Misin09G205400.1", "Misin10G046900.1", "Misin16G184100.1", "Misin17G034300.1", "Misin17G229000.1", "Misin19G210900.1", "MisinT011200.1", "MisinT136200.1")	leaf
+"51"	GO:0009808	lignin metabolic process	118	3	1.38	0.05703	c("Misin05G312600.1", "Misin06G334400.1", "MisinT029700.1")	leaf
+"52"	GO:0019408	dolichol biosynthetic process	5	1	0.06	0.05713	Misin12G129800.1	leaf
+"53"	GO:0001578	microtubule bundle formation	5	1	0.06	0.05713	Misin01G154400.1	leaf
+"54"	GO:0006816	calcium ion transport	84	4	0.98	0.05948	c("Misin02G069000.1", "Misin05G216900.1", "Misin08G105700.1", "Misin13G189000.1")	leaf
+"55"	GO:0006550	isoleucine catabolic process	78	3	0.91	0.0636	c("Misin04G200300.1", "Misin07G299800.1", "Misin17G216100.1")	leaf
+"56"	GO:0006574	valine catabolic process	78	3	0.91	0.0636	c("Misin04G200300.1", "Misin07G299800.1", "Misin17G216100.1")	leaf
+"57"	GO:0006541	glutamine metabolic process	94	4	1.1	0.06719	c("Misin01G050700.1", "Misin01G103100.1", "Misin01G108900.1", "Misin14G007100.1")	leaf
+"58"	GO:0051501	diterpene phytoalexin metabolic process	20	2	0.23	0.06801	c("Misin01G047600.1", "Misin04G333300.1")	leaf
+"59"	GO:0030007	cellular potassium ion homeostasis	6	1	0.07	0.06816	Misin02G069000.1	leaf
+"60"	GO:0030643	cellular phosphate ion homeostasis	6	1	0.07	0.06816	Misin08G144100.1	leaf
+"61"	GO:0000132	establishment of mitotic spindle orienta...	6	1	0.07	0.06816	Misin07G248700.1	leaf
+"62"	GO:0010289	homogalacturonan biosynthetic process	6	1	0.07	0.06816	Misin07G474500.1	leaf
+"63"	GO:0055129	L-proline biosynthetic process	6	1	0.07	0.06816	Misin06G403100.1	leaf
+"64"	GO:0051315	attachment of mitotic spindle microtubul...	6	1	0.07	0.06816	Misin07G248700.1	leaf
+"65"	GO:0046901	tetrahydrofolylpolyglutamate biosyntheti...	6	1	0.07	0.06816	Misin02G507900.1	leaf
+"66"	GO:0046475	glycerophospholipid catabolic process	6	1	0.07	0.06816	Misin08G144100.1	leaf
+"67"	GO:0019852	L-ascorbic acid metabolic process	82	3	0.96	0.07161	c("Misin04G200300.1", "Misin07G299800.1", "Misin17G216100.1")	leaf
+"68"	GO:0046777	protein autophosphorylation	135	4	1.58	0.0744	c("Misin02G021600.1", "Misin02G100400.1", "Misin07G411800.1", "Misin15G022800.1")	leaf
+"69"	GO:0060255	regulation of macromolecule metabolic pr...	4306	37	50.36	0.07518	c("Misin01G029200.1", "Misin01G036000.1", "Misin01G036200.1", "Misin01G389000.1", "Misin02G100400.1", "Misin03G045100.1", "Misin04G155200.1", "Misin04G316000.1", "Misin05G295500.1", "Misin05G311700.1", "Misin07G365600.1", "Misin07G375400.1", "Misin07G405700.1", "Misin07G428500.1", "Misin08G106400.1", "Misin08G284800.1", "Misin09G018800.1", "Misin09G030000.1", "Misin09G040900.1", "Misin10G026500.1", "Misin10G037100.1", "Misin11G195000.1", "Misin12G158100.1", "Misin12G260000.1", "Misin15G122100.1", 
+"Misin16G212300.1", "Misin17G012500.1", "Misin17G122200.1", "Misin17G168000.1", "Misin18G131900.1", "Misin18G228900.1", "Misin19G049800.1", "Misin19G066100.1", "MisinT087200.1", "MisinT342700.1", "MisinT528100.1", "MisinT553500.1")	leaf
+"70"	GO:0006552	leucine catabolic process	84	3	0.98	0.07577	c("Misin04G200300.1", "Misin07G299800.1", "Misin17G216100.1")	leaf
+"71"	GO:0046486	glycerolipid metabolic process	644	11	7.53	0.07611	c("Misin03G233500.1", "Misin04G200300.1", "Misin04G243200.1", "Misin05G081700.1", "Misin05G239800.1", "Misin07G299800.1", "Misin08G144100.1", "Misin10G007600.1", "Misin11G111200.1", "Misin17G179400.1", "Misin17G216100.1")	leaf
+"72"	GO:0015768	maltose transport	7	1	0.08	0.07906	Misin07G377000.1	leaf
+"73"	GO:0007023	post-chaperonin tubulin folding pathway	7	1	0.08	0.07906	Misin08G326800.1	leaf
+"74"	GO:0015759	beta-glucoside transport	7	1	0.08	0.07906	Misin07G377000.1	leaf
+"75"	GO:0032790	ribosome disassembly	7	1	0.08	0.07906	Misin12G158100.1	leaf
+"76"	GO:0031120	snRNA pseudouridine synthesis	7	1	0.08	0.07906	Misin07G496200.1	leaf
+"77"	GO:0033306	phytol metabolic process	7	1	0.08	0.07906	Misin04G243200.1	leaf
+"78"	GO:0000741	karyogamy	41	2	0.48	0.08304	c("Misin10G020200.1", "MisinT087200.1")	leaf
+"79"	GO:0006974	cellular response to DNA damage stimulus	666	11	7.79	0.08586	c("Misin01G004600.1", "Misin04G187700.1", "Misin06G183200.1", "Misin07G320300.1", "Misin07G351600.1", "Misin07G404500.1", "Misin09G210800.1", "Misin18G241400.1", "MisinT226600.1", "MisinT478600.1", "MisinT487800.1")	leaf
+"80"	GO:0009063	cellular amino acid catabolic process	235	5	2.75	0.08952	c("Misin04G200300.1", "Misin07G299800.1", "Misin07G316900.1", "Misin14G007100.1", "Misin17G216100.1")	leaf
+"81"	GO:0070126	mitochondrial translational termination	8	1	0.09	0.08984	Misin12G129800.1	leaf
+"82"	GO:0019287	isopentenyl diphosphate biosynthetic pro...	8	1	0.09	0.08984	Misin01G074800.1	leaf
+"83"	GO:0006656	phosphatidylcholine biosynthetic process	8	1	0.09	0.08984	Misin05G239800.1	leaf
+"84"	GO:0048656	anther wall tapetum formation	8	1	0.09	0.08984	Misin04G316000.1	leaf
+"85"	GO:0010205	photoinhibition	8	1	0.09	0.08984	Misin19G100700.1	leaf
+"86"	GO:0019482	beta-alanine metabolic process	92	3	1.08	0.09346	c("Misin04G200300.1", "Misin07G299800.1", "Misin17G216100.1")	leaf
+"87"	GO:0046856	phosphatidylinositol dephosphorylation	45	2	0.53	0.09731	c("Misin10G007600.1", "Misin17G179400.1")	leaf
+"88"	GO:0055075	potassium ion homeostasis	15	2	0.18	0.10024	c("Misin02G069000.1", "Misin10G025400.1")	leaf
+"89"	GO:0043481	anthocyanin accumulation in tissues in r...	9	1	0.11	0.10048	MisinT029700.1	leaf
+"90"	GO:0009560	embryo sac egg cell differentiation	46	2	0.54	0.10097	c("Misin10G020200.1", "MisinT087200.1")	leaf
+"91"	GO:0006094	gluconeogenesis	337	7	3.94	0.10233	c("Misin02G341300.1", "Misin04G200300.1", "Misin06G200500.1", "Misin07G299800.1", "Misin10G020200.1", "Misin12G113600.1", "Misin17G216100.1")	leaf
+"92"	GO:0032543	mitochondrial translation	55	3	0.64	0.10425	c("Misin05G077400.1", "Misin12G129800.1", "Misin18G011800.1")	leaf
+"93"	GO:0019684	photosynthesis, light reaction	239	5	2.8	0.10432	c("Misin02G486800.1", "Misin07G010900.1", "Misin10G086500.1", "Misin12G158100.1", "Misin19G100700.1")	leaf
+"94"	GO:0006631	fatty acid metabolic process	514	11	6.01	0.1081	c("Misin02G377300.1", "Misin04G200300.1", "Misin06G200500.1", "Misin07G299800.1", "Misin07G317300.1", "Misin07G365700.1", "Misin12G051300.1", "Misin12G092100.1", "Misin17G216100.1", "Misin19G196400.1", "MisinT182000.1")	leaf
+"95"	GO:0050789	regulation of biological process	7229	60	84.55	0.10829	c("Misin01G029200.1", "Misin01G031800.1", "Misin01G036000.1", "Misin01G036200.1", "Misin01G389000.1", "Misin01G483200.1", "Misin02G069000.1", "Misin02G100400.1", "Misin03G045100.1", "Misin04G155200.1", "Misin04G316000.1", "Misin05G081700.1", "Misin05G111300.1", "Misin05G216900.1", "Misin05G295500.1", "Misin05G311700.1", "Misin06G098800.1", "Misin07G197000.1", "Misin07G225300.1", "Misin07G365600.1", "Misin07G375400.1", "Misin07G382600.1", "Misin07G405700.1", "Misin07G411800.1", "Misin07G428500.1", 
+"Misin08G106400.1", "Misin08G228000.1", "Misin08G284800.1", "Misin09G018800.1", "Misin09G030000.1", "Misin09G030100.1", "Misin09G040900.1", "Misin10G026500.1", "Misin10G033300.1", "Misin10G036800.1", "Misin10G037100.1", "Misin10G038800.1", "Misin11G195000.1", "Misin11G222200.1", "Misin12G158100.1", "Misin12G201000.1", "Misin12G260000.1", "Misin15G022800.1", "Misin15G122100.1", "Misin16G212300.1", "Misin17G012500.1", "Misin17G122200.1", "Misin17G168000.1", "Misin18G131900.1", "Misin18G228900.1", "Misin18G232300.1", 
+"Misin19G031300.1", "Misin19G049800.1", "Misin19G066100.1", "Misin19G100700.1", "MisinT029700.1", "MisinT087200.1", "MisinT342700.1", "MisinT528100.1", "MisinT553500.1")	leaf
+"96"	GO:0009647	skotomorphogenesis	10	1	0.12	0.11101	Misin01G154400.1	leaf
+"97"	GO:0031087	deadenylation-independent decapping of n...	10	1	0.12	0.11101	Misin18G131900.1	leaf
+"98"	GO:0009399	nitrogen fixation	10	1	0.12	0.11101	Misin01G108900.1	leaf
+"99"	GO:0000244	spliceosomal tri-snRNP complex assembly	10	1	0.12	0.11101	Misin15G122100.1	leaf
+"100"	GO:1902456	regulation of stomatal opening	10	1	0.12	0.11101	Misin01G483200.1	leaf
+"101"	GO:0046482	para-aminobenzoic acid metabolic process	10	1	0.12	0.11101	Misin13G198400.1	leaf
+"102"	GO:0019252	starch biosynthetic process	100	3	1.17	0.11266	c("Misin10G086500.1", "Misin12G158100.1", "Misin15G122100.1")	leaf
+"103"	GO:0006260	DNA replication	375	5	4.39	0.11427	c("Misin07G320300.1", "Misin07G351600.1", "Misin18G241400.1", "Misin19G066100.1", "MisinT487800.1")	leaf
+"104"	GO:0031408	oxylipin biosynthetic process	50	2	0.58	0.11601	c("Misin07G365700.1", "Misin12G092100.1")	leaf
+"105"	GO:0070588	calcium ion transmembrane transport	50	2	0.58	0.11601	c("Misin05G216900.1", "Misin13G189000.1")	leaf
+"106"	GO:0030422	production of siRNA involved in RNA inte...	87	3	1.02	0.11955	c("Misin04G155200.1", "Misin19G049800.1", "MisinT087200.1")	leaf
+"107"	GO:0009407	toxin catabolic process	103	3	1.2	0.12022	c("Misin16G140000.1", "MisinT258000.1", "MisinT404400.1")	leaf
+"108"	GO:0000453	enzyme-directed rRNA 2'-O-methylation	11	1	0.13	0.12141	Misin01G025200.1	leaf
+"109"	GO:0007021	tubulin complex assembly	11	1	0.13	0.12141	Misin08G326800.1	leaf
+"110"	GO:0051504	diterpene phytoalexin precursor biosynth...	11	1	0.13	0.12141	Misin01G047600.1	leaf
+"111"	GO:0006893	Golgi to plasma membrane transport	11	1	0.13	0.12141	Misin09G109400.1	leaf
+"112"	GO:0071470	cellular response to osmotic stress	11	1	0.13	0.12141	MisinT528100.1	leaf
+"113"	GO:0031054	pre-miRNA processing	11	1	0.13	0.12141	Misin19G049800.1	leaf
+"114"	GO:0071051	polyadenylation-dependent snoRNA 3'-end ...	11	1	0.13	0.12141	Misin12G260000.1	leaf
+"115"	GO:0006096	glycolytic process	328	7	3.84	0.12421	c("Misin02G341300.1", "Misin04G200300.1", "Misin06G200500.1", "Misin07G299800.1", "Misin10G020200.1", "Misin12G113600.1", "Misin17G216100.1")	leaf
+"116"	GO:0006744	ubiquinone biosynthetic process	105	3	1.23	0.12536	c("Misin01G012900.1", "Misin02G377300.1", "Misin05G312600.1")	leaf
+"117"	GO:0009646	response to absence of light	22	2	0.26	0.13139	c("Misin01G154400.1", "Misin14G007100.1")	leaf
+"118"	GO:0019915	lipid storage	12	1	0.14	0.13169	Misin10G020200.1	leaf
+"119"	GO:0016121	carotene catabolic process	12	1	0.14	0.13169	Misin10G103700.1	leaf
+"120"	GO:0051601	exocyst localization	12	1	0.14	0.13169	Misin09G109400.1	leaf
+"121"	GO:0031118	rRNA pseudouridine synthesis	12	1	0.14	0.13169	Misin07G496200.1	leaf
+"122"	GO:1901601	strigolactone biosynthetic process	12	1	0.14	0.13169	Misin10G103700.1	leaf
+"123"	GO:0048579	negative regulation of long-day photoper...	12	1	0.14	0.13169	Misin01G031800.1	leaf
+"124"	GO:0008285	negative regulation of cell proliferatio...	12	1	0.14	0.13169	Misin07G382600.1	leaf
+"125"	GO:0001193	maintenance of transcriptional fidelity ...	12	1	0.14	0.13169	Misin09G210800.1	leaf
+"126"	GO:0019637	organophosphate metabolic process	2030	24	23.74	0.1319	c("Misin01G074800.1", "Misin02G341300.1", "Misin02G490600.1", "Misin04G200300.1", "Misin05G081700.1", "Misin05G193300.1", "Misin05G239800.1", "Misin06G200500.1", "Misin07G251100.1", "Misin07G299800.1", "Misin07G405300.1", "Misin08G144100.1", "Misin08G331400.1", "Misin10G007600.1", "Misin10G020200.1", "Misin10G067800.1", "Misin11G031500.1", "Misin12G113600.1", "Misin15G086900.1", "Misin16G213000.1", "Misin17G179400.1", "Misin17G216100.1", "MisinT029700.1", "MisinT278900.1")	leaf
+"127"	GO:0042744	hydrogen peroxide catabolic process	229	5	2.68	0.13203	c("Misin01G258700.1", "Misin05G111300.1", "Misin11G270000.1", "Misin12G281500.1", "Misin17G189900.1")	leaf
+"128"	GO:0006687	glycosphingolipid metabolic process	153	4	1.79	0.1355	c("Misin03G233500.1", "Misin03G316100.1", "Misin05G081700.1", "Misin11G111200.1")	leaf
+"129"	GO:0071554	cell wall organization or biogenesis	1121	17	13.11	0.13676	c("Misin01G108900.1", "Misin02G273500.1", "Misin02G274300.1", "Misin02G380400.1", "Misin02G497400.1", "Misin02G515400.1", "Misin03G345700.1", "Misin05G078900.1", "Misin07G474500.1", "Misin07G523300.1", "Misin11G126300.1", "Misin11G270000.1", "Misin12G281500.1", "Misin17G189900.1", "Misin18G107600.1", "Misin19G085200.1", "MisinT029700.1")	leaf
+"130"	GO:0009744	response to sucrose	56	2	0.65	0.13951	c("Misin07G320500.1", "Misin19G066100.1")	leaf
+"131"	GO:0000467	exonucleolytic trimming to generate matu...	13	1	0.15	0.14185	Misin12G260000.1	leaf
+"132"	GO:0000002	mitochondrial genome maintenance	13	1	0.15	0.14185	MisinT226600.1	leaf
+"133"	GO:0043928	exonucleolytic nuclear-transcribed mRNA ...	13	1	0.15	0.14185	Misin12G260000.1	leaf
+"134"	GO:0071035	nuclear polyadenylation-dependent rRNA c...	13	1	0.15	0.14185	Misin12G260000.1	leaf
+"135"	GO:0071038	nuclear polyadenylation-dependent tRNA c...	13	1	0.15	0.14185	Misin12G260000.1	leaf
+"136"	GO:0010025	wax biosynthetic process	13	1	0.15	0.14185	Misin19G196400.1	leaf
+"137"	GO:0048577	negative regulation of short-day photope...	13	1	0.15	0.14185	Misin01G031800.1	leaf
+"138"	GO:0006525	arginine metabolic process	172	4	2.01	0.14344	c("Misin04G200300.1", "Misin06G403100.1", "Misin07G299800.1", "Misin17G216100.1")	leaf
+"139"	GO:0031122	cytoplasmic microtubule organization	57	2	0.67	0.14352	c("Misin14G117700.1", "Misin14G118100.1")	leaf
+"140"	GO:0019748	secondary metabolic process	824	22	9.64	0.14825	c("Misin01G012900.1", "Misin01G047600.1", "Misin01G349900.1", "Misin03G032400.1", "Misin04G105800.1", "Misin04G333300.1", "Misin05G312600.1", "Misin06G334400.1", "Misin07G204200.1", "Misin09G192700.1", "Misin12G095900.1", "Misin14G075500.1", "Misin15G165600.1", "Misin16G140000.1", "Misin17G203600.1", "Misin19G207900.1", "MisinT014600.1", "MisinT014900.1", "MisinT029700.1", "MisinT219600.1", "MisinT258000.1", "MisinT404400.1")	leaf
+"141"	GO:0006561	proline biosynthetic process	20	2	0.23	0.15154	c("Misin06G403100.1", "Misin17G216100.1")	leaf
+"142"	GO:0006283	transcription-coupled nucleotide-excisio...	14	1	0.16	0.15189	Misin09G210800.1	leaf
+"143"	GO:0009294	DNA mediated transformation	14	1	0.16	0.15189	Misin03G006400.1	leaf
+"144"	GO:0006542	glutamine biosynthetic process	14	1	0.16	0.15189	Misin01G108900.1	leaf
+"145"	GO:0019877	diaminopimelate biosynthetic process	14	1	0.16	0.15189	Misin02G486800.1	leaf
+"146"	GO:0044260	cellular macromolecule metabolic process	13317	127	155.76	0.15899	c("Misin01G004600.1", "Misin01G012200.1", "Misin01G025200.1", "Misin01G025700.1", "Misin01G029200.1", "Misin01G036000.1", "Misin01G036200.1", "Misin01G072400.1", "Misin01G072900.1", "Misin01G108900.1", "Misin01G187200.1", "Misin01G389000.1", "Misin02G021600.1", "Misin02G100400.1", "Misin02G205400.1", "Misin02G490600.1", "Misin02G497400.1", "Misin02G500600.1", "Misin02G503700.1", "Misin03G021400.1", "Misin03G045100.1", "Misin03G050400.1", "Misin03G103300.1", "Misin04G133400.1", "Misin04G187700.1", 
+"Misin04G207500.1", "Misin04G316000.1", "Misin04G359800.1", "Misin05G077400.1", "Misin05G078900.1", "Misin05G193300.1", "Misin05G295500.1", "Misin05G303100.1", "Misin05G311700.1", "Misin05G312100.1", "Misin05G352800.1", "Misin06G183200.1", "Misin06G348100.1", "Misin06G358300.1", "Misin06G406100.1", "Misin07G010900.1", "Misin07G023900.1", "Misin07G105500.1", "Misin07G225300.1", "Misin07G226500.1", "Misin07G296000.1", "Misin07G316900.1", "Misin07G320300.1", "Misin07G322000.1", "Misin07G339800.1", "Misin07G351600.1", 
+"Misin07G365600.1", "Misin07G375400.1", "Misin07G404500.1", "Misin07G405700.1", "Misin07G411800.1", "Misin07G474500.1", "Misin07G496200.1", "Misin07G523300.1", "Misin08G022200.1", "Misin08G106400.1", "Misin08G284800.1", "Misin08G292300.1", "Misin08G324500.1", "Misin09G018800.1", "Misin09G030000.1", "Misin09G040900.1", "Misin09G165900.1", "Misin09G166100.1", "Misin09G171200.1", "Misin09G181500.1", "Misin09G205400.1", "Misin09G210800.1", "Misin10G020200.1", "Misin10G026500.1", "Misin10G031100.1", "Misin10G033300.1", 
+"Misin10G036800.1", "Misin10G037100.1", "Misin10G046900.1", "Misin10G086500.1", "Misin10G115700.1", "Misin11G095800.1", "Misin11G111200.1", "Misin11G126300.1", "Misin11G195000.1", "Misin12G095900.1", "Misin12G104000.1", "Misin12G129800.1", "Misin12G158100.1", "Misin12G161800.1", "Misin12G260000.1", "Misin13G163800.1", "Misin14G075500.1", "Misin15G022800.1", "Misin15G122100.1", "Misin15G174600.1", "Misin16G184100.1", "Misin16G212300.1", "Misin17G012500.1", "Misin17G034300.1", "Misin17G122200.1", "Misin17G168000.1", 
+"Misin17G171800.1", "Misin18G011800.1", "Misin18G030900.1", "Misin18G076700.1", "Misin18G131900.1", "Misin18G228900.1", "Misin18G241400.1", "Misin18G257900.1", "Misin19G021100.1", "Misin19G066100.1", "Misin19G100700.1", "Misin19G210900.1", "Misin19G236400.1", "MisinT029700.1", "MisinT067200.1", "MisinT087200.1", "MisinT211500.1", "MisinT226600.1", "MisinT244700.1", "MisinT342700.1", "MisinT487800.1", "MisinT497600.1", "MisinT528100.1", "MisinT553500.1")	leaf
+"147"	GO:0002084	protein depalmitoylation	15	1	0.18	0.16181	Misin05G193300.1	leaf
+"148"	GO:0051103	DNA ligation involved in DNA repair	15	1	0.18	0.16181	Misin07G351600.1	leaf
+"149"	GO:0006471	protein ADP-ribosylation	15	1	0.18	0.16181	Misin07G351600.1	leaf
+"150"	GO:0009959	negative gravitropism	15	1	0.18	0.16181	MisinT104600.1	leaf
+"151"	GO:0034654	nucleobase-containing compound biosynthe...	4599	37	53.79	0.17004	c("Misin01G029200.1", "Misin02G100400.1", "Misin02G341300.1", "Misin02G490600.1", "Misin03G045100.1", "Misin04G200300.1", "Misin04G316000.1", "Misin04G359800.1", "Misin05G295500.1", "Misin05G311700.1", "Misin06G200500.1", "Misin07G299800.1", "Misin07G365600.1", "Misin07G375400.1", "Misin08G106400.1", "Misin08G284800.1", "Misin08G292300.1", "Misin09G018800.1", "Misin09G040900.1", "Misin09G210800.1", "Misin10G020200.1", "Misin10G026500.1", "Misin10G037100.1", "Misin11G195000.1", "Misin12G113600.1", 
+"Misin12G158100.1", "Misin16G212300.1", "Misin17G168000.1", "Misin17G216100.1", "Misin18G228900.1", "Misin18G241400.1", "Misin19G066100.1", "MisinT087200.1", "MisinT278900.1", "MisinT342700.1", "MisinT528100.1", "MisinT553500.1")	leaf
+"152"	GO:0015837	amine transport	16	1	0.19	0.17162	Misin06G329800.1	leaf
+"153"	GO:0046839	phospholipid dephosphorylation	62	3	0.73	0.18066	c("Misin05G081700.1", "Misin10G007600.1", "Misin17G179400.1")	leaf
+"154"	GO:0031053	primary miRNA processing	19	2	0.22	0.18088	c("Misin15G122100.1", "Misin19G049800.1")	leaf
+"155"	GO:0048765	root hair cell differentiation	44	2	0.51	0.18101	c("Misin07G518200.1", "MisinT029700.1")	leaf
+"156"	GO:0007064	mitotic sister chromatid cohesion	17	1	0.2	0.18132	Misin07G404500.1	leaf
+"157"	GO:0006517	protein deglycosylation	17	1	0.2	0.18132	Misin10G115700.1	leaf
+"158"	GO:0007098	centrosome cycle	18	1	0.21	0.1909	MisinT539400.1	leaf
+"159"	GO:0009115	xanthine catabolic process	18	1	0.21	0.1909	Misin01G055200.1	leaf
+"160"	GO:0051260	protein homooligomerization	18	1	0.21	0.1909	Misin02G069000.1	leaf
+"161"	GO:0055074	calcium ion homeostasis	18	1	0.21	0.1909	Misin08G105700.1	leaf
+"162"	GO:0070417	cellular response to cold	18	1	0.21	0.1909	Misin02G227400.1	leaf
+"163"	GO:0071805	potassium ion transmembrane transport	130	3	1.52	0.19534	c("Misin02G069000.1", "Misin10G025400.1", "Misin19G086300.1")	leaf
+"164"	GO:0007093	mitotic cell cycle checkpoint	46	2	0.54	0.20003	c("Misin02G100400.1", "Misin19G031300.1")	leaf
+"165"	GO:0009085	lysine biosynthetic process	52	2	0.61	0.20007	c("Misin02G486800.1", "Misin04G200300.1")	leaf
+"166"	GO:0006401	RNA catabolic process	173	3	2.02	0.20027	c("Misin12G260000.1", "Misin18G131900.1", "MisinT087200.1")	leaf
+"167"	GO:0005987	sucrose catabolic process	19	1	0.22	0.20036	Misin04G207500.1	leaf
+"168"	GO:0006097	glyoxylate cycle	19	1	0.22	0.20036	Misin11G121200.1	leaf
+"169"	GO:0048767	root hair elongation	20	1	0.23	0.20972	MisinT029700.1	leaf
+"170"	GO:0034475	U4 snRNA 3'-end processing	20	1	0.23	0.20972	Misin12G260000.1	leaf
+"171"	GO:0009750	response to fructose	20	1	0.23	0.20972	Misin07G320500.1	leaf
+"172"	GO:0035999	tetrahydrofolate interconversion	20	1	0.23	0.20972	Misin01G032000.1	leaf
+"173"	GO:0010264	myo-inositol hexakisphosphate biosynthet...	20	1	0.23	0.20972	Misin08G331400.1	leaf
+"174"	GO:0009845	seed germination	104	3	1.22	0.20975	c("Misin02G069000.1", "Misin12G158100.1", "Misin15G122100.1")	leaf
+"175"	GO:0040007	growth	393	2	4.6	0.21144	c("Misin05G312600.1", "MisinT029700.1")	leaf
+"176"	GO:0010027	thylakoid membrane organization	136	3	1.59	0.21337	c("Misin10G086500.1", "Misin12G158100.1", "Misin19G100700.1")	leaf
+"177"	GO:0016132	brassinosteroid biosynthetic process	75	2	0.88	0.21886	c("Misin01G154400.1", "MisinT029700.1")	leaf
+"178"	GO:0006406	mRNA export from nucleus	75	2	0.88	0.21886	c("Misin04G155200.1", "MisinT087200.1")	leaf
+"179"	GO:0035725	sodium ion transmembrane transport	21	1	0.25	0.21897	Misin08G105700.1	leaf
+"180"	GO:0035434	copper ion transmembrane transport	21	1	0.25	0.21897	Misin18G219600.1	leaf
+"181"	GO:0010206	photosystem II repair	21	1	0.25	0.21897	Misin19G100700.1	leaf
+"182"	GO:0006633	fatty acid biosynthetic process	327	7	3.82	0.22285	c("Misin02G377300.1", "Misin06G200500.1", "Misin07G365700.1", "Misin12G051300.1", "Misin12G092100.1", "Misin19G196400.1", "MisinT182000.1")	leaf
+"183"	GO:0016122	xanthophyll metabolic process	22	1	0.26	0.22811	Misin05G111300.1	leaf
+"184"	GO:0045737	positive regulation of cyclin-dependent ...	22	1	0.26	0.22811	Misin08G106400.1	leaf
+"185"	GO:0034427	nuclear-transcribed mRNA catabolic proce...	22	1	0.26	0.22811	Misin12G260000.1	leaf
+"186"	GO:1901409	positive regulation of phosphorylation o...	22	1	0.26	0.22811	Misin08G106400.1	leaf
+"187"	GO:0098869	cellular oxidant detoxification	352	6	4.12	0.23177	c("Misin01G258700.1", "Misin08G228000.1", "Misin11G121300.1", "Misin11G270000.1", "Misin12G281500.1", "Misin17G189900.1")	leaf
+"188"	GO:0016125	sterol metabolic process	143	3	1.67	0.23587	c("Misin01G074800.1", "Misin01G154400.1", "MisinT029700.1")	leaf
+"189"	GO:0009252	peptidoglycan biosynthetic process	23	1	0.27	0.23715	Misin01G108900.1	leaf
+"190"	GO:0015812	gamma-aminobutyric acid transport	23	1	0.27	0.23715	Misin06G329800.1	leaf
+"191"	GO:0019722	calcium-mediated signaling	23	1	0.27	0.23715	Misin06G098800.1	leaf
+"192"	GO:0006812	cation transport	1108	11	12.96	0.23898	c("Misin02G069000.1", "Misin05G193300.1", "Misin05G216900.1", "Misin06G159300.1", "Misin07G377000.1", "Misin08G105700.1", "Misin10G025400.1", "Misin13G189000.1", "Misin18G219600.1", "Misin19G086300.1", "MisinT244700.1")	leaf
+"193"	GO:0010119	regulation of stomatal movement	34	2	0.4	0.24557	c("Misin01G483200.1", "Misin02G069000.1")	leaf
+"194"	GO:0033617	mitochondrial respiratory chain complex ...	24	1	0.28	0.24608	MisinT299300.1	leaf
+"195"	GO:0009664	plant-type cell wall organization	230	5	2.69	0.24839	c("Misin07G474500.1", "Misin11G270000.1", "Misin12G281500.1", "Misin17G189900.1", "MisinT029700.1")	leaf
+"196"	GO:0006979	response to oxidative stress	565	8	6.61	0.25165	c("Misin01G258700.1", "Misin05G303700.1", "Misin08G228000.1", "Misin11G121300.1", "Misin11G270000.1", "Misin12G281500.1", "Misin17G189900.1", "MisinT528100.1")	leaf
+"197"	GO:0006273	lagging strand elongation	25	1	0.29	0.2549	Misin07G351600.1	leaf
+"198"	GO:0046656	folic acid biosynthetic process	25	1	0.29	0.2549	Misin02G507900.1	leaf
+"199"	GO:0010304	PSII associated light-harvesting complex...	25	1	0.29	0.2549	Misin19G100700.1	leaf
+"200"	GO:0009749	response to glucose	25	1	0.29	0.2549	Misin07G320500.1	leaf
+"201"	GO:0009851	auxin biosynthetic process	25	1	0.29	0.2549	Misin01G055200.1	leaf
+"202"	GO:0006807	nitrogen compound metabolic process	17540	175	205.15	0.25919	c("Misin01G004600.1", "Misin01G012200.1", "Misin01G025200.1", "Misin01G025700.1", "Misin01G029200.1", "Misin01G029900.1", "Misin01G032000.1", "Misin01G036000.1", "Misin01G036200.1", "Misin01G050700.1", "Misin01G055200.1", "Misin01G072400.1", "Misin01G072900.1", "Misin01G074800.1", "Misin01G103100.1", "Misin01G108900.1", "Misin01G187200.1", "Misin01G389000.1", "Misin02G021600.1", "Misin02G100400.1", "Misin02G198000.1", "Misin02G341300.1", "Misin02G420500.1", "Misin02G486800.1", "Misin02G490600.1", 
+"Misin02G500600.1", "Misin02G503700.1", "Misin02G507900.1", "Misin03G021400.1", "Misin03G045100.1", "Misin03G050400.1", "Misin03G103300.1", "Misin03G233500.1", "Misin03G303800.1", "Misin03G316100.1", "Misin04G133400.1", "Misin04G155200.1", "Misin04G187700.1", "Misin04G200300.1", "Misin04G316000.1", "Misin04G340100.1", "Misin04G359800.1", "Misin05G077400.1", "Misin05G081700.1", "Misin05G156300.1", "Misin05G193300.1", "Misin05G239800.1", "Misin05G280300.1", "Misin05G295500.1", "Misin05G300700.1", "Misin05G300800.1", 
+"Misin05G301000.1", "Misin05G303100.1", "Misin05G303700.1", "Misin05G311700.1", "Misin05G312100.1", "Misin05G312600.1", "Misin05G352800.1", "Misin06G183200.1", "Misin06G200500.1", "Misin06G348100.1", "Misin06G403100.1", "Misin06G406100.1", "Misin07G010900.1", "Misin07G105500.1", "Misin07G225300.1", "Misin07G226500.1", "Misin07G251100.1", "Misin07G296000.1", "Misin07G299800.1", "Misin07G316900.1", "Misin07G320300.1", "Misin07G322000.1", "Misin07G339800.1", "Misin07G351600.1", "Misin07G357000.1", "Misin07G357300.1", 
+"Misin07G365600.1", "Misin07G375400.1", "Misin07G404500.1", "Misin07G405300.1", "Misin07G405700.1", "Misin07G411800.1", "Misin07G418800.1", "Misin07G428500.1", "Misin07G496200.1", "Misin07G523300.1", "Misin08G022200.1", "Misin08G074500.1", "Misin08G106400.1", "Misin08G228000.1", "Misin08G284800.1", "Misin08G292300.1", "Misin08G324500.1", "Misin09G018800.1", "Misin09G030000.1", "Misin09G040900.1", "Misin09G149500.1", "Misin09G165900.1", "Misin09G166100.1", "Misin09G171200.1", "Misin09G181500.1", "Misin09G205400.1", 
+"Misin09G210800.1", "Misin10G020200.1", "Misin10G026500.1", "Misin10G031100.1", "Misin10G033300.1", "Misin10G036800.1", "Misin10G037100.1", "Misin10G046900.1", "Misin10G066600.1", "Misin10G067800.1", "Misin10G115700.1", "Misin11G031500.1", "Misin11G095800.1", "Misin11G111200.1", "Misin11G126300.1", "Misin11G195000.1", "Misin12G095900.1", "Misin12G104000.1", "Misin12G113600.1", "Misin12G129800.1", "Misin12G155200.1", "Misin12G158100.1", "Misin12G161800.1", "Misin12G260000.1", "Misin13G163800.1", "Misin13G198400.1", 
+"Misin14G007100.1", "Misin14G075500.1", "Misin15G022800.1", "Misin15G086900.1", "Misin15G122100.1", "Misin15G174600.1", "Misin16G140000.1", "Misin16G184100.1", "Misin16G212300.1", "Misin17G012500.1", "Misin17G034300.1", "Misin17G122200.1", "Misin17G168000.1", "Misin17G171800.1", "Misin17G216100.1", "Misin18G011800.1", "Misin18G030900.1", "Misin18G076700.1", "Misin18G131900.1", "Misin18G228900.1", "Misin18G241400.1", "Misin18G257900.1", "Misin19G021100.1", "Misin19G049800.1", "Misin19G057300.1", "Misin19G066100.1", 
+"Misin19G100700.1", "Misin19G191900.1", "Misin19G210900.1", "Misin19G236400.1", "MisinT029700.1", "MisinT067200.1", "MisinT087200.1", "MisinT211500.1", "MisinT226600.1", "MisinT244700.1", "MisinT258000.1", "MisinT278900.1", "MisinT342700.1", "MisinT380000.1", "MisinT384400.1", "MisinT404400.1", "MisinT487800.1", "MisinT497600.1", "MisinT528100.1", "MisinT553500.1")	leaf
+"203"	GO:0072593	reactive oxygen species metabolic proces...	338	6	3.95	0.26279	c("Misin01G258700.1", "Misin05G111300.1", "Misin11G270000.1", "Misin12G281500.1", "Misin17G189900.1", "Misin17G216100.1")	leaf
+"204"	GO:0046034	ATP metabolic process	629	9	7.36	0.27163	c("Misin02G341300.1", "Misin04G200300.1", "Misin05G193300.1", "Misin06G200500.1", "Misin07G299800.1", "Misin10G020200.1", "Misin12G113600.1", "Misin15G086900.1", "Misin17G216100.1")	leaf
+"205"	GO:0031125	rRNA 3'-end processing	40	2	0.47	0.27171	c("Misin12G260000.1", "MisinT087200.1")	leaf
+"206"	GO:0007094	mitotic spindle assembly checkpoint	27	1	0.32	0.27224	Misin19G031300.1	leaf
+"207"	GO:0009825	multidimensional cell growth	28	1	0.33	0.28076	MisinT029700.1	leaf
+"208"	GO:0046373	L-arabinose metabolic process	28	1	0.33	0.28076	Misin10G067800.1	leaf
+"209"	GO:0080163	regulation of protein serine/threonine p...	28	1	0.33	0.28076	Misin01G389000.1	leaf
+"210"	GO:0046184	aldehyde biosynthetic process	29	1	0.34	0.28918	Misin19G196400.1	leaf
+"211"	GO:0010223	secondary shoot formation	29	1	0.34	0.28918	Misin10G103700.1	leaf
+"212"	GO:0065007	biological regulation	8786	82	102.76	0.29063	c("Misin01G029200.1", "Misin01G031800.1", "Misin01G036000.1", "Misin01G036200.1", "Misin01G047600.1", "Misin01G055200.1", "Misin01G074800.1", "Misin01G154400.1", "Misin01G389000.1", "Misin01G483200.1", "Misin02G069000.1", "Misin02G100400.1", "Misin02G198000.1", "Misin02G410800.1", "Misin03G032400.1", "Misin03G045100.1", "Misin03G074500.1", "Misin04G155200.1", "Misin04G200300.1", "Misin04G239000.1", "Misin04G316000.1", "Misin05G081700.1", "Misin05G111300.1", "Misin05G216900.1", "Misin05G295500.1", 
+"Misin05G311700.1", "Misin06G098800.1", "Misin07G197000.1", "Misin07G225300.1", "Misin07G299800.1", "Misin07G365600.1", "Misin07G375400.1", "Misin07G382600.1", "Misin07G405300.1", "Misin07G405700.1", "Misin07G411800.1", "Misin07G428500.1", "Misin08G105700.1", "Misin08G106400.1", "Misin08G144100.1", "Misin08G228000.1", "Misin08G284800.1", "Misin08G295000.1", "Misin09G018800.1", "Misin09G030000.1", "Misin09G030100.1", "Misin09G040900.1", "Misin10G020200.1", "Misin10G025400.1", "Misin10G026500.1", "Misin10G033300.1", 
+"Misin10G036800.1", "Misin10G037100.1", "Misin10G038800.1", "Misin10G040500.1", "Misin10G103700.1", "Misin11G195000.1", "Misin11G222200.1", "Misin12G158100.1", "Misin12G201000.1", "Misin12G260000.1", "Misin15G022800.1", "Misin15G122100.1", "Misin16G212300.1", "Misin17G012500.1", "Misin17G122200.1", "Misin17G168000.1", "Misin17G216100.1", "Misin18G131900.1", "Misin18G228900.1", "Misin18G232300.1", "Misin19G031300.1", "Misin19G049800.1", "Misin19G066100.1", "Misin19G100700.1", "MisinT004700.1", "MisinT029700.1", 
+"MisinT087200.1", "MisinT087300.1", "MisinT342700.1", "MisinT528100.1", "MisinT553500.1")	leaf
+"213"	GO:0009069	serine family amino acid metabolic proce...	2441	30	28.55	0.29478	c("Misin01G025700.1", "Misin01G072400.1", "Misin02G021600.1", "Misin02G100400.1", "Misin02G503700.1", "Misin07G225300.1", "Misin07G226500.1", "Misin07G296000.1", "Misin07G339800.1", "Misin07G405300.1", "Misin07G411800.1", "Misin09G030000.1", "Misin09G165900.1", "Misin09G166100.1", "Misin09G171200.1", "Misin09G181500.1", "Misin09G205400.1", "Misin10G033300.1", "Misin10G036800.1", "Misin10G046900.1", "Misin11G095800.1", "Misin12G104000.1", "Misin15G022800.1", "Misin16G184100.1", "Misin17G034300.1", 
+"Misin17G171800.1", "Misin18G030900.1", "Misin19G021100.1", "Misin19G210900.1", "MisinT029700.1")	leaf
+"214"	GO:0006522	alanine metabolic process	93	2	1.09	0.2967	c("Misin01G050700.1", "Misin14G007100.1")	leaf
+"215"	GO:0006531	aspartate metabolic process	93	2	1.09	0.2967	c("Misin01G050700.1", "Misin14G007100.1")	leaf
+"216"	GO:0009691	cytokinin biosynthetic process	30	1	0.35	0.2975	Misin02G198000.1	leaf
+"217"	GO:0015976	carbon utilization	164	3	1.92	0.30098	c("Misin06G200500.1", "Misin07G271500.1", "Misin11G031500.1")	leaf
+"218"	GO:0006090	pyruvate metabolic process	546	10	6.39	0.30228	c("Misin01G074800.1", "Misin02G341300.1", "Misin04G200300.1", "Misin06G200500.1", "Misin07G271500.1", "Misin07G299800.1", "Misin10G020200.1", "Misin11G121200.1", "Misin12G113600.1", "Misin17G216100.1")	leaf
+"219"	GO:0048653	anther development	47	2	0.55	0.30517	c("Misin04G316000.1", "MisinT029700.1")	leaf
+"220"	GO:0015770	sucrose transport	31	1	0.36	0.30573	Misin07G377000.1	leaf
+"221"	GO:0010029	regulation of seed germination	31	1	0.36	0.30573	Misin02G069000.1	leaf
+"222"	GO:0015074	DNA integration	31	1	0.36	0.30573	Misin03G050400.1	leaf
+"223"	GO:0048367	shoot system development	749	9	8.76	0.30601	c("Misin01G031800.1", "Misin04G316000.1", "Misin05G333500.1", "Misin07G474500.1", "Misin08G228000.1", "Misin10G103700.1", "Misin12G158100.1", "MisinT029700.1", "MisinT087200.1")	leaf
+"224"	GO:0007018	microtubule-based movement	167	3	1.95	0.31055	c("Misin02G383400.1", "Misin05G273400.1", "Misin13G159100.1")	leaf
+"225"	GO:0030042	actin filament depolymerization	32	1	0.37	0.31385	Misin01G026300.1	leaf
+"226"	GO:0061512	protein localization to cilium	32	1	0.37	0.31385	MisinT528100.1	leaf
+"227"	GO:0006310	DNA recombination	299	4	3.5	0.31864	c("Misin01G004600.1", "Misin01G012200.1", "Misin07G320300.1", "MisinT487800.1")	leaf
+"228"	GO:0006694	steroid biosynthetic process	267	7	3.12	0.31904	c("Misin01G154400.1", "Misin04G200300.1", "Misin04G333300.1", "Misin07G299800.1", "Misin10G040500.1", "Misin17G216100.1", "MisinT029700.1")	leaf
+"229"	GO:0009089	lysine biosynthetic process via diaminop...	33	1	0.39	0.32189	Misin02G486800.1	leaf
+"230"	GO:0007052	mitotic spindle organization	33	1	0.39	0.32189	Misin07G248700.1	leaf
+"231"	GO:0010143	cutin biosynthetic process	33	1	0.39	0.32189	Misin05G333500.1	leaf
+"232"	GO:0008207	C21-steroid hormone metabolic process	33	1	0.39	0.32189	Misin10G040500.1	leaf
+"233"	GO:0050832	defense response to fungus	171	3	2	0.32332	c("Misin07G137500.1", "Misin07G137600.1", "Misin07G332100.1")	leaf
+"234"	GO:0006013	mannose metabolic process	171	3	2	0.32332	c("Misin02G490600.1", "Misin10G115700.1", "Misin12G113600.1")	leaf
+"235"	GO:0009620	response to fungus	205	4	2.4	0.3291	c("Misin07G137500.1", "Misin07G137600.1", "Misin07G332100.1", "MisinT528100.1")	leaf
+"236"	GO:0009693	ethylene biosynthetic process	34	1	0.4	0.32983	Misin08G295000.1	leaf
+"237"	GO:0006397	mRNA processing	488	4	5.71	0.33694	c("Misin02G021600.1", "Misin07G428500.1", "Misin15G122100.1", "Misin19G236400.1")	leaf
+"238"	GO:0051225	spindle assembly	35	1	0.41	0.33767	MisinT539400.1	leaf
+"239"	GO:0006123	mitochondrial electron transport, cytoch...	35	1	0.41	0.33767	Misin05G193300.1	leaf
+"240"	GO:0006098	pentose-phosphate shunt	176	3	2.06	0.33928	c("Misin07G251100.1", "Misin11G031500.1", "Misin12G113600.1")	leaf
+"241"	GO:0016036	cellular response to phosphate starvatio...	36	1	0.42	0.34543	Misin02G227400.1	leaf
+"242"	GO:0007268	chemical synaptic transmission	36	1	0.42	0.34543	Misin18G232300.1	leaf
+"243"	GO:0035235	ionotropic glutamate receptor signaling ...	36	1	0.42	0.34543	Misin18G232300.1	leaf
+"244"	GO:0045493	xylan catabolic process	36	1	0.42	0.34543	Misin05G078900.1	leaf
+"245"	GO:0010267	production of ta-siRNAs involved in RNA ...	36	1	0.42	0.34543	Misin04G155200.1	leaf
+"246"	GO:0006413	translational initiation	256	2	2.99	0.34662	c("Misin07G405700.1", "Misin08G324500.1")	leaf
+"247"	GO:0006281	DNA repair	624	9	7.3	0.34913	c("Misin01G004600.1", "Misin04G187700.1", "Misin07G320300.1", "Misin07G351600.1", "Misin07G404500.1", "Misin09G210800.1", "Misin18G241400.1", "MisinT226600.1", "MisinT487800.1")	leaf
+"248"	GO:0046939	nucleotide phosphorylation	378	8	4.42	0.35077	c("Misin02G341300.1", "Misin04G200300.1", "Misin06G200500.1", "Misin07G299800.1", "Misin10G020200.1", "Misin12G113600.1", "Misin15G086900.1", "Misin17G216100.1")	leaf
+"249"	GO:0006354	DNA-templated transcription, elongation	109	2	1.27	0.35297	c("Misin09G210800.1", "Misin12G158100.1")	leaf
+"250"	GO:0009615	response to virus	37	1	0.43	0.35309	Misin07G405700.1	leaf
+"251"	GO:0008210	estrogen metabolic process	37	1	0.43	0.35309	Misin10G040500.1	leaf
+"252"	GO:0008209	androgen metabolic process	37	1	0.43	0.35309	Misin10G040500.1	leaf
+"253"	GO:0007275	multicellular organism development	2082	22	24.35	0.3553	c("Misin01G029200.1", "Misin01G031800.1", "Misin01G074800.1", "Misin01G154400.1", "Misin02G069000.1", "Misin04G316000.1", "Misin05G311700.1", "Misin05G312600.1", "Misin05G333500.1", "Misin06G200500.1", "Misin07G375400.1", "Misin07G474500.1", "Misin07G518200.1", "Misin08G228000.1", "Misin10G020200.1", "Misin10G103700.1", "Misin12G158100.1", "Misin15G122100.1", "Misin19G236400.1", "MisinT029700.1", "MisinT087200.1", "MisinT211500.1")	leaf
+"254"	GO:0006012	galactose metabolic process	182	3	2.13	0.3584	c("Misin03G233500.1", "Misin11G111200.1", "Misin12G113600.1")	leaf
+"255"	GO:0051304	chromosome separation	84	2	0.98	0.36031	c("Misin02G100400.1", "Misin19G031300.1")	leaf
+"256"	GO:0090503	RNA phosphodiester bond hydrolysis, exon...	52	2	0.61	0.36749	c("Misin07G428500.1", "Misin12G260000.1")	leaf
+"257"	GO:0061615	glycolytic process through fructose-6-ph...	39	1	0.46	0.36816	Misin12G113600.1	leaf
+"258"	GO:0009932	cell tip growth	39	1	0.46	0.36816	MisinT029700.1	leaf
+"259"	GO:1901657	glycosyl compound metabolic process	386	4	4.51	0.37009	c("Misin06G358300.1", "Misin07G357300.1", "Misin11G111200.1", "Misin11G141900.1")	leaf
+"260"	GO:0006084	acetyl-CoA metabolic process	48	2	0.56	0.37483	c("Misin01G074800.1", "MisinT029700.1")	leaf
+"261"	GO:0006007	glucose catabolic process	40	1	0.47	0.37556	Misin02G341300.1	leaf
+"262"	GO:0009908	flower development	451	6	5.27	0.37749	c("Misin01G031800.1", "Misin04G316000.1", "Misin05G333500.1", "Misin12G158100.1", "MisinT029700.1", "MisinT087200.1")	leaf
+"263"	GO:0006997	nucleus organization	82	3	0.96	0.38164	c("Misin05G283300.1", "Misin10G020200.1", "MisinT087200.1")	leaf
+"264"	GO:0009765	photosynthesis, light harvesting	62	2	0.73	0.38226	c("Misin07G010900.1", "Misin19G100700.1")	leaf
+"265"	GO:0010224	response to UV-B	41	1	0.48	0.38287	Misin18G241400.1	leaf
+"266"	GO:0048825	cotyledon development	42	1	0.49	0.3901	MisinT087200.1	leaf
+"267"	GO:0006449	regulation of translational termination	42	1	0.49	0.3901	Misin17G122200.1	leaf
+"268"	GO:0006470	protein dephosphorylation	424	7	4.96	0.39655	c("Misin01G389000.1", "Misin05G303100.1", "Misin06G406100.1", "Misin07G322000.1", "Misin10G031100.1", "Misin12G158100.1", "MisinT244700.1")	leaf
+"269"	GO:0006558	L-phenylalanine metabolic process	192	3	2.25	0.39703	c("Misin01G103100.1", "Misin05G312600.1", "Misin19G191900.1")	leaf
+"270"	GO:2000280	regulation of root development	43	1	0.5	0.39724	Misin08G228000.1	leaf
+"271"	GO:0016571	histone methylation	199	2	2.33	0.39792	c("Misin07G316900.1", "MisinT087200.1")	leaf
+"272"	GO:0001575	globoside metabolic process	44	1	0.51	0.4043	Misin03G316100.1	leaf
+"273"	GO:0006002	fructose 6-phosphate metabolic process	44	1	0.51	0.4043	Misin12G113600.1	leaf
+"274"	GO:0048831	regulation of shoot system development	211	2	2.47	0.4051	c("Misin08G228000.1", "MisinT087200.1")	leaf
+"275"	GO:0008380	RNA splicing	465	3	5.44	0.40633	c("Misin07G428500.1", "Misin08G074500.1", "Misin15G122100.1")	leaf
+"276"	GO:0009685	gibberellin metabolic process	45	1	0.53	0.41127	Misin01G047600.1	leaf
+"277"	GO:0010074	maintenance of meristem identity	45	1	0.53	0.41127	MisinT087200.1	leaf
+"278"	GO:0035304	regulation of protein dephosphorylation	92	2	1.08	0.41778	c("Misin01G389000.1", "Misin12G158100.1")	leaf
+"279"	GO:0001510	RNA methylation	171	3	2	0.41799	c("Misin01G025200.1", "Misin10G020200.1", "Misin19G236400.1")	leaf
+"280"	GO:0006570	tyrosine metabolic process	271	4	3.17	0.41822	c("Misin01G103100.1", "Misin07G299800.1", "Misin10G031100.1", "Misin19G191900.1")	leaf
+"281"	GO:0030245	cellulose catabolic process	47	1	0.55	0.42499	Misin06G358300.1	leaf
+"282"	GO:0034645	cellular macromolecule biosynthetic proc...	6245	48	73.04	0.42589	c("Misin01G029200.1", "Misin01G036000.1", "Misin01G036200.1", "Misin01G072900.1", "Misin01G108900.1", "Misin01G187200.1", "Misin02G100400.1", "Misin03G045100.1", "Misin04G316000.1", "Misin04G359800.1", "Misin05G077400.1", "Misin05G295500.1", "Misin05G311700.1", "Misin07G320300.1", "Misin07G351600.1", "Misin07G365600.1", "Misin07G375400.1", "Misin07G405700.1", "Misin07G474500.1", "Misin07G496200.1", "Misin07G523300.1", "Misin08G106400.1", "Misin08G284800.1", "Misin08G292300.1", "Misin08G324500.1", 
+"Misin09G018800.1", "Misin09G040900.1", "Misin09G210800.1", "Misin10G026500.1", "Misin10G037100.1", "Misin10G086500.1", "Misin11G195000.1", "Misin12G129800.1", "Misin12G158100.1", "Misin15G122100.1", "Misin15G174600.1", "Misin16G212300.1", "Misin17G122200.1", "Misin17G168000.1", "Misin18G011800.1", "Misin18G228900.1", "Misin18G241400.1", "Misin19G066100.1", "MisinT087200.1", "MisinT342700.1", "MisinT487800.1", "MisinT528100.1", "MisinT553500.1")	leaf
+"283"	GO:0048364	root development	262	5	3.06	0.42871	c("Misin01G074800.1", "Misin07G474500.1", "Misin07G518200.1", "Misin08G228000.1", "MisinT029700.1")	leaf
+"284"	GO:0000469	cleavage involved in rRNA processing	61	2	0.71	0.43098	c("Misin07G496200.1", "Misin12G260000.1")	leaf
+"285"	GO:0046274	lignin catabolic process	48	1	0.56	0.43172	Misin06G334400.1	leaf
+"286"	GO:0006040	amino sugar metabolic process	125	2	1.46	0.43828	c("Misin03G316100.1", "Misin11G126300.1")	leaf
+"287"	GO:0000023	maltose metabolic process	49	1	0.57	0.43838	Misin12G158100.1	leaf
+"288"	GO:0043687	post-translational protein modification	49	1	0.57	0.43838	MisinT087200.1	leaf
+"289"	GO:0008654	phospholipid biosynthetic process	321	3	3.75	0.43943	c("Misin01G074800.1", "Misin05G239800.1", "Misin07G405300.1")	leaf
+"290"	GO:0034660	ncRNA metabolic process	1031	13	12.06	0.44448	c("Misin01G025200.1", "Misin03G303800.1", "Misin04G340100.1", "Misin07G357000.1", "Misin07G357300.1", "Misin07G428500.1", "Misin07G496200.1", "Misin12G158100.1", "Misin12G260000.1", "Misin15G122100.1", "Misin19G049800.1", "Misin19G236400.1", "MisinT087200.1")	leaf
+"291"	GO:0032502	developmental process	2518	23	29.45	0.44491	c("Misin01G029200.1", "Misin01G031800.1", "Misin01G074800.1", "Misin01G154400.1", "Misin02G069000.1", "Misin04G316000.1", "Misin05G311700.1", "Misin05G312600.1", "Misin05G333500.1", "Misin06G200500.1", "Misin07G375400.1", "Misin07G474500.1", "Misin07G518200.1", "Misin08G228000.1", "Misin08G292300.1", "Misin10G020200.1", "Misin10G103700.1", "Misin12G158100.1", "Misin15G122100.1", "Misin19G236400.1", "MisinT029700.1", "MisinT087200.1", "MisinT211500.1")	leaf
+"292"	GO:0009743	response to carbohydrate	134	3	1.57	0.45054	c("Misin04G200300.1", "Misin07G320500.1", "Misin19G066100.1")	leaf
+"293"	GO:0006730	one-carbon metabolic process	72	2	0.84	0.45719	c("Misin01G032000.1", "Misin02G507900.1")	leaf
+"294"	GO:0009811	stilbene biosynthetic process	52	1	0.61	0.45788	Misin05G312600.1	leaf
+"295"	GO:0006108	malate metabolic process	52	1	0.61	0.45788	Misin07G271500.1	leaf
+"296"	GO:0006606	protein import into nucleus	133	2	1.56	0.46205	c("Misin19G236400.1", "MisinT087200.1")	leaf
+"297"	GO:0042542	response to hydrogen peroxide	67	2	0.78	0.46348	c("Misin05G303700.1", "MisinT528100.1")	leaf
+"298"	GO:0018108	peptidyl-tyrosine phosphorylation	53	1	0.62	0.46424	Misin06G348100.1	leaf
+"299"	GO:0009987	cellular process	24773	270	289.75	0.46788	c("Misin01G004600.1", "Misin01G012200.1", "Misin01G012900.1", "Misin01G025200.1", "Misin01G025700.1", "Misin01G026300.1", "Misin01G029200.1", "Misin01G029900.1", "Misin01G032000.1", "Misin01G036000.1", "Misin01G036200.1", "Misin01G047600.1", "Misin01G050700.1", "Misin01G055200.1", "Misin01G072400.1", "Misin01G072900.1", "Misin01G073700.1", "Misin01G074800.1", "Misin01G103100.1", "Misin01G108900.1", "Misin01G154400.1", "Misin01G187200.1", "Misin01G258700.1", "Misin01G378600.1", "Misin01G389000.1", 
+"Misin01G483200.1", "Misin02G021600.1", "Misin02G069000.1", "Misin02G100400.1", "Misin02G198000.1", "Misin02G205400.1", "Misin02G227400.1", "Misin02G273500.1", "Misin02G274300.1", "Misin02G341300.1", "Misin02G377300.1", "Misin02G380400.1", "Misin02G383400.1", "Misin02G420500.1", "Misin02G431100.1", "Misin02G486800.1", "Misin02G490600.1", "Misin02G497400.1", "Misin02G500600.1", "Misin02G503700.1", "Misin02G507900.1", "Misin02G515400.1", "Misin03G006400.1", "Misin03G015500.1", "Misin03G021400.1", "Misin03G032400.1", 
+"Misin03G045100.1", "Misin03G050400.1", "Misin03G103300.1", "Misin03G233500.1", "Misin03G303800.1", "Misin03G316100.1", "Misin03G336300.1", "Misin03G345700.1", "Misin03G362800.1", "Misin04G133400.1", "Misin04G155200.1", "Misin04G187700.1", "Misin04G200300.1", "Misin04G207500.1", "Misin04G243200.1", "Misin04G314200.1", "Misin04G316000.1", "Misin04G333300.1", "Misin04G340100.1", "Misin04G359800.1", "Misin05G077400.1", "Misin05G078900.1", "Misin05G081700.1", "Misin05G092200.1", "Misin05G111300.1", "Misin05G156300.1", 
+"Misin05G193300.1", "Misin05G239800.1", "Misin05G273400.1", "Misin05G280300.1", "Misin05G283300.1", "Misin05G295500.1", "Misin05G303100.1", "Misin05G303700.1", "Misin05G311700.1", "Misin05G312100.1", "Misin05G312600.1", "Misin05G333500.1", "Misin05G352800.1", "Misin06G098800.1", "Misin06G183200.1", "Misin06G200500.1", "Misin06G334400.1", "Misin06G348100.1", "Misin06G358300.1", "Misin06G403100.1", "Misin06G406100.1", "Misin07G010900.1", "Misin07G023900.1", "Misin07G105500.1", "Misin07G197000.1", "Misin07G225300.1", 
+"Misin07G226500.1", "Misin07G248700.1", "Misin07G251100.1", "Misin07G271500.1", "Misin07G289400.1", "Misin07G296000.1", "Misin07G299800.1", "Misin07G316900.1", "Misin07G317300.1", "Misin07G320300.1", "Misin07G322000.1", "Misin07G339800.1", "Misin07G351600.1", "Misin07G357000.1", "Misin07G357300.1", "Misin07G365600.1", "Misin07G365700.1", "Misin07G375400.1", "Misin07G382600.1", "Misin07G401200.1", "Misin07G404500.1", "Misin07G405300.1", "Misin07G405700.1", "Misin07G411800.1", "Misin07G428500.1", "Misin07G474100.1", 
+"Misin07G474500.1", "Misin07G496200.1", "Misin07G518200.1", "Misin07G523300.1", "Misin08G022200.1", "Misin08G074500.1", "Misin08G106400.1", "Misin08G144100.1", "Misin08G185100.1", "Misin08G228000.1", "Misin08G284800.1", "Misin08G292300.1", "Misin08G295000.1", "Misin08G324500.1", "Misin08G326800.1", "Misin08G331400.1", "Misin09G018800.1", "Misin09G030000.1", "Misin09G030100.1", "Misin09G040900.1", "Misin09G108600.1", "Misin09G109400.1", "Misin09G149500.1", "Misin09G165900.1", "Misin09G166100.1", "Misin09G171200.1", 
+"Misin09G178500.1", "Misin09G181500.1", "Misin09G205400.1", "Misin09G210800.1", "Misin10G007600.1", "Misin10G020200.1", "Misin10G025400.1", "Misin10G026500.1", "Misin10G031100.1", "Misin10G033300.1", "Misin10G036400.1", "Misin10G036800.1", "Misin10G037100.1", "Misin10G038800.1", "Misin10G040500.1", "Misin10G041800.1", "Misin10G042200.1", "Misin10G046900.1", "Misin10G067800.1", "Misin10G086500.1", "Misin10G103700.1", "Misin10G115700.1", "Misin10G196200.1", "Misin11G031500.1", "Misin11G095800.1", "Misin11G111200.1", 
+"Misin11G121200.1", "Misin11G121300.1", "Misin11G126300.1", "Misin11G195000.1", "Misin11G222200.1", "Misin11G270000.1", "Misin12G051300.1", "Misin12G092100.1", "Misin12G095900.1", "Misin12G104000.1", "Misin12G113600.1", "Misin12G129800.1", "Misin12G158100.1", "Misin12G161800.1", "Misin12G201000.1", "Misin12G260000.1", "Misin12G281500.1", "Misin13G159100.1", "Misin13G163800.1", "Misin13G198400.1", "Misin14G007100.1", "Misin14G075500.1", "Misin14G117700.1", "Misin14G118100.1", "Misin14G151100.1", "Misin15G022800.1", 
+"Misin15G086900.1", "Misin15G122100.1", "Misin15G153000.1", "Misin15G165600.1", "Misin15G174600.1", "Misin16G140000.1", "Misin16G184100.1", "Misin16G212300.1", "Misin16G213000.1", "Misin17G012500.1", "Misin17G034300.1", "Misin17G122200.1", "Misin17G168000.1", "Misin17G171800.1", "Misin17G179400.1", "Misin17G189900.1", "Misin17G195600.1", "Misin17G216100.1", "Misin17G229000.1", "Misin18G011800.1", "Misin18G030900.1", "Misin18G076700.1", "Misin18G107600.1", "Misin18G131900.1", "Misin18G228900.1", "Misin18G232300.1", 
+"Misin18G241400.1", "Misin18G257900.1", "Misin19G021100.1", "Misin19G031300.1", "Misin19G049800.1", "Misin19G055800.1", "Misin19G066100.1", "Misin19G085200.1", "Misin19G086300.1", "Misin19G100700.1", "Misin19G191900.1", "Misin19G196400.1", "Misin19G210900.1", "Misin19G236400.1", "Misin19G248200.1", "MisinT011200.1", "MisinT029700.1", "MisinT067200.1", "MisinT087200.1", "MisinT136200.1", "MisinT182000.1", "MisinT211500.1", "MisinT226600.1", "MisinT244700.1", "MisinT258000.1", "MisinT278900.1", "MisinT299300.1", 
+"MisinT323700.1", "MisinT342700.1", "MisinT380000.1", "MisinT404400.1", "MisinT478600.1", "MisinT487800.1", "MisinT497600.1", "MisinT528100.1", "MisinT539400.1", "MisinT553500.1")	leaf
+"300"	GO:0010075	regulation of meristem growth	54	1	0.63	0.47051	MisinT029700.1	leaf
+"301"	GO:0071454	cellular response to anoxia	4	2	0.01	5.2e-05	c("Misin07G309900.1", "Misin11G099200.1")	root
+"302"	GO:0019285	glycine betaine biosynthetic process fro...	4	2	0.01	5.2e-05	c("Misin07G309900.1", "Misin11G099200.1")	root
+"303"	GO:0019482	beta-alanine metabolic process	92	3	0.27	0.0026	c("Misin07G309900.1", "Misin11G099200.1", "Misin17G216100.1")	root
+"304"	GO:0055064	chloride ion homeostasis	2	1	0.01	0.0059	Misin10G025400.1	root
+"305"	GO:0010133	proline catabolic process to glutamate	3	1	0.01	0.0089	Misin17G216100.1	root
+"306"	GO:1902476	chloride transmembrane transport	4	1	0.01	0.0118	Misin10G025400.1	root
+"307"	GO:0042352	GDP-L-fucose salvage	4	1	0.01	0.0118	Misin02G490600.1	root
+"308"	GO:0010378	temperature compensation of the circadia...	4	1	0.01	0.0118	Misin05G043900.1	root
+"309"	GO:0031929	TOR signaling	4	1	0.01	0.0118	Misin19G049800.1	root
+"310"	GO:0006013	mannose metabolic process	171	3	0.51	0.0144	c("Misin02G490600.1", "Misin10G115700.1", "Misin12G113600.1")	root
+"311"	GO:0006525	arginine metabolic process	172	3	0.51	0.0146	c("Misin07G309900.1", "Misin11G099200.1", "Misin17G216100.1")	root
+"312"	GO:0042542	response to hydrogen peroxide	67	2	0.2	0.017	c("Misin05G043900.1", "MisinT528100.1")	root
+"313"	GO:0000132	establishment of mitotic spindle orienta...	6	1	0.02	0.0177	Misin07G248700.1	root
+"314"	GO:0051315	attachment of mitotic spindle microtubul...	6	1	0.02	0.0177	Misin07G248700.1	root
+"315"	GO:0044260	cellular macromolecule metabolic process	13317	41	39.46	0.0191	c("Misin01G025700.1", "Misin01G053500.1", "Misin01G072900.1", "Misin02G343000.1", "Misin02G490600.1", "Misin02G503700.1", "Misin04G319100.1", "Misin05G043900.1", "Misin07G023900.1", "Misin07G226100.1", "Misin07G316900.1", "Misin07G320300.1", "Misin07G339800.1", "Misin07G365600.1", "Misin08G022200.1", "Misin08G103500.1", "Misin09G040900.1", "Misin09G165900.1", "Misin09G181500.1", "Misin09G184300.1", "Misin09G205400.1", "Misin09G210800.1", "Misin10G033300.1", "Misin10G036800.1", "Misin10G037700.1", 
+"Misin10G077900.1", "Misin10G115700.1", "Misin11G205100.1", "Misin12G095900.1", "Misin15G054800.1", "Misin17G013400.1", "Misin17G013700.1", "Misin17G168000.1", "Misin18G131900.1", "MisinT029700.1", "MisinT067200.1", "MisinT244700.1", "MisinT317800.1", "MisinT344300.1", "MisinT470400.1", "MisinT528100.1")	root
+"316"	GO:0000027	ribosomal large subunit assembly	76	2	0.23	0.0215	c("Misin02G343000.1", "Misin08G103500.1")	root
+"317"	GO:0019287	isopentenyl diphosphate biosynthetic pro...	8	1	0.02	0.0235	Misin01G074800.1	root
+"318"	GO:0043481	anthocyanin accumulation in tissues in r...	9	1	0.03	0.0264	MisinT029700.1	root
+"319"	GO:0048578	positive regulation of long-day photoper...	9	1	0.03	0.0264	Misin05G043900.1	root
+"320"	GO:0046482	para-aminobenzoic acid metabolic process	10	1	0.03	0.0292	Misin13G198400.1	root
+"321"	GO:0031087	deadenylation-independent decapping of n...	10	1	0.03	0.0292	Misin18G131900.1	root
+"322"	GO:0044267	cellular protein metabolic process	8095	26	23.99	0.0313	c("Misin01G025700.1", "Misin01G072900.1", "Misin02G343000.1", "Misin02G503700.1", "Misin04G319100.1", "Misin07G316900.1", "Misin07G339800.1", "Misin08G022200.1", "Misin08G103500.1", "Misin09G165900.1", "Misin09G181500.1", "Misin09G184300.1", "Misin09G205400.1", "Misin10G033300.1", "Misin10G036800.1", "Misin10G037700.1", "Misin10G115700.1", "Misin11G205100.1", "Misin12G095900.1", "Misin17G013400.1", "Misin17G013700.1", "MisinT067200.1", "MisinT244700.1", "MisinT317800.1", "MisinT344300.1", "MisinT470400.1"
+)	root
+"323"	GO:0071470	cellular response to osmotic stress	11	1	0.03	0.0321	MisinT528100.1	root
+"324"	GO:0031054	pre-miRNA processing	11	1	0.03	0.0321	Misin19G049800.1	root
+"325"	GO:0090332	stomatal closure	12	1	0.04	0.035	Misin01G041700.1	root
+"326"	GO:0001193	maintenance of transcriptional fidelity ...	12	1	0.04	0.035	Misin09G210800.1	root
+"327"	GO:0048579	negative regulation of long-day photoper...	12	1	0.04	0.035	Misin01G031800.1	root
+"328"	GO:0048577	negative regulation of short-day photope...	13	1	0.04	0.0379	Misin01G031800.1	root
+"329"	GO:0006283	transcription-coupled nucleotide-excisio...	14	1	0.04	0.0407	Misin09G210800.1	root
+"330"	GO:0055075	potassium ion homeostasis	15	1	0.04	0.0436	Misin10G025400.1	root
+"331"	GO:0006554	lysine catabolic process	113	2	0.33	0.0445	c("Misin07G316900.1", "Misin17G216100.1")	root
+"332"	GO:0006517	protein deglycosylation	17	1	0.05	0.0492	Misin10G115700.1	root
+"333"	GO:0009115	xanthine catabolic process	18	1	0.05	0.052	Misin01G055200.1	root
+"334"	GO:0010951	negative regulation of endopeptidase act...	124	2	0.37	0.0525	c("Misin17G013400.1", "Misin17G013700.1")	root
+"335"	GO:0031053	primary miRNA processing	19	1	0.06	0.0548	Misin19G049800.1	root
+"336"	GO:0006915	apoptotic process	129	2	0.38	0.0563	c("MisinT011200.1", "MisinT323700.1")	root
+"337"	GO:0009611	response to wounding	130	2	0.39	0.0571	c("Misin17G013400.1", "Misin17G013700.1")	root
+"338"	GO:0019288	isopentenyl diphosphate biosynthetic pro...	130	2	0.39	0.0571	c("Misin01G074800.1", "Misin08G240700.1")	root
+"339"	GO:0048767	root hair elongation	20	1	0.06	0.0576	MisinT029700.1	root
+"340"	GO:0035999	tetrahydrofolate interconversion	20	1	0.06	0.0576	Misin01G032000.1	root
+"341"	GO:0006561	proline biosynthetic process	20	1	0.06	0.0576	Misin17G216100.1	root
+"342"	GO:0006278	RNA-dependent DNA biosynthetic process	23	1	0.07	0.066	Misin01G053500.1	root
+"343"	GO:0006560	proline metabolic process	166	3	0.49	0.0687	c("Misin07G309900.1", "Misin11G099200.1", "Misin17G216100.1")	root
+"344"	GO:0006566	threonine metabolic process	145	2	0.43	0.0691	c("Misin07G309900.1", "Misin11G099200.1")	root
+"345"	GO:0006665	sphingolipid metabolic process	178	2	0.53	0.0711	c("Misin01G041700.1", "Misin05G081700.1")	root
+"346"	GO:0009851	auxin biosynthetic process	25	1	0.07	0.0715	Misin01G055200.1	root
+"347"	GO:0006000	fructose metabolic process	156	2	0.46	0.0784	c("Misin02G490600.1", "Misin12G113600.1")	root
+"348"	GO:0006094	gluconeogenesis	337	3	1	0.0788	c("Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1")	root
+"349"	GO:0009688	abscisic acid biosynthetic process	28	1	0.08	0.0798	Misin01G055200.1	root
+"350"	GO:0009825	multidimensional cell growth	28	1	0.08	0.0798	MisinT029700.1	root
+"351"	GO:0010218	response to far red light	28	1	0.08	0.0798	Misin05G043900.1	root
+"352"	GO:0044238	primary metabolic process	19852	60	58.83	0.0852	c("Misin01G025700.1", "Misin01G032000.1", "Misin01G041700.1", "Misin01G053500.1", "Misin01G055200.1", "Misin01G072900.1", "Misin01G074800.1", "Misin02G343000.1", "Misin02G490600.1", "Misin02G503700.1", "Misin04G319100.1", "Misin05G043900.1", "Misin05G081700.1", "Misin05G304300.1", "Misin07G023900.1", "Misin07G226100.1", "Misin07G271500.1", "Misin07G309900.1", "Misin07G316900.1", "Misin07G317800.1", "Misin07G320300.1", "Misin07G339800.1", "Misin07G365600.1", "Misin08G022200.1", "Misin08G103500.1", 
+"Misin08G144200.1", "Misin08G240700.1", "Misin09G040900.1", "Misin09G165900.1", "Misin09G181500.1", "Misin09G184300.1", "Misin09G205400.1", "Misin09G210800.1", "Misin10G033300.1", "Misin10G036800.1", "Misin10G037700.1", "Misin10G040500.1", "Misin10G077900.1", "Misin10G115700.1", "Misin11G099200.1", "Misin11G205100.1", "Misin12G095900.1", "Misin12G113600.1", "Misin13G198400.1", "Misin15G054800.1", "Misin17G013400.1", "Misin17G013700.1", "Misin17G168000.1", "Misin17G216100.1", "Misin18G131900.1", "Misin19G049800.1", 
+"Misin19G088000.1", "Misin19G219700.1", "MisinT029700.1", "MisinT067200.1", "MisinT244700.1", "MisinT317800.1", "MisinT344300.1", "MisinT470400.1", "MisinT528100.1")	root
+"353"	GO:0015976	carbon utilization	164	2	0.49	0.0854	c("Misin07G271500.1", "Misin19G219700.1")	root
+"354"	GO:0061512	protein localization to cilium	32	1	0.09	0.0906	MisinT528100.1	root
+"355"	GO:0007052	mitotic spindle organization	33	1	0.1	0.0933	Misin07G248700.1	root
+"356"	GO:0008207	C21-steroid hormone metabolic process	33	1	0.1	0.0933	Misin10G040500.1	root
+"357"	GO:0009620	response to fungus	205	2	0.61	0.0955	c("MisinT340700.1", "MisinT528100.1")	root
+"358"	GO:0015743	malate transport	34	1	0.1	0.096	Misin10G080900.1	root
+"359"	GO:0006544	glycine metabolic process	181	2	0.54	0.1008	c("Misin07G309900.1", "Misin11G099200.1")	root
+"360"	GO:0008210	estrogen metabolic process	37	1	0.11	0.1041	Misin10G040500.1	root
+"361"	GO:0008209	androgen metabolic process	37	1	0.11	0.1041	Misin10G040500.1	root
+"362"	GO:0006563	L-serine metabolic process	187	2	0.55	0.1064	c("Misin07G309900.1", "Misin11G099200.1")	root
+"363"	GO:0009932	cell tip growth	39	1	0.12	0.1094	MisinT029700.1	root
+"364"	GO:0061615	glycolytic process through fructose-6-ph...	39	1	0.12	0.1094	Misin12G113600.1	root
+"365"	GO:0006084	acetyl-CoA metabolic process	48	2	0.14	0.1109	c("Misin01G074800.1", "MisinT029700.1")	root
+"366"	GO:0019260	1,2-dichloroethane catabolic process	40	1	0.12	0.112	Misin17G216100.1	root
+"367"	GO:0046251	limonene catabolic process	42	1	0.12	0.1173	Misin17G216100.1	root
+"368"	GO:0006002	fructose 6-phosphate metabolic process	44	1	0.13	0.1225	Misin12G113600.1	root
+"369"	GO:0006699	bile acid biosynthetic process	45	1	0.13	0.1251	Misin17G216100.1	root
+"370"	GO:0048653	anther development	47	1	0.14	0.1303	MisinT029700.1	root
+"371"	GO:0006474	N-terminal protein amino acid acetylatio...	48	1	0.14	0.1329	Misin11G205100.1	root
+"372"	GO:0055114	oxidation-reduction process	3524	14	10.44	0.1389	c("Misin01G032000.1", "Misin01G055200.1", "Misin07G271500.1", "Misin07G309900.1", "Misin10G040500.1", "Misin11G099200.1", "Misin13G198400.1", "Misin17G150500.1", "Misin17G216100.1", "Misin18G011500.1", "MisinT014600.1", "MisinT014900.1", "MisinT029700.1", "MisinT439700.1")	root
+"373"	GO:0006810	transport	5179	12	15.35	0.1416	c("Misin06G159300.1", "Misin07G250000.1", "Misin09G189700.1", "Misin10G025400.1", "Misin10G037700.1", "Misin10G080900.1", "Misin12G156400.1", "Misin13G084700.1", "Misin17G223700.1", "MisinT173100.1", "MisinT244700.1", "MisinT392400.1")	root
+"374"	GO:0006108	malate metabolic process	52	1	0.15	0.1431	Misin07G271500.1	root
+"375"	GO:0010075	regulation of meristem growth	54	1	0.16	0.1482	MisinT029700.1	root
+"376"	GO:0006568	tryptophan metabolic process	237	2	0.7	0.1561	c("Misin01G055200.1", "Misin17G216100.1")	root
+"377"	GO:0001522	pseudouridine synthesis	58	1	0.17	0.1583	Misin07G317800.1	root
+"378"	GO:0009069	serine family amino acid metabolic proce...	2441	12	7.23	0.1632	c("Misin01G025700.1", "Misin02G503700.1", "Misin07G309900.1", "Misin07G339800.1", "Misin09G165900.1", "Misin09G181500.1", "Misin09G184300.1", "Misin09G205400.1", "Misin10G033300.1", "Misin10G036800.1", "Misin11G099200.1", "MisinT029700.1")	root
+"379"	GO:0016310	phosphorylation	4559	20	13.51	0.1632	c("Misin01G025700.1", "Misin02G431100.1", "Misin02G490600.1", "Misin02G503700.1", "Misin05G081600.1", "Misin07G339800.1", "Misin07G401200.1", "Misin09G165900.1", "Misin09G181500.1", "Misin09G184300.1", "Misin09G205400.1", "Misin10G033300.1", "Misin10G036800.1", "Misin10G077900.1", "Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1", "Misin19G248200.1", "MisinT067200.1", "MisinT344300.1")	root
+"380"	GO:0009834	plant-type secondary cell wall biogenesi...	61	1	0.18	0.1657	MisinT029700.1	root
+"381"	GO:0009908	flower development	451	3	1.34	0.1674	c("Misin01G031800.1", "Misin05G043900.1", "MisinT029700.1")	root
+"382"	GO:0046839	phospholipid dephosphorylation	62	1	0.18	0.1682	Misin05G081700.1	root
+"383"	GO:0006857	oligopeptide transport	63	1	0.19	0.1707	Misin06G159300.1	root
+"384"	GO:0009637	response to blue light	64	1	0.19	0.1731	Misin05G043900.1	root
+"385"	GO:0016126	sterol biosynthetic process	64	1	0.19	0.1731	MisinT029700.1	root
+"386"	GO:0016311	dephosphorylation	741	4	2.2	0.1732	c("Misin02G490600.1", "Misin05G081700.1", "Misin15G149100.1", "MisinT244700.1")	root
+"387"	GO:0072593	reactive oxygen species metabolic proces...	338	2	1	0.1801	c("Misin17G150500.1", "Misin17G216100.1")	root
+"388"	GO:0006547	histidine metabolic process	69	1	0.2	0.1854	Misin17G216100.1	root
+"389"	GO:0016117	carotenoid biosynthetic process	70	1	0.21	0.1878	Misin08G240700.1	root
+"390"	GO:0050790	regulation of catalytic activity	794	5	2.35	0.1905	c("Misin01G074800.1", "Misin03G074500.1", "Misin17G013400.1", "Misin17G013700.1", "MisinT087300.1")	root
+"391"	GO:0006807	nitrogen compound metabolic process	17540	56	51.98	0.1994	c("Misin01G025700.1", "Misin01G032000.1", "Misin01G041700.1", "Misin01G053500.1", "Misin01G055200.1", "Misin01G072900.1", "Misin01G074800.1", "Misin02G343000.1", "Misin02G490600.1", "Misin02G503700.1", "Misin04G319100.1", "Misin05G043900.1", "Misin05G081700.1", "Misin07G226100.1", "Misin07G309900.1", "Misin07G316900.1", "Misin07G317800.1", "Misin07G320300.1", "Misin07G339800.1", "Misin07G365600.1", "Misin07G418800.1", "Misin08G022200.1", "Misin08G103500.1", "Misin08G144200.1", "Misin08G240700.1", 
+"Misin09G040900.1", "Misin09G165900.1", "Misin09G181500.1", "Misin09G184300.1", "Misin09G205400.1", "Misin09G210800.1", "Misin10G033300.1", "Misin10G036800.1", "Misin10G037700.1", "Misin10G115700.1", "Misin11G099200.1", "Misin11G205100.1", "Misin12G095900.1", "Misin12G113600.1", "Misin13G198400.1", "Misin15G054800.1", "Misin15G149100.1", "Misin17G013400.1", "Misin17G013700.1", "Misin17G168000.1", "Misin17G216100.1", "Misin18G131900.1", "Misin19G049800.1", "Misin19G219700.1", "MisinT029700.1", "MisinT067200.1", 
+"MisinT244700.1", "MisinT317800.1", "MisinT344300.1", "MisinT470400.1", "MisinT528100.1")	root
+"392"	GO:0016132	brassinosteroid biosynthetic process	75	1	0.22	0.1998	MisinT029700.1	root
+"393"	GO:0016197	endosomal transport	76	1	0.23	0.2021	MisinT173100.1	root
+"394"	GO:0019497	hexachlorocyclohexane metabolic process	77	1	0.23	0.2045	Misin15G149100.1	root
+"395"	GO:0006550	isoleucine catabolic process	78	1	0.23	0.2069	Misin17G216100.1	root
+"396"	GO:0006574	valine catabolic process	78	1	0.23	0.2069	Misin17G216100.1	root
+"397"	GO:0016125	sterol metabolic process	143	2	0.42	0.2076	c("Misin01G074800.1", "MisinT029700.1")	root
+"398"	GO:0006096	glycolytic process	328	3	0.97	0.2083	c("Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1")	root
+"399"	GO:0006812	cation transport	1108	3	3.28	0.2114	c("Misin06G159300.1", "Misin10G025400.1", "MisinT244700.1")	root
+"400"	GO:0019852	L-ascorbic acid metabolic process	82	1	0.24	0.2163	Misin17G216100.1	root
+"401"	GO:0006367	transcription initiation from RNA polyme...	82	1	0.24	0.2163	Misin09G210800.1	root
+"402"	GO:0006552	leucine catabolic process	84	1	0.25	0.2209	Misin17G216100.1	root
+"403"	GO:0006310	DNA recombination	299	2	0.89	0.2222	c("Misin01G053500.1", "Misin07G320300.1")	root
+"404"	GO:0030422	production of siRNA involved in RNA inte...	87	1	0.26	0.2278	Misin19G049800.1	root
+"405"	GO:0006468	protein phosphorylation	2876	11	8.52	0.2309	c("Misin01G025700.1", "Misin02G503700.1", "Misin07G339800.1", "Misin09G165900.1", "Misin09G181500.1", "Misin09G184300.1", "Misin09G205400.1", "Misin10G033300.1", "Misin10G036800.1", "MisinT067200.1", "MisinT344300.1")	root
+"406"	GO:0006090	pyruvate metabolic process	546	6	1.62	0.2375	c("Misin01G074800.1", "Misin07G271500.1", "Misin08G240700.1", "Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1")	root
+"407"	GO:0015995	chlorophyll biosynthetic process	92	1	0.27	0.2392	Misin08G240700.1	root
+"408"	GO:0006694	steroid biosynthetic process	267	3	0.79	0.2514	c("Misin10G040500.1", "Misin17G216100.1", "MisinT029700.1")	root
+"409"	GO:0019344	cysteine biosynthetic process	98	1	0.29	0.2527	MisinT029700.1	root
+"410"	GO:0006914	autophagy	99	1	0.29	0.2549	Misin10G036400.1	root
+"411"	GO:0048278	vesicle docking	100	1	0.3	0.2571	Misin10G037700.1	root
+"412"	GO:0006771	riboflavin metabolic process	105	1	0.31	0.2681	Misin15G149100.1	root
+"413"	GO:0044550	secondary metabolite biosynthetic proces...	611	3	1.81	0.2716	c("Misin09G191700.1", "MisinT014600.1", "MisinT014900.1")	root
+"414"	GO:0006555	methionine metabolic process	109	1	0.32	0.2768	Misin01G032000.1	root
+"415"	GO:0009808	lignin metabolic process	118	1	0.35	0.2959	MisinT029700.1	root
+"416"	GO:0006260	DNA replication	375	2	1.11	0.3054	c("Misin07G320300.1", "Misin08G103500.1")	root
+"417"	GO:0071805	potassium ion transmembrane transport	130	1	0.39	0.3206	Misin10G025400.1	root
+"418"	GO:0000462	maturation of SSU-rRNA from tricistronic...	137	1	0.41	0.3347	Misin08G144200.1	root
+"419"	GO:0006952	defense response	1110	4	3.29	0.3418	c("Misin09G165900.1", "Misin09G205400.1", "MisinT011200.1", "MisinT340700.1")	root
+"420"	GO:0048364	root development	262	2	0.78	0.3579	c("Misin01G074800.1", "MisinT029700.1")	root
+"421"	GO:0006687	glycosphingolipid metabolic process	153	1	0.45	0.3657	Misin05G081700.1	root
+"422"	GO:0034968	histone lysine methylation	156	1	0.46	0.3713	Misin07G316900.1	root
+"423"	GO:0006099	tricarboxylic acid cycle	157	1	0.47	0.3732	Misin07G271500.1	root
+"424"	GO:0006906	vesicle fusion	160	1	0.47	0.3788	Misin10G037700.1	root
+"425"	GO:0006869	lipid transport	163	1	0.48	0.3843	Misin13G084700.1	root
+"426"	GO:0031146	SCF-dependent proteasomal ubiquitin-depe...	163	1	0.48	0.3843	MisinT470400.1	root
+"427"	GO:0019748	secondary metabolic process	824	5	2.44	0.3884	c("Misin09G191700.1", "Misin12G095900.1", "MisinT014600.1", "MisinT014900.1", "MisinT029700.1")	root
+"428"	GO:0009409	response to cold	167	1	0.49	0.3916	Misin05G043900.1	root
+"429"	GO:0006629	lipid metabolic process	2135	9	6.33	0.3948	c("Misin01G041700.1", "Misin01G055200.1", "Misin01G074800.1", "Misin05G081700.1", "Misin08G240700.1", "Misin10G040500.1", "Misin17G216100.1", "Misin19G088000.1", "MisinT029700.1")	root
+"430"	GO:0050832	defense response to fungus	171	1	0.51	0.3988	MisinT340700.1	root
+"431"	GO:0090502	RNA phosphodiester bond hydrolysis, endo...	172	1	0.51	0.4006	Misin19G049800.1	root
+"432"	GO:0006098	pentose-phosphate shunt	176	1	0.52	0.4077	Misin12G113600.1	root
+"433"	GO:0042254	ribosome biogenesis	1408	6	4.17	0.4135	c("Misin01G016200.1", "Misin01G072900.1", "Misin02G343000.1", "Misin08G103500.1", "Misin08G144200.1", "Misin10G037700.1")	root
+"434"	GO:0006012	galactose metabolic process	182	1	0.54	0.4182	Misin12G113600.1	root
+"435"	GO:0042742	defense response to bacterium	186	1	0.55	0.4251	MisinT340700.1	root
+"436"	GO:0043087	regulation of GTPase activity	188	1	0.56	0.4286	MisinT087300.1	root
+"437"	GO:0008152	metabolic process	24630	76	72.99	0.4328	c("Misin01G025700.1", "Misin01G032000.1", "Misin01G041700.1", "Misin01G053500.1", "Misin01G055200.1", "Misin01G072900.1", "Misin01G074800.1", "Misin01G106500.1", "Misin02G343000.1", "Misin02G431100.1", "Misin02G490600.1", "Misin02G503700.1", "Misin04G319100.1", "Misin05G043900.1", "Misin05G081600.1", "Misin05G081700.1", "Misin05G304300.1", "Misin07G023900.1", "Misin07G226100.1", "Misin07G271500.1", "Misin07G309900.1", "Misin07G316900.1", "Misin07G317800.1", "Misin07G320300.1", "Misin07G339800.1", 
+"Misin07G365600.1", "Misin07G401200.1", "Misin07G418800.1", "Misin08G022200.1", "Misin08G103500.1", "Misin08G144200.1", "Misin08G240700.1", "Misin09G040900.1", "Misin09G165900.1", "Misin09G181500.1", "Misin09G184300.1", "Misin09G184700.1", "Misin09G191700.1", "Misin09G205400.1", "Misin09G210800.1", "Misin10G033300.1", "Misin10G036400.1", "Misin10G036800.1", "Misin10G037700.1", "Misin10G040500.1", "Misin10G077900.1", "Misin10G115700.1", "Misin11G099200.1", "Misin11G199400.1", "Misin11G205100.1", "Misin12G095900.1", 
+"Misin12G113600.1", "Misin13G198400.1", "Misin15G054800.1", "Misin15G149100.1", "Misin17G013400.1", "Misin17G013700.1", "Misin17G150500.1", "Misin17G168000.1", "Misin17G216100.1", "Misin18G011500.1", "Misin18G131900.1", "Misin19G049800.1", "Misin19G088000.1", "Misin19G219700.1", "Misin19G248200.1", "MisinT014600.1", "MisinT014900.1", "MisinT029700.1", "MisinT067200.1", "MisinT244700.1", "MisinT317800.1", "MisinT344300.1", "MisinT439700.1", "MisinT470400.1", "MisinT528100.1")	root
+"438"	GO:0009395	phospholipid catabolic process	204	1	0.6	0.4552	Misin05G081700.1	root
+"439"	GO:0009651	response to salt stress	209	1	0.62	0.4633	MisinT528100.1	root
+"440"	GO:0006206	pyrimidine nucleobase metabolic process	212	1	0.63	0.4681	Misin09G210800.1	root
+"441"	GO:0070838	divalent metal ion transport	213	1	0.63	0.4697	Misin06G159300.1	root
+"442"	GO:0042744	hydrogen peroxide catabolic process	229	1	0.68	0.4944	Misin17G150500.1	root
+"443"	GO:0009664	plant-type cell wall organization	230	1	0.68	0.496	MisinT029700.1	root
+"444"	GO:0051603	proteolysis involved in cellular protein...	1241	3	3.68	0.4998	c("Misin09G205400.1", "Misin12G095900.1", "MisinT470400.1")	root
+"445"	GO:0051252	regulation of RNA metabolic process	3164	7	9.38	0.5023	c("Misin02G343000.1", "Misin05G043900.1", "Misin07G365600.1", "Misin09G040900.1", "Misin17G168000.1", "Misin19G049800.1", "MisinT528100.1")	root
+"446"	GO:0006351	transcription, DNA-templated	3670	9	10.88	0.5295	c("Misin02G343000.1", "Misin05G043900.1", "Misin07G226100.1", "Misin07G365600.1", "Misin09G040900.1", "Misin09G210800.1", "Misin15G054800.1", "Misin17G168000.1", "MisinT528100.1")	root
+"447"	GO:0048193	Golgi vesicle transport	263	1	0.78	0.5433	Misin10G037700.1	root
+"448"	GO:0046486	glycerolipid metabolic process	644	2	1.91	0.5717	c("Misin05G081700.1", "Misin17G216100.1")	root
+"449"	GO:0030154	cell differentiation	446	2	1.32	0.5817	c("Misin05G043900.1", "MisinT029700.1")	root
+"450"	GO:0006144	purine nucleobase metabolic process	333	2	0.99	0.5973	c("Misin01G055200.1", "Misin09G210800.1")	root
+"451"	GO:0051276	chromosome organization	1045	3	3.1	0.6017	c("Misin07G248700.1", "Misin07G316900.1", "Misin07G320300.1")	root
+"452"	GO:0006511	ubiquitin-dependent protein catabolic pr...	990	2	2.93	0.6178	c("Misin09G205400.1", "MisinT470400.1")	root
+"453"	GO:0052696	flavonoid glucuronidation	339	1	1	0.6363	Misin05G304300.1	root
+"454"	GO:0098869	cellular oxidant detoxification	352	1	1.04	0.6502	Misin17G150500.1	root
+"455"	GO:0009737	response to abscisic acid	365	1	1.08	0.6636	Misin01G041700.1	root
+"456"	GO:0035556	intracellular signal transduction	788	3	2.34	0.6731	c("Misin10G033300.1", "Misin10G036800.1", "Misin19G049800.1")	root
+"457"	GO:0009813	flavonoid biosynthetic process	385	1	1.14	0.6832	Misin05G304300.1	root
+"458"	GO:0006470	protein dephosphorylation	424	1	1.26	0.7183	MisinT244700.1	root
+"459"	GO:0006979	response to oxidative stress	565	3	1.67	0.7237	c("Misin05G043900.1", "Misin17G150500.1", "MisinT528100.1")	root
+"460"	GO:0055085	transmembrane transport	2381	4	7.06	0.7275	c("Misin10G025400.1", "Misin13G084700.1", "Misin17G223700.1", "MisinT244700.1")	root
+"461"	GO:0000271	polysaccharide biosynthetic process	454	1	1.35	0.7426	MisinT029700.1	root
+"462"	GO:0006412	translation	1690	4	5.01	0.7442	c("Misin01G072900.1", "Misin02G343000.1", "Misin08G103500.1", "Misin10G037700.1")	root
+"463"	GO:0032259	methylation	957	2	2.84	0.7628	c("Misin07G316900.1", "Misin09G184700.1")	root
+"464"	GO:0005975	carbohydrate metabolic process	2716	8	8.05	0.7731	c("Misin02G490600.1", "Misin05G304300.1", "Misin07G271500.1", "Misin10G115700.1", "Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1", "MisinT029700.1")	root
+"465"	GO:0006631	fatty acid metabolic process	514	1	1.52	0.7852	Misin17G216100.1	root
+"466"	GO:0006281	DNA repair	624	2	1.85	0.8064	c("Misin07G320300.1", "Misin09G210800.1")	root
+"467"	GO:0019438	aromatic compound biosynthetic process	5298	16	15.7	0.8221	c("Misin01G053500.1", "Misin02G343000.1", "Misin02G490600.1", "Misin05G043900.1", "Misin07G226100.1", "Misin07G365600.1", "Misin08G240700.1", "Misin09G040900.1", "Misin09G184700.1", "Misin09G210800.1", "Misin12G113600.1", "Misin15G054800.1", "Misin17G168000.1", "Misin17G216100.1", "Misin19G219700.1", "MisinT528100.1")	root
+"468"	GO:0006355	regulation of transcription, DNA-templat...	2887	6	8.56	0.8672	c("Misin02G343000.1", "Misin05G043900.1", "Misin07G365600.1", "Misin09G040900.1", "Misin17G168000.1", "MisinT528100.1")	root
+"469"	GO:0050794	regulation of cellular process	6569	13	19.47	0.8786	c("Misin02G343000.1", "Misin05G043900.1", "Misin05G081700.1", "Misin07G226100.1", "Misin07G365600.1", "Misin09G040900.1", "Misin10G033300.1", "Misin10G036800.1", "Misin17G013400.1", "Misin17G013700.1", "Misin17G168000.1", "Misin19G049800.1", "MisinT528100.1")	root
+"470"	GO:0005982	starch metabolic process	758	1	2.25	0.8974	MisinT029700.1	root
+"471"	GO:0016567	protein ubiquitination	903	1	2.68	0.934	Misin09G205400.1	root
+"472"	GO:0006886	intracellular protein transport	948	1	2.81	0.9425	Misin10G037700.1	root
+"473"	GO:0007165	signal transduction	2063	4	6.11	0.9784	c("Misin05G081700.1", "Misin10G033300.1", "Misin10G036800.1", "Misin19G049800.1")	root
+"474"	GO:0006714	sesquiterpenoid metabolic process	51	1	0.15	1	Misin01G055200.1	root
+"475"	GO:0044255	cellular lipid metabolic process	1717	6	5.09	1	c("Misin01G041700.1", "Misin01G055200.1", "Misin01G074800.1", "Misin05G081700.1", "Misin08G240700.1", "Misin17G216100.1")	root
+"476"	GO:0044257	cellular protein catabolic process	1268	3	3.76	1	c("Misin09G205400.1", "Misin12G095900.1", "MisinT470400.1")	root
+"477"	GO:0048523	negative regulation of cellular process	769	2	2.28	1	c("Misin17G013400.1", "Misin17G013700.1")	root
+"478"	GO:0046110	xanthine metabolic process	18	1	0.05	1	Misin01G055200.1	root
+"479"	GO:0140056	organelle localization by membrane tethe...	102	1	0.3	1	Misin10G037700.1	root
+"480"	GO:0046113	nucleobase catabolic process	31	1	0.09	1	Misin01G055200.1	root
+"481"	GO:0012501	programmed cell death	249	2	0.74	1	c("MisinT011200.1", "MisinT323700.1")	root
+"482"	GO:0044281	small molecule metabolic process	6897	27	20.44	1	c("Misin01G025700.1", "Misin01G032000.1", "Misin01G055200.1", "Misin01G074800.1", "Misin02G490600.1", "Misin02G503700.1", "Misin05G304300.1", "Misin07G271500.1", "Misin07G309900.1", "Misin07G316900.1", "Misin07G339800.1", "Misin08G240700.1", "Misin09G165900.1", "Misin09G181500.1", "Misin09G184300.1", "Misin09G205400.1", "Misin09G210800.1", "Misin10G033300.1", "Misin10G036800.1", "Misin10G115700.1", "Misin11G099200.1", "Misin12G113600.1", "Misin13G198400.1", "Misin15G149100.1", "Misin17G216100.1", 
+"Misin19G219700.1", "MisinT029700.1")	root
+"483"	GO:0097305	response to alcohol	366	1	1.08	1	Misin01G041700.1	root
+"484"	GO:0044282	small molecule catabolic process	484	2	1.43	1	c("Misin07G316900.1", "Misin17G216100.1")	root
+"485"	GO:0019693	ribose phosphate metabolic process	1042	5	3.09	1	c("Misin01G074800.1", "Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1", "MisinT029700.1")	root
+"486"	GO:0044283	small molecule biosynthetic process	1794	5	5.32	1	c("Misin01G055200.1", "Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1", "MisinT029700.1")	root
+"487"	GO:0019695	choline metabolic process	4	2	0.01	1	c("Misin07G309900.1", "Misin11G099200.1")	root
+"488"	GO:0006401	RNA catabolic process	173	1	0.51	1	Misin18G131900.1	root
+"489"	GO:1901575	organic substance catabolic process	3342	10	9.9	1	c("Misin01G055200.1", "Misin05G081700.1", "Misin07G316900.1", "Misin09G205400.1", "Misin12G095900.1", "Misin12G113600.1", "Misin17G216100.1", "Misin18G131900.1", "Misin19G219700.1", "MisinT470400.1")	root
+"490"	GO:0006402	mRNA catabolic process	153	1	0.45	1	Misin18G131900.1	root
+"491"	GO:1901576	organic substance biosynthetic process	9558	26	28.32	1	c("Misin01G053500.1", "Misin01G055200.1", "Misin01G072900.1", "Misin01G074800.1", "Misin02G343000.1", "Misin02G490600.1", "Misin05G043900.1", "Misin05G304300.1", "Misin07G226100.1", "Misin07G309900.1", "Misin07G320300.1", "Misin07G365600.1", "Misin08G103500.1", "Misin08G240700.1", "Misin09G040900.1", "Misin09G210800.1", "Misin10G037700.1", "Misin10G040500.1", "Misin11G099200.1", "Misin12G113600.1", "Misin15G054800.1", "Misin17G168000.1", "Misin17G216100.1", "Misin19G219700.1", "MisinT029700.1", "MisinT528100.1"
+)	root
+"492"	GO:0019752	carboxylic acid metabolic process	5127	23	15.19	1	c("Misin01G025700.1", "Misin01G032000.1", "Misin01G055200.1", "Misin01G074800.1", "Misin02G503700.1", "Misin05G304300.1", "Misin07G271500.1", "Misin07G309900.1", "Misin07G316900.1", "Misin07G339800.1", "Misin08G240700.1", "Misin09G165900.1", "Misin09G181500.1", "Misin09G184300.1", "Misin09G205400.1", "Misin10G033300.1", "Misin10G036800.1", "Misin11G099200.1", "Misin12G113600.1", "Misin13G198400.1", "Misin17G216100.1", "Misin19G219700.1", "MisinT029700.1")	root
+"493"	GO:0031047	gene silencing by RNA	225	1	0.67	1	Misin19G049800.1	root
+"494"	GO:0046907	intracellular transport	1116	2	3.31	1	c("Misin10G037700.1", "MisinT173100.1")	root
+"495"	GO:0048511	rhythmic process	49	1	0.15	1	Misin05G043900.1	root
+"496"	GO:0090567	reproductive shoot system development	489	3	1.45	1	c("Misin01G031800.1", "Misin05G043900.1", "MisinT029700.1")	root
+"497"	GO:0008299	isoprenoid biosynthetic process	374	3	1.11	1	c("Misin01G055200.1", "Misin01G074800.1", "Misin08G240700.1")	root
+"498"	GO:0097237	cellular response to toxic substance	368	1	1.09	1	Misin17G150500.1	root
+"499"	GO:0006730	one-carbon metabolic process	72	1	0.21	1	Misin01G032000.1	root
+"500"	GO:0044270	cellular nitrogen compound catabolic pro...	725	5	2.15	1	c("Misin01G055200.1", "Misin12G113600.1", "Misin17G216100.1", "Misin18G131900.1", "Misin19G219700.1")	root
+"501"	GO:0048518	positive regulation of biological proces...	844	1	2.5	1	Misin05G043900.1	root
+"502"	GO:0016999	antibiotic metabolic process	527	2	1.56	1	c("Misin07G271500.1", "Misin17G150500.1")	root
+"503"	GO:0044271	cellular nitrogen compound biosynthetic ...	6671	20	19.77	1	c("Misin01G053500.1", "Misin01G072900.1", "Misin02G343000.1", "Misin02G490600.1", "Misin05G043900.1", "Misin07G226100.1", "Misin07G309900.1", "Misin07G365600.1", "Misin08G103500.1", "Misin08G240700.1", "Misin09G040900.1", "Misin09G210800.1", "Misin10G037700.1", "Misin11G099200.1", "Misin12G113600.1", "Misin15G054800.1", "Misin17G168000.1", "Misin17G216100.1", "Misin19G219700.1", "MisinT528100.1")	root
+"504"	GO:0048519	negative regulation of biological proces...	1220	5	3.62	1	c("Misin01G031800.1", "Misin17G013400.1", "Misin17G013700.1", "Misin18G131900.1", "Misin19G049800.1")	root
+"505"	GO:0006732	coenzyme metabolic process	980	6	2.9	1	c("Misin01G032000.1", "Misin01G074800.1", "Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1", "MisinT029700.1")	root
+"506"	GO:0044272	sulfur compound biosynthetic process	318	1	0.94	1	MisinT029700.1	root
+"507"	GO:0006733	oxidoreduction coenzyme metabolic proces...	581	3	1.72	1	c("Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1")	root
+"508"	GO:0098754	detoxification	462	1	1.37	1	Misin17G150500.1	root
+"509"	GO:0046148	pigment biosynthetic process	235	1	0.7	1	Misin08G240700.1	root
+"510"	GO:0040029	regulation of gene expression, epigeneti...	292	1	0.87	1	Misin19G049800.1	root
+"511"	GO:0009725	response to hormone	1112	1	3.3	1	Misin01G041700.1	root
+"512"	GO:0006739	NADP metabolic process	189	1	0.56	1	Misin12G113600.1	root
+"513"	GO:0090558	plant epidermis development	138	1	0.41	1	MisinT029700.1	root
+"514"	GO:0018022	peptidyl-lysine methylation	185	1	0.55	1	Misin07G316900.1	root
+"515"	GO:0031323	regulation of cellular metabolic process	4171	9	12.36	1	c("Misin02G343000.1", "Misin05G043900.1", "Misin07G365600.1", "Misin09G040900.1", "Misin17G013400.1", "Misin17G013700.1", "Misin17G168000.1", "Misin19G049800.1", "MisinT528100.1")	root
+"516"	GO:0031324	negative regulation of cellular metaboli...	561	2	1.66	1	c("Misin17G013400.1", "Misin17G013700.1")	root
+"517"	GO:0031326	regulation of cellular biosynthetic proc...	3441	6	10.2	1	c("Misin02G343000.1", "Misin05G043900.1", "Misin07G365600.1", "Misin09G040900.1", "Misin17G168000.1", "MisinT528100.1")	root
+"518"	GO:0009653	anatomical structure morphogenesis	721	1	2.14	1	MisinT029700.1	root
+"519"	GO:0043086	negative regulation of catalytic activit...	306	2	0.91	1	c("Misin17G013400.1", "Misin17G013700.1")	root
+"520"	GO:0021700	developmental maturation	132	1	0.39	1	MisinT029700.1	root
+"521"	GO:0006950	response to stress	3272	13	9.7	1	c("Misin05G043900.1", "Misin07G309900.1", "Misin07G320300.1", "Misin09G165900.1", "Misin09G205400.1", "Misin09G210800.1", "Misin11G099200.1", "Misin17G013400.1", "Misin17G013700.1", "Misin17G150500.1", "MisinT011200.1", "MisinT340700.1", "MisinT528100.1")	root
+"522"	GO:0009719	response to endogenous stimulus	1117	1	3.31	1	Misin01G041700.1	root
+"523"	GO:0090304	nucleic acid metabolic process	6803	16	20.16	1	c("Misin01G053500.1", "Misin02G343000.1", "Misin05G043900.1", "Misin07G226100.1", "Misin07G317800.1", "Misin07G320300.1", "Misin07G365600.1", "Misin08G103500.1", "Misin08G144200.1", "Misin09G040900.1", "Misin09G210800.1", "Misin15G054800.1", "Misin17G168000.1", "Misin18G131900.1", "Misin19G049800.1", "MisinT528100.1")	root
+"524"	GO:0098771	inorganic ion homeostasis	433	1	1.28	1	Misin10G025400.1	root
+"525"	GO:0090305	nucleic acid phosphodiester bond hydroly...	503	2	1.49	1	c("Misin18G131900.1", "Misin19G049800.1")	root
+"526"	GO:0019439	aromatic compound catabolic process	792	5	2.35	1	c("Misin01G055200.1", "Misin12G113600.1", "Misin17G216100.1", "Misin18G131900.1", "Misin19G219700.1")	root
+"527"	GO:0033993	response to lipid	463	1	1.37	1	Misin01G041700.1	root
+"528"	GO:0009687	abscisic acid metabolic process	34	1	0.1	1	Misin01G055200.1	root
+"529"	GO:0010605	negative regulation of macromolecule met...	874	4	2.59	1	c("Misin17G013400.1", "Misin17G013700.1", "Misin18G131900.1", "Misin19G049800.1")	root
+"530"	GO:0140014	mitotic nuclear division	106	1	0.31	1	Misin07G248700.1	root
+"531"	GO:0010608	posttranscriptional regulation of gene e...	606	1	1.8	1	Misin19G049800.1	root
+"532"	GO:0098660	inorganic ion transmembrane transport	617	1	1.83	1	Misin10G025400.1	root
+"533"	GO:0098661	inorganic anion transmembrane transport	44	1	0.13	1	Misin10G025400.1	root
+"534"	GO:0098662	inorganic cation transmembrane transport	573	1	1.7	1	Misin10G025400.1	root
+"535"	GO:0006643	membrane lipid metabolic process	292	2	0.87	1	c("Misin01G041700.1", "Misin05G081700.1")	root
+"536"	GO:0070887	cellular response to chemical stimulus	1356	4	4.02	1	c("Misin07G309900.1", "Misin11G099200.1", "Misin15G149100.1", "Misin17G150500.1")	root
+"537"	GO:0006644	phospholipid metabolic process	651	3	1.93	1	c("Misin01G074800.1", "Misin05G081700.1", "Misin08G240700.1")	root
+"538"	GO:0046390	ribose phosphate biosynthetic process	608	3	1.8	1	c("Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1")	root
+"539"	GO:0044242	cellular lipid catabolic process	366	2	1.08	1	c("Misin05G081700.1", "Misin17G216100.1")	root
+"540"	GO:0046394	carboxylic acid biosynthetic process	1402	5	4.15	1	c("Misin01G055200.1", "Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1", "MisinT029700.1")	root
+"541"	GO:0046395	carboxylic acid catabolic process	343	2	1.02	1	c("Misin07G316900.1", "Misin17G216100.1")	root
+"542"	GO:0048466	androecium development	65	1	0.19	1	MisinT029700.1	root
+"543"	GO:0071466	cellular response to xenobiotic stimulus	99	1	0.29	1	Misin15G149100.1	root
+"544"	GO:0048468	cell development	124	1	0.37	1	MisinT029700.1	root
+"545"	GO:0044248	cellular catabolic process	3262	12	9.67	1	c("Misin01G055200.1", "Misin05G081700.1", "Misin07G316900.1", "Misin09G205400.1", "Misin10G036400.1", "Misin12G095900.1", "Misin12G113600.1", "Misin17G150500.1", "Misin17G216100.1", "Misin18G131900.1", "Misin19G219700.1", "MisinT470400.1")	root
+"546"	GO:0006970	response to osmotic stress	259	1	0.77	1	MisinT528100.1	root
+"547"	GO:0048469	cell maturation	44	1	0.13	1	MisinT029700.1	root
+"548"	GO:0044249	cellular biosynthetic process	9004	25	26.68	1	c("Misin01G053500.1", "Misin01G055200.1", "Misin01G072900.1", "Misin01G074800.1", "Misin02G343000.1", "Misin02G490600.1", "Misin05G043900.1", "Misin07G226100.1", "Misin07G309900.1", "Misin07G320300.1", "Misin07G365600.1", "Misin08G103500.1", "Misin08G240700.1", "Misin09G040900.1", "Misin09G184700.1", "Misin09G210800.1", "Misin10G037700.1", "Misin11G099200.1", "Misin12G113600.1", "Misin15G054800.1", "Misin17G168000.1", "Misin17G216100.1", "Misin19G219700.1", "MisinT029700.1", "MisinT528100.1")	root
+"549"	GO:0006974	cellular response to DNA damage stimulus	666	2	1.97	1	c("Misin07G320300.1", "Misin09G210800.1")	root
+"550"	GO:0017144	drug metabolic process	2016	8	5.97	1	c("Misin07G271500.1", "Misin07G309900.1", "Misin11G099200.1", "Misin12G113600.1", "Misin15G149100.1", "Misin17G150500.1", "Misin17G216100.1", "Misin19G219700.1")	root
+"551"	GO:0098655	cation transmembrane transport	663	1	1.96	1	Misin10G025400.1	root
+"552"	GO:0098656	anion transmembrane transport	437	1	1.3	1	Misin10G025400.1	root
+"553"	GO:0000902	cell morphogenesis	241	1	0.71	1	MisinT029700.1	root
+"554"	GO:0019682	glyceraldehyde-3-phosphate metabolic pro...	305	3	0.9	1	c("Misin01G074800.1", "Misin08G240700.1", "Misin12G113600.1")	root
+"555"	GO:0042866	pyruvate biosynthetic process	328	3	0.97	1	c("Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1")	root
+"556"	GO:0006637	acyl-CoA metabolic process	102	2	0.3	1	c("Misin01G074800.1", "MisinT029700.1")	root
+"557"	GO:0071453	cellular response to oxygen levels	9	2	0.03	1	c("Misin07G309900.1", "Misin11G099200.1")	root
+"558"	GO:0016192	vesicle-mediated transport	808	2	2.39	1	c("Misin10G037700.1", "MisinT173100.1")	root
+"559"	GO:0044237	cellular metabolic process	20861	67	61.82	1	c("Misin01G025700.1", "Misin01G032000.1", "Misin01G041700.1", "Misin01G053500.1", "Misin01G055200.1", "Misin01G072900.1", "Misin01G074800.1", "Misin02G343000.1", "Misin02G431100.1", "Misin02G490600.1", "Misin02G503700.1", "Misin04G319100.1", "Misin05G043900.1", "Misin05G081600.1", "Misin05G081700.1", "Misin05G304300.1", "Misin07G023900.1", "Misin07G226100.1", "Misin07G271500.1", "Misin07G309900.1", "Misin07G316900.1", "Misin07G317800.1", "Misin07G320300.1", "Misin07G339800.1", "Misin07G365600.1", 
+"Misin07G401200.1", "Misin08G022200.1", "Misin08G103500.1", "Misin08G144200.1", "Misin08G240700.1", "Misin09G040900.1", "Misin09G165900.1", "Misin09G181500.1", "Misin09G184300.1", "Misin09G184700.1", "Misin09G205400.1", "Misin09G210800.1", "Misin10G033300.1", "Misin10G036400.1", "Misin10G036800.1", "Misin10G037700.1", "Misin10G040500.1", "Misin10G077900.1", "Misin10G115700.1", "Misin11G099200.1", "Misin11G205100.1", "Misin12G095900.1", "Misin12G113600.1", "Misin13G198400.1", "Misin15G054800.1", "Misin15G149100.1", 
+"Misin17G013400.1", "Misin17G013700.1", "Misin17G150500.1", "Misin17G168000.1", "Misin17G216100.1", "Misin18G131900.1", "Misin19G049800.1", "Misin19G219700.1", "Misin19G248200.1", "MisinT029700.1", "MisinT067200.1", "MisinT244700.1", "MisinT317800.1", "MisinT344300.1", "MisinT470400.1", "MisinT528100.1")	root
+"560"	GO:0009628	response to abiotic stimulus	1292	6	3.83	1	c("Misin01G031800.1", "Misin05G043900.1", "Misin07G309900.1", "Misin11G099200.1", "MisinT029700.1", "MisinT528100.1")	root
+"561"	GO:0000096	sulfur amino acid metabolic process	255	2	0.76	1	c("Misin01G032000.1", "MisinT029700.1")	root
+"562"	GO:0000097	sulfur amino acid biosynthetic process	172	1	0.51	1	MisinT029700.1	root
+"563"	GO:0032501	multicellular organismal process	2370	4	7.02	1	c("Misin01G031800.1", "Misin01G074800.1", "Misin05G043900.1", "MisinT029700.1")	root
+"564"	GO:0050801	ion homeostasis	447	1	1.32	1	Misin10G025400.1	root
+"565"	GO:0032502	developmental process	2518	4	7.46	1	c("Misin01G031800.1", "Misin01G074800.1", "Misin05G043900.1", "MisinT029700.1")	root
+"566"	GO:0048507	meristem development	236	1	0.7	1	MisinT029700.1	root
+"567"	GO:0048509	regulation of meristem development	106	1	0.31	1	MisinT029700.1	root
+"568"	GO:0043043	peptide biosynthetic process	1705	4	5.05	1	c("Misin01G072900.1", "Misin02G343000.1", "Misin08G103500.1", "Misin10G037700.1")	root
+"569"	GO:0007051	spindle organization	60	1	0.18	1	Misin07G248700.1	root
+"570"	GO:0006163	purine nucleotide metabolic process	851	5	2.52	1	c("Misin01G074800.1", "Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1", "MisinT029700.1")	root
+"571"	GO:0009617	response to bacterium	200	1	0.59	1	MisinT340700.1	root
+"572"	GO:0006164	purine nucleotide biosynthetic process	503	3	1.49	1	c("Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1")	root
+"573"	GO:0045184	establishment of protein localization	1193	1	3.54	1	Misin10G037700.1	root
+"574"	GO:0006165	nucleoside diphosphate phosphorylation	341	3	1.01	1	c("Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1")	root
+"575"	GO:0015698	inorganic anion transport	167	1	0.49	1	Misin10G025400.1	root
+"576"	GO:0040001	establishment of mitotic spindle localiz...	6	1	0.02	1	Misin07G248700.1	root
+"577"	GO:0007059	chromosome segregation	246	1	0.73	1	Misin07G248700.1	root
+"578"	GO:0051653	spindle localization	6	1	0.02	1	Misin07G248700.1	root
+"579"	GO:0009199	ribonucleoside triphosphate metabolic pr...	669	3	1.98	1	c("Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1")	root
+"580"	GO:0042886	amide transport	1254	2	3.72	1	c("Misin06G159300.1", "Misin10G037700.1")	root
+"581"	GO:0051656	establishment of organelle localization	137	1	0.41	1	Misin07G248700.1	root
+"582"	GO:0009987	cellular process	24773	71	73.41	1	c("Misin01G025700.1", "Misin01G032000.1", "Misin01G041700.1", "Misin01G053500.1", "Misin01G055200.1", "Misin01G072900.1", "Misin01G074800.1", "Misin02G343000.1", "Misin02G431100.1", "Misin02G490600.1", "Misin02G503700.1", "Misin04G319100.1", "Misin05G043900.1", "Misin05G081600.1", "Misin05G081700.1", "Misin05G304300.1", "Misin07G023900.1", "Misin07G226100.1", "Misin07G248700.1", "Misin07G271500.1", "Misin07G309900.1", "Misin07G316900.1", "Misin07G317800.1", "Misin07G320300.1", "Misin07G339800.1", 
+"Misin07G365600.1", "Misin07G401200.1", "Misin08G022200.1", "Misin08G103500.1", "Misin08G144200.1", "Misin08G240700.1", "Misin09G040900.1", "Misin09G165900.1", "Misin09G181500.1", "Misin09G184300.1", "Misin09G184700.1", "Misin09G205400.1", "Misin09G210800.1", "Misin10G025400.1", "Misin10G033300.1", "Misin10G036400.1", "Misin10G036800.1", "Misin10G037700.1", "Misin10G040500.1", "Misin10G077900.1", "Misin10G115700.1", "Misin11G099200.1", "Misin11G205100.1", "Misin12G095900.1", "Misin12G113600.1", "Misin13G198400.1", 
+"Misin15G054800.1", "Misin15G149100.1", "Misin17G013400.1", "Misin17G013700.1", "Misin17G150500.1", "Misin17G168000.1", "Misin17G216100.1", "Misin18G131900.1", "Misin19G049800.1", "Misin19G219700.1", "Misin19G248200.1", "MisinT011200.1", "MisinT029700.1", "MisinT067200.1", "MisinT244700.1", "MisinT317800.1", "MisinT323700.1", "MisinT344300.1", "MisinT470400.1", "MisinT528100.1")	root
+"583"	GO:0040007	growth	393	1	1.16	1	MisinT029700.1	root
+"584"	GO:0040008	regulation of growth	187	1	0.55	1	MisinT029700.1	root
+"585"	GO:0010118	stomatal movement	51	1	0.15	1	Misin01G041700.1	root
+"586"	GO:0046364	monosaccharide biosynthetic process	354	3	1.05	1	c("Misin12G113600.1", "Misin17G216100.1", "Misin19G219700.1")	root
+"587"	GO:0007080	mitotic metaphase plate congression	6	1	0.02	1	Misin07G248700.1	root
+"588"	GO:0051716	cellular response to stimulus	3552	11	10.53	1	c("Misin05G081700.1", "Misin07G309900.1", "Misin07G320300.1", "Misin09G210800.1", "Misin10G033300.1", "Misin10G036800.1", "Misin11G099200.1", "Misin15G149100.1", "Misin17G150500.1", "Misin19G049800.1", "MisinT528100.1")	root
+"589"	GO:0065003	protein-containing complex assembly	1015	2	3.01	1	c("Misin02G343000.1", "Misin08G103500.1")	root
+"590"	GO:0046368	GDP-L-fucose metabolic process	5	1	0.01	1	Misin02G490600.1	root
+"591"	GO:0009648	photoperiodism	123	2	0.36	1	c("Misin01G031800.1", "Misin05G043900.1")	root
+"592"	GO:0030162	regulation of proteolysis	234	2	0.69	1	c("Misin17G013400.1", "Misin17G013700.1")	root
+"593"	GO:0065007	biological regulation	8786	25	26.04	1	c("Misin01G031800.1", "Misin01G055200.1", "Misin01G074800.1", "Misin02G343000.1", "Misin03G074500.1", "Misin05G043900.1", "Misin05G081700.1", "Misin07G226100.1", "Misin07G309900.1", "Misin07G365600.1", "Misin09G040900.1", "Misin10G025400.1", "Misin10G033300.1", "Misin10G036800.1", "Misin10G040500.1", "Misin11G099200.1", "Misin17G013400.1", "Misin17G013700.1", "Misin17G168000.1", "Misin17G216100.1", "Misin18G131900.1", "Misin19G049800.1", "MisinT029700.1", "MisinT087300.1", "MisinT528100.1")	root
+"594"	GO:0030163	protein catabolic process	1490	3	4.42	1	c("Misin09G205400.1", "Misin12G095900.1", "MisinT470400.1")	root
+"595"	GO:0065008	regulation of biological quality	1975	7	5.85	1	c("Misin01G055200.1", "Misin07G309900.1", "Misin10G025400.1", "Misin10G040500.1", "Misin11G099200.1", "Misin17G216100.1", "MisinT029700.1")	root
+"596"	GO:0061024	membrane organization	406	1	1.2	1	Misin10G037700.1	root
+"597"	GO:0065009	regulation of molecular function	824	5	2.44	1	c("Misin01G074800.1", "Misin03G074500.1", "Misin17G013400.1", "Misin17G013700.1", "MisinT087300.1")	root
+"598"	GO:0061025	membrane fusion	178	1	0.53	1	Misin10G037700.1	root
+"599"	GO:0001505	regulation of neurotransmitter levels	290	3	0.86	1	c("Misin07G309900.1", "Misin11G099200.1", "Misin17G216100.1")	root
+"600"	GO:0048764	trichoblast maturation	44	1	0.13	1	MisinT029700.1	root
+"601"	GO:0055114	oxidation-reduction process	3524	85	48.55	2.2e-05	c("Misin01G032000.1", "Misin01G055200.1", "Misin01G066800.1", "Misin01G078200.1", "Misin01G110800.1", "Misin01G158200.1", "Misin01G230400.1", "Misin01G382100.1", "Misin02G077000.1", "Misin02G098000.1", "Misin02G107500.1", "Misin02G115800.1", "Misin02G358800.1", "Misin02G449500.1", "Misin02G514900.1", "Misin03G016900.1", "Misin03G030000.1", "Misin03G195400.1", "Misin04G215400.1", "Misin05G156500.1", "Misin05G273100.1", "Misin05G295500.1", "Misin05G300400.1", "Misin05G333300.1", "Misin05G335800.1", 
+"Misin06G093400.1", "Misin06G253000.1", "Misin06G289700.1", "Misin06G374400.1", "Misin07G223100.1", "Misin07G271500.1", "Misin07G311500.1", "Misin07G332200.1", "Misin07G345300.1", "Misin07G352300.1", "Misin07G365700.1", "Misin08G252700.1", "Misin09G018700.1", "Misin09G192700.1", "Misin10G040500.1", "Misin10G085200.1", "Misin11G002600.1", "Misin11G099200.1", "Misin11G115400.1", "Misin11G121200.1", "Misin11G139700.1", "Misin11G270000.1", "Misin12G160300.1", "Misin12G201000.1", "Misin12G229900.1", "Misin12G236300.1", 
+"Misin12G267200.1", "Misin12G281500.1", "Misin13G159000.1", "Misin13G198400.1", "Misin14G071300.1", "Misin14G071600.1", "Misin14G071700.1", "Misin14G126400.1", "Misin15G067300.1", "Misin15G135500.1", "Misin15G165600.1", "Misin16G048000.1", "Misin17G131000.1", "Misin17G174300.1", "Misin17G216100.1", "Misin17G255500.1", "Misin18G018200.1", "Misin18G102100.1", "Misin18G109800.1", "Misin18G276400.1", "Misin19G063100.1", "Misin19G083700.1", "Misin19G100700.1", "Misin19G218600.1", "MisinT014600.1", "MisinT014900.1", 
+"MisinT029700.1", "MisinT078900.1", "MisinT091600.1", "MisinT167900.1", "MisinT182000.1", "MisinT263900.1", "MisinT439700.1", "MisinT505500.1")	stem
+"602"	GO:0046620	regulation of organ growth	45	6	0.62	3.4e-05	c("Misin03G228600.1", "Misin04G268000.1", "Misin04G268700.1", "Misin07G266600.1", "Misin13G154100.1", "Misin13G154200.1")	stem
+"603"	GO:0005980	glycogen catabolic process	7	3	0.1	8.7e-05	c("Misin03G195400.1", "Misin04G215400.1", "Misin05G335800.1")	stem
+"604"	GO:0005975	carbohydrate metabolic process	2716	56	37.42	0.00012	c("Misin01G145100.1", "Misin01G191300.1", "Misin01G358800.1", "Misin02G017100.1", "Misin02G069000.1", "Misin02G115300.1", "Misin02G205400.1", "Misin02G341300.1", "Misin02G490600.1", "Misin03G030000.1", "Misin03G047700.1", "Misin03G086800.1", "Misin03G195400.1", "Misin03G235900.1", "Misin04G215400.1", "Misin04G312400.1", "Misin05G156500.1", "Misin05G227800.1", "Misin05G304300.1", "Misin05G328000.1", "Misin05G335800.1", "Misin06G405300.1", "Misin06G405400.1", "Misin07G271500.1", "Misin07G352300.1", 
+"Misin07G474200.1", "Misin08G304400.1", "Misin10G020200.1", "Misin10G064900.1", "Misin10G070300.1", "Misin10G115700.1", "Misin11G067200.1", "Misin11G121200.1", "Misin11G126600.1", "Misin11G142000.1", "Misin12G113600.1", "Misin12G147300.1", "Misin15G034600.1", "Misin15G088700.1", "Misin17G010600.1", "Misin17G131000.1", "Misin17G142700.1", "Misin17G174300.1", "Misin17G216100.1", "Misin17G255500.1", "Misin18G106000.1", "Misin18G109800.1", "Misin18G276400.1", "Misin19G040400.1", "Misin19G100900.1", "MisinT029700.1", 
+"MisinT167900.1", "MisinT226600.1", "MisinT226900.1", "MisinT393000.1", "MisinT552400.1")	stem
+"605"	GO:0032780	negative regulation of ATPase activity	2	2	0.03	0.00019	c("Misin07G350500.1", "Misin08G154200.1")	stem
+"606"	GO:0006529	asparagine biosynthetic process	18	3	0.25	0.00182	c("Misin01G050700.1", "Misin02G034300.1", "Misin14G007100.1")	stem
+"607"	GO:1903826	arginine transmembrane transport	18	3	0.25	0.00182	c("Misin06G405300.1", "Misin06G405400.1", "MisinT226900.1")	stem
+"608"	GO:0009408	response to heat	177	9	2.44	0.00248	c("Misin05G079700.1", "Misin05G079800.1", "Misin06G182100.1", "Misin06G405400.1", "Misin08G301900.1", "Misin14G086000.1", "Misin16G208700.1", "MisinT226600.1", "MisinT528600.1")	stem
+"609"	GO:0044571	[2Fe-2S] cluster assembly	6	2	0.08	0.00274	c("Misin16G239400.1", "Misin17G245600.1")	stem
+"610"	GO:0015808	L-alanine transport	21	3	0.29	0.00287	c("Misin06G405300.1", "Misin06G405400.1", "MisinT226900.1")	stem
+"611"	GO:0009926	auxin polar transport	106	6	1.46	0.00354	c("Misin03G228600.1", "Misin04G268000.1", "Misin04G268700.1", "Misin07G266600.1", "Misin13G154100.1", "Misin13G154200.1")	stem
+"612"	GO:0015812	gamma-aminobutyric acid transport	23	3	0.32	0.00375	c("Misin06G405300.1", "Misin06G405400.1", "MisinT226900.1")	stem
+"613"	GO:0031640	killing of cells of other organism	24	3	0.33	0.00424	c("Misin03G315100.1", "Misin07G137500.1", "Misin07G137600.1")	stem
+"614"	GO:0010205	photoinhibition	8	2	0.11	0.00502	c("Misin18G102100.1", "Misin19G100700.1")	stem
+"615"	GO:0003333	amino acid transmembrane transport	201	10	2.77	0.00549	c("Misin01G226300.1", "Misin06G405300.1", "Misin06G405400.1", "Misin07G151000.1", "Misin07G437800.1", "Misin07G520600.1", "Misin08G235900.1", "Misin11G109200.1", "Misin12G114200.1", "MisinT226900.1")	stem
+"616"	GO:0005978	glycogen biosynthetic process	28	3	0.39	0.00659	c("Misin07G352300.1", "Misin17G255500.1", "Misin18G276400.1")	stem
+"617"	GO:1903401	L-lysine transmembrane transport	30	3	0.41	0.008	c("Misin06G405300.1", "Misin06G405400.1", "MisinT226900.1")	stem
+"618"	GO:0006090	pyruvate metabolic process	546	13	7.52	0.01004	c("Misin01G074800.1", "Misin02G341300.1", "Misin03G235900.1", "Misin05G156500.1", "Misin05G273100.1", "Misin06G253000.1", "Misin07G271500.1", "Misin10G020200.1", "Misin11G121200.1", "Misin12G113600.1", "Misin17G174300.1", "Misin17G216100.1", "Misin18G109800.1")	stem
+"619"	GO:0008207	C21-steroid hormone metabolic process	33	3	0.45	0.01043	c("Misin10G040500.1", "Misin12G229900.1", "Misin12G236300.1")	stem
+"620"	GO:0006816	calcium ion transport	84	5	1.16	0.01123	c("Misin02G069000.1", "Misin03G235900.1", "Misin05G216900.1", "Misin08G105700.1", "Misin12G223700.1")	stem
+"621"	GO:0019915	lipid storage	12	2	0.17	0.01141	c("Misin10G020200.1", "Misin12G170300.1")	stem
+"622"	GO:0019252	starch biosynthetic process	100	5	1.38	0.01256	c("Misin05G328000.1", "Misin07G352300.1", "Misin17G255500.1", "Misin18G276400.1", "Misin19G100900.1")	stem
+"623"	GO:0000002	mitochondrial genome maintenance	13	2	0.18	0.01336	c("Misin06G405400.1", "MisinT226600.1")	stem
+"624"	GO:0002238	response to molecule of fungal origin	13	2	0.18	0.01336	c("Misin02G369800.1", "Misin07G507700.1")	stem
+"625"	GO:0008210	estrogen metabolic process	37	3	0.51	0.01427	c("Misin10G040500.1", "Misin12G229900.1", "Misin12G236300.1")	stem
+"626"	GO:0008209	androgen metabolic process	37	3	0.51	0.01427	c("Misin10G040500.1", "Misin12G229900.1", "Misin12G236300.1")	stem
+"627"	GO:0010048	vernalization response	15	2	0.21	0.01766	c("Misin17G174300.1", "MisinT078900.1")	stem
+"628"	GO:0097428	protein maturation by iron-sulfur cluste...	15	2	0.21	0.01766	c("Misin16G239400.1", "Misin17G245600.1")	stem
+"629"	GO:0006032	chitin catabolic process	74	4	1.02	0.01919	c("Misin03G047700.1", "Misin05G227800.1", "Misin10G064900.1", "Misin11G126600.1")	stem
+"630"	GO:0016311	dephosphorylation	741	20	10.21	0.02005	c("Misin01G242200.1", "Misin02G374600.1", "Misin02G447300.1", "Misin02G490600.1", "Misin03G010100.1", "Misin03G042300.1", "Misin05G081700.1", "Misin07G309100.1", "Misin07G506400.1", "Misin10G020200.1", "Misin11G016000.1", "Misin15G149100.1", "Misin16G078300.1", "Misin16G213000.1", "Misin17G010600.1", "Misin17G084900.1", "Misin17G248600.1", "Misin18G077700.1", "MisinT227600.1", "MisinT244700.1")	stem
+"631"	GO:0019497	hexachlorocyclohexane metabolic process	77	4	1.06	0.02186	c("Misin01G242200.1", "Misin15G149100.1", "Misin16G078300.1", "Misin17G084900.1")	stem
+"632"	GO:0046839	phospholipid dephosphorylation	62	4	0.85	0.02233	c("Misin03G042300.1", "Misin05G081700.1", "Misin07G309100.1", "MisinT227600.1")	stem
+"633"	GO:0010183	pollen tube guidance	17	2	0.23	0.02246	c("Misin01G390800.1", "Misin07G208000.1")	stem
+"634"	GO:0006952	defense response	1110	24	15.29	0.02283	c("Misin01G390800.1", "Misin02G229900.1", "Misin02G374600.1", "Misin03G047700.1", "Misin03G315100.1", "Misin04G180100.1", "Misin05G216900.1", "Misin05G333300.1", "Misin06G298800.1", "Misin07G137500.1", "Misin07G137600.1", "Misin07G163600.1", "Misin07G366300.1", "Misin09G165900.1", "Misin09G166100.1", "Misin09G205400.1", "Misin10G046900.1", "Misin11G067200.1", "Misin12G016000.1", "Misin16G261200.1", "Misin17G034300.1", "Misin18G179300.1", "Misin18G257200.1", "MisinT011200.1")	stem
+"635"	GO:0006950	response to stress	3272	72	45.08	0.02362	c("Misin01G066800.1", "Misin01G390800.1", "Misin02G069000.1", "Misin02G094500.1", "Misin02G229900.1", "Misin02G315100.1", "Misin02G358800.1", "Misin02G360000.1", "Misin02G369800.1", "Misin02G374600.1", "Misin03G010100.1", "Misin03G047700.1", "Misin03G235900.1", "Misin03G315100.1", "Misin04G180100.1", "Misin05G015300.1", "Misin05G079700.1", "Misin05G079800.1", "Misin05G156500.1", "Misin05G216900.1", "Misin05G245900.1", "Misin05G333300.1", "Misin05G335800.1", "Misin06G022300.1", "Misin06G182100.1", 
+"Misin06G257300.1", "Misin06G286000.1", "Misin06G298800.1", "Misin06G405300.1", "Misin06G405400.1", "Misin07G137500.1", "Misin07G137600.1", "Misin07G163600.1", "Misin07G320300.1", "Misin07G351600.1", "Misin07G366300.1", "Misin07G375900.1", "Misin07G507700.1", "Misin08G301900.1", "Misin09G165900.1", "Misin09G166100.1", "Misin09G205400.1", "Misin09G210800.1", "Misin10G046900.1", "Misin11G067200.1", "Misin11G099200.1", "Misin11G116500.1", "Misin11G270000.1", "Misin12G016000.1", "Misin12G120700.1", "Misin12G281500.1", 
+"Misin14G086000.1", "Misin15G067300.1", "Misin15G128300.1", "Misin16G009200.1", "Misin16G071400.1", "Misin16G185400.1", "Misin16G208700.1", "Misin16G261200.1", "Misin17G012500.1", "Misin17G034300.1", "Misin17G174300.1", "Misin17G269000.1", "Misin18G179300.1", "Misin18G257200.1", "Misin19G218600.1", "MisinT011200.1", "MisinT078900.1", "MisinT226600.1", "MisinT226900.1", "MisinT478600.1", "MisinT528600.1")	stem
+"636"	GO:0006970	response to osmotic stress	259	7	3.57	0.0253	c("Misin01G390800.1", "Misin02G069000.1", "Misin03G235900.1", "Misin05G245900.1", "Misin06G257300.1", "Misin08G301900.1", "Misin12G120700.1")	stem
+"637"	GO:0050790	regulation of catalytic activity	794	15	10.94	0.02615	c("Misin01G074800.1", "Misin01G390800.1", "Misin01G402300.1", "Misin02G374600.1", "Misin02G410800.1", "Misin03G032400.1", "Misin03G074500.1", "Misin03G315100.1", "Misin05G328000.1", "Misin07G350500.1", "Misin08G106400.1", "Misin08G154200.1", "Misin16G009200.1", "Misin17G012500.1", "MisinT087300.1")	stem
+"638"	GO:0046323	glucose import	122	5	1.68	0.02714	c("Misin01G306100.1", "Misin02G271400.1", "Misin04G190300.1", "MisinT147900.1", "MisinT250900.1")	stem
+"639"	GO:0035264	multicellular organism growth	2	1	0.03	0.02736	Misin16G096400.1	stem
+"640"	GO:0035281	pre-miRNA export from nucleus	2	1	0.03	0.02736	Misin13G077800.1	stem
+"641"	GO:0080136	priming of cellular response to stress	2	1	0.03	0.02736	Misin01G390800.1	stem
+"642"	GO:0000169	activation of MAPK activity involved in ...	2	1	0.03	0.02736	Misin01G390800.1	stem
+"643"	GO:0034477	U6 snRNA 3'-end processing	2	1	0.03	0.02736	Misin07G428500.1	stem
+"644"	GO:0055064	chloride ion homeostasis	2	1	0.03	0.02736	Misin10G025400.1	stem
+"645"	GO:0010031	circumnutation	2	1	0.03	0.02736	Misin08G202400.1	stem
+"646"	GO:0086010	membrane depolarization during action po...	2	1	0.03	0.02736	Misin05G216900.1	stem
+"647"	GO:2000071	regulation of defense response by callos...	2	1	0.03	0.02736	Misin18G179300.1	stem
+"648"	GO:0048767	root hair elongation	20	2	0.28	0.03055	c("MisinT029700.1", "MisinT167900.1")	stem
+"649"	GO:0016998	cell wall macromolecule catabolic proces...	86	4	1.18	0.03119	c("Misin03G047700.1", "Misin05G227800.1", "Misin10G064900.1", "Misin11G126600.1")	stem
+"650"	GO:0050832	defense response to fungus	171	6	2.36	0.03163	c("Misin03G315100.1", "Misin07G137500.1", "Misin07G137600.1", "Misin11G067200.1", "Misin16G261200.1", "Misin18G179300.1")	stem
+"651"	GO:0010206	photosystem II repair	21	2	0.29	0.03346	c("Misin18G102100.1", "Misin19G100700.1")	stem
+"652"	GO:0006108	malate metabolic process	52	3	0.72	0.03492	c("Misin05G273100.1", "Misin06G253000.1", "Misin07G271500.1")	stem
+"653"	GO:0006278	RNA-dependent DNA biosynthetic process	23	2	0.32	0.03959	c("Misin01G053500.1", "Misin13G077800.1")	stem
+"654"	GO:0007530	sex determination	3	1	0.04	0.04076	Misin07G208000.1	stem
+"655"	GO:0052576	carbohydrate storage	3	1	0.04	0.04076	Misin11G067200.1	stem
+"656"	GO:0098755	maintenance of seed dormancy by absisic ...	3	1	0.04	0.04076	Misin14G086000.1	stem
+"657"	GO:0010133	proline catabolic process to glutamate	3	1	0.04	0.04076	Misin17G216100.1	stem
+"658"	GO:0006479	protein methylation	252	3	3.47	0.04319	c("Misin07G316900.1", "Misin11G116400.1", "Misin12G120700.1")	stem
+"659"	GO:0010304	PSII associated light-harvesting complex...	25	2	0.34	0.04612	c("Misin18G102100.1", "Misin19G100700.1")	stem
+"660"	GO:0009733	response to auxin	381	9	5.25	0.05169	c("Misin01G032900.1", "Misin03G228600.1", "Misin04G268000.1", "Misin04G268700.1", "Misin05G133800.1", "Misin07G266600.1", "Misin13G154100.1", "Misin13G154200.1", "Misin16G096400.1")	stem
+"661"	GO:0016441	posttranscriptional gene silencing	129	3	1.78	0.05395	c("Misin08G280700.1", "Misin13G077800.1", "Misin19G049800.1")	stem
+"662"	GO:0010351	lithium ion transport	4	1	0.06	0.05398	MisinT167900.1	stem
+"663"	GO:1902476	chloride transmembrane transport	4	1	0.06	0.05398	Misin10G025400.1	stem
+"664"	GO:0010120	camalexin biosynthetic process	4	1	0.06	0.05398	Misin01G390800.1	stem
+"665"	GO:0070544	histone H3-K36 demethylation	4	1	0.06	0.05398	Misin07G230300.1	stem
+"666"	GO:0042352	GDP-L-fucose salvage	4	1	0.06	0.05398	Misin02G490600.1	stem
+"667"	GO:0006642	triglyceride mobilization	4	1	0.06	0.05398	Misin03G235900.1	stem
+"668"	GO:0019285	glycine betaine biosynthetic process fro...	4	1	0.06	0.05398	Misin11G099200.1	stem
+"669"	GO:0098504	DNA 3' dephosphorylation involved in DNA...	4	1	0.06	0.05398	Misin03G010100.1	stem
+"670"	GO:0098506	polynucleotide 3' dephosphorylation	4	1	0.06	0.05398	Misin03G010100.1	stem
+"671"	GO:0031929	TOR signaling	4	1	0.06	0.05398	Misin19G049800.1	stem
+"672"	GO:0042183	formate catabolic process	4	1	0.06	0.05398	MisinT505500.1	stem
+"673"	GO:0071454	cellular response to anoxia	4	1	0.06	0.05398	Misin11G099200.1	stem
+"674"	GO:0015798	myo-inositol transport	4	1	0.06	0.05398	Misin12G131100.1	stem
+"675"	GO:0009407	toxin catabolic process	103	4	1.42	0.05433	c("Misin02G286600.1", "Misin02G293100.1", "MisinT258000.1", "MisinT404400.1")	stem
+"676"	GO:0006771	riboflavin metabolic process	105	4	1.45	0.05753	c("Misin01G242200.1", "Misin15G149100.1", "Misin16G078300.1", "Misin17G084900.1")	stem
+"677"	GO:0005983	starch catabolic process	29	2	0.4	0.06022	c("Misin03G195400.1", "Misin04G215400.1")	stem
+"678"	GO:0046500	S-adenosylmethionine metabolic process	29	2	0.4	0.06022	c("Misin11G116400.1", "Misin12G120700.1")	stem
+"679"	GO:0006099	tricarboxylic acid cycle	157	5	2.16	0.06674	c("Misin05G273100.1", "Misin06G253000.1", "Misin07G271500.1", "Misin11G121200.1", "Misin18G018200.1")	stem
+"680"	GO:0010239	chloroplast mRNA processing	5	1	0.07	0.06702	Misin01G012100.1	stem
+"681"	GO:0002229	defense response to oomycetes	5	1	0.07	0.06702	Misin18G179300.1	stem
+"682"	GO:0006879	cellular iron ion homeostasis	31	2	0.43	0.06776	c("Misin16G239400.1", "Misin17G245600.1")	stem
+"683"	GO:0010029	regulation of seed germination	31	2	0.43	0.06776	c("Misin02G069000.1", "Misin14G086000.1")	stem
+"684"	GO:0044550	secondary metabolite biosynthetic proces...	611	12	8.42	0.0714	c("Misin01G158200.1", "Misin01G390800.1", "Misin03G032400.1", "Misin05G333300.1", "Misin07G345300.1", "Misin09G192700.1", "Misin10G081900.1", "Misin11G115400.1", "Misin13G159000.1", "Misin15G165600.1", "MisinT014600.1", "MisinT014900.1")	stem
+"685"	GO:0044260	cellular macromolecule metabolic process	13317	157	183.47	0.07414	c("Misin01G012200.1", "Misin01G020500.1", "Misin01G025700.1", "Misin01G032900.1", "Misin01G036200.1", "Misin01G036800.1", "Misin01G042900.1", "Misin01G053500.1", "Misin01G072900.1", "Misin01G150200.1", "Misin01G356500.1", "Misin01G358800.1", "Misin01G390800.1", "Misin01G393400.1", "Misin01G394400.1", "Misin02G022300.1", "Misin02G094500.1", "Misin02G188000.1", "Misin02G205400.1", "Misin02G343000.1", "Misin02G374600.1", "Misin02G447300.1", "Misin02G490400.1", "Misin02G490600.1", "Misin02G503700.1", 
+"Misin03G006600.1", "Misin03G010100.1", "Misin03G030000.1", "Misin03G047700.1", "Misin03G050400.1", "Misin03G103300.1", "Misin03G195400.1", "Misin03G315100.1", "Misin04G215400.1", "Misin04G312400.1", "Misin04G319100.1", "Misin05G054700.1", "Misin05G156500.1", "Misin05G209300.1", "Misin05G227800.1", "Misin05G228300.1", "Misin05G245900.1", "Misin05G295500.1", "Misin05G328000.1", "Misin05G335800.1", "Misin06G022300.1", "Misin06G200900.1", "Misin06G250900.1", "Misin06G257300.1", "Misin06G286000.1", "Misin06G405300.1", 
+"Misin06G405400.1", "Misin07G023900.1", "Misin07G205700.1", "Misin07G230300.1", "Misin07G316900.1", "Misin07G320300.1", "Misin07G339800.1", "Misin07G348300.1", "Misin07G351600.1", "Misin07G352300.1", "Misin07G363100.1", "Misin07G365600.1", "Misin07G375900.1", "Misin07G398000.1", "Misin07G419100.1", "Misin07G506400.1", "Misin08G022200.1", "Misin08G106400.1", "Misin08G171900.1", "Misin08G202400.1", "Misin08G217900.1", "Misin08G222000.1", "Misin08G260300.1", "Misin08G324500.1", "Misin09G080800.1", "Misin09G081000.1", 
+"Misin09G165900.1", "Misin09G166100.1", "Misin09G181500.1", "Misin09G184300.1", "Misin09G205400.1", "Misin09G210700.1", "Misin09G210800.1", "Misin10G020200.1", "Misin10G033300.1", "Misin10G034300.1", "Misin10G036800.1", "Misin10G036900.1", "Misin10G037100.1", "Misin10G037700.1", "Misin10G046900.1", "Misin10G064900.1", "Misin10G115700.1", "Misin10G181000.1", "Misin11G016000.1", "Misin11G067200.1", "Misin11G116400.1", "Misin11G116500.1", "Misin11G126600.1", "Misin11G153100.1", "Misin11G205100.1", "Misin12G016000.1", 
+"Misin12G095900.1", "Misin12G108200.1", "Misin12G120700.1", "Misin12G202900.1", "Misin13G077800.1", "Misin13G183300.1", "Misin14G005900.1", "Misin14G075500.1", "Misin15G034600.1", "Misin15G128300.1", "Misin16G009200.1", "Misin16G207000.1", "Misin16G212300.1", "Misin16G261200.1", "Misin17G010600.1", "Misin17G012500.1", "Misin17G034300.1", "Misin17G122200.1", "Misin17G131000.1", "Misin17G163800.1", "Misin17G168000.1", "Misin17G180500.1", "Misin17G238500.1", "Misin17G242400.1", "Misin17G248600.1", "Misin17G255500.1", 
+"Misin18G005600.1", "Misin18G056300.1", "Misin18G077700.1", "Misin18G102100.1", "Misin18G228700.1", "Misin18G257200.1", "Misin18G276400.1", "Misin19G040400.1", "Misin19G055900.1", "Misin19G100700.1", "Misin19G100900.1", "Misin19G109800.1", "Misin19G236400.1", "MisinT029700.1", "MisinT050600.1", "MisinT067200.1", "MisinT115400.1", "MisinT226600.1", "MisinT226900.1", "MisinT227600.1", "MisinT241800.1", "MisinT244700.1", "MisinT263300.1", "MisinT344300.1", "MisinT393000.1", "MisinT497600.1", "MisinT552400.1", 
+"MisinT553500.1")	stem
+"686"	GO:0000272	polysaccharide catabolic process	262	8	3.61	0.07586	c("Misin02G205400.1", "Misin03G047700.1", "Misin03G195400.1", "Misin04G215400.1", "Misin04G312400.1", "Misin05G335800.1", "Misin15G034600.1", "MisinT552400.1")	stem
+"687"	GO:0015976	carbon utilization	164	5	2.26	0.07719	c("Misin03G235900.1", "Misin05G273100.1", "Misin06G253000.1", "Misin07G271500.1", "Misin11G031500.1")	stem
+"688"	GO:0007030	Golgi organization	73	3	1.01	0.07986	c("Misin01G121100.1", "Misin02G069000.1", "Misin03G235900.1")	stem
+"689"	GO:0030007	cellular potassium ion homeostasis	6	1	0.08	0.07987	Misin02G069000.1	stem
+"690"	GO:0042989	sequestering of actin monomers	6	1	0.08	0.07987	Misin19G040400.1	stem
+"691"	GO:0051315	attachment of mitotic spindle microtubul...	6	1	0.08	0.07987	Misin07G248700.1	stem
+"692"	GO:0000132	establishment of mitotic spindle orienta...	6	1	0.08	0.07987	Misin07G248700.1	stem
+"693"	GO:0034051	negative regulation of plant-type hypers...	6	1	0.08	0.07987	Misin07G163600.1	stem
+"694"	GO:0044281	small molecule metabolic process	6897	95	95.02	0.08008	c("Misin01G020100.1", "Misin01G025700.1", "Misin01G032000.1", "Misin01G050700.1", "Misin01G055200.1", "Misin01G074800.1", "Misin01G242200.1", "Misin01G309200.1", "Misin01G390800.1", "Misin01G394400.1", "Misin02G017100.1", "Misin02G034300.1", "Misin02G107500.1", "Misin02G341300.1", "Misin02G358800.1", "Misin02G490600.1", "Misin02G503700.1", "Misin03G010100.1", "Misin03G030000.1", "Misin03G086800.1", "Misin03G235900.1", "Misin04G126800.1", "Misin05G156500.1", "Misin05G209300.1", "Misin05G273100.1", 
+"Misin05G304300.1", "Misin05G324900.1", "Misin05G333300.1", "Misin06G022300.1", "Misin06G250900.1", "Misin06G253000.1", "Misin06G324900.1", "Misin06G374400.1", "Misin06G411400.1", "Misin07G028600.1", "Misin07G271500.1", "Misin07G316900.1", "Misin07G332200.1", "Misin07G339800.1", "Misin07G365700.1", "Misin07G474200.1", "Misin07G506400.1", "Misin08G171900.1", "Misin08G260300.1", "Misin08G280700.1", "Misin08G304400.1", "Misin09G165900.1", "Misin09G166100.1", "Misin09G181500.1", "Misin09G184300.1", "Misin09G194100.1", 
+"Misin09G205400.1", "Misin09G210800.1", "Misin10G020200.1", "Misin10G033300.1", "Misin10G036800.1", "Misin10G046900.1", "Misin10G115700.1", "Misin11G015800.1", "Misin11G031500.1", "Misin11G099200.1", "Misin11G121200.1", "Misin11G139700.1", "Misin11G153100.1", "Misin12G113600.1", "Misin13G198400.1", "Misin13G198800.1", "Misin14G007100.1", "Misin14G126400.1", "Misin14G145400.1", "Misin14G151100.1", "Misin15G135500.1", "Misin15G149100.1", "Misin16G078300.1", "Misin16G207000.1", "Misin16G243200.1", "Misin17G034300.1", 
+"Misin17G084900.1", "Misin17G174300.1", "Misin17G216100.1", "Misin18G018200.1", "Misin18G109800.1", "Misin18G257200.1", "Misin19G109800.1", "Misin19G191900.1", "Misin19G206300.1", "Misin19G218600.1", "MisinT029700.1", "MisinT050600.1", "MisinT078900.1", "MisinT167900.1", "MisinT182000.1", "MisinT278900.1", "MisinT339800.1", "MisinT505500.1")	stem
+"695"	GO:0006123	mitochondrial electron transport, cytoch...	35	2	0.48	0.08368	c("Misin14G126400.1", "Misin15G135500.1")	stem
+"696"	GO:0016132	brassinosteroid biosynthetic process	75	3	1.03	0.08502	c("Misin02G115800.1", "Misin09G018700.1", "MisinT029700.1")	stem
+"697"	GO:1901657	glycosyl compound metabolic process	386	7	5.32	0.08778	c("Misin04G126800.1", "Misin05G333300.1", "Misin07G028600.1", "Misin08G171900.1", "Misin11G142000.1", "Misin12G147300.1", "Misin15G088700.1")	stem
+"698"	GO:0006013	mannose metabolic process	171	5	2.36	0.08848	c("Misin02G490600.1", "Misin03G235900.1", "Misin10G115700.1", "Misin12G113600.1", "Misin17G174300.1")	stem
+"699"	GO:0006145	purine nucleobase catabolic process	25	2	0.34	0.0924	c("Misin01G055200.1", "Misin14G145400.1")	stem
+"700"	GO:0048657	anther wall tapetum cell differentiation	7	1	0.1	0.09255	Misin09G018700.1	stem
+"701"	GO:0031426	polycistronic mRNA processing	7	1	0.1	0.09255	Misin01G012100.1	stem
+"702"	GO:0010136	ureide catabolic process	7	1	0.1	0.09255	Misin14G145400.1	stem
+"703"	GO:0010021	amylopectin biosynthetic process	7	1	0.1	0.09255	Misin17G131000.1	stem
+"704"	GO:0006065	UDP-glucuronate biosynthetic process	7	1	0.1	0.09255	Misin03G030000.1	stem
+"705"	GO:0016125	sterol metabolic process	143	4	1.97	0.09569	c("Misin01G074800.1", "Misin02G115800.1", "Misin09G018700.1", "MisinT029700.1")	stem
+"706"	GO:0005985	sucrose metabolic process	689	14	9.49	0.09752	c("Misin01G358800.1", "Misin02G205400.1", "Misin03G030000.1", "Misin04G312400.1", "Misin07G352300.1", "Misin10G070300.1", "Misin11G067200.1", "Misin15G034600.1", "Misin17G010600.1", "Misin17G255500.1", "Misin18G276400.1", "Misin19G100900.1", "MisinT393000.1", "MisinT552400.1")	stem
+"707"	GO:2000022	regulation of jasmonic acid mediated sig...	39	2	0.54	0.10061	c("Misin04G180100.1", "Misin18G179300.1")	stem
+"708"	GO:0006749	glutathione metabolic process	285	7	3.93	0.10076	c("Misin01G393400.1", "Misin02G286600.1", "Misin02G293100.1", "Misin15G067300.1", "MisinT258000.1", "MisinT364200.1", "MisinT404400.1")	stem
+"709"	GO:0046166	glyceraldehyde-3-phosphate biosynthetic ...	8	1	0.11	0.10505	Misin03G235900.1	stem
+"710"	GO:0019287	isopentenyl diphosphate biosynthetic pro...	8	1	0.11	0.10505	Misin01G074800.1	stem
+"711"	GO:0010731	protein glutathionylation	8	1	0.11	0.10505	Misin01G393400.1	stem
+"712"	GO:0009063	cellular amino acid catabolic process	235	4	3.24	0.10508	c("Misin03G235900.1", "Misin07G316900.1", "Misin14G007100.1", "Misin17G216100.1")	stem
+"713"	GO:0071805	potassium ion transmembrane transport	130	4	1.79	0.10552	c("Misin02G069000.1", "Misin10G025400.1", "Misin19G036300.1", "Misin19G114000.1")	stem
+"714"	GO:0010224	response to UV-B	41	2	0.56	0.10939	c("Misin01G390800.1", "Misin09G018700.1")	stem
+"715"	GO:0009607	response to biotic stimulus	526	11	7.25	0.11284	c("Misin02G369800.1", "Misin02G374600.1", "Misin03G315100.1", "Misin05G333300.1", "Misin07G137500.1", "Misin07G137600.1", "Misin07G366300.1", "Misin07G507700.1", "Misin11G067200.1", "Misin16G261200.1", "Misin18G179300.1")	stem
+"716"	GO:0017148	negative regulation of translation	42	2	0.58	0.11386	c("Misin12G016000.1", "Misin14G005900.1")	stem
+"717"	GO:0005977	glycogen metabolic process	44	7	0.61	0.11598	c("Misin03G195400.1", "Misin04G215400.1", "Misin05G335800.1", "Misin07G352300.1", "Misin17G131000.1", "Misin17G255500.1", "Misin18G276400.1")	stem
+"718"	GO:0055075	potassium ion homeostasis	15	2	0.21	0.11715	c("Misin02G069000.1", "Misin10G025400.1")	stem
+"719"	GO:0051382	kinetochore assembly	9	1	0.12	0.11739	Misin11G116500.1	stem
+"720"	GO:0043481	anthocyanin accumulation in tissues in r...	9	1	0.12	0.11739	MisinT029700.1	stem
+"721"	GO:0000256	allantoin catabolic process	9	1	0.12	0.11739	Misin14G145400.1	stem
+"722"	GO:0046856	phosphatidylinositol dephosphorylation	45	2	0.62	0.12753	c("Misin03G042300.1", "Misin07G309100.1")	stem
+"723"	GO:0019953	sexual reproduction	187	4	2.58	0.12807	c("Misin01G283900.1", "Misin02G273400.1", "Misin07G434100.1", "Misin10G020200.1")	stem
+"724"	GO:0048574	long-day photoperiodism, flowering	43	2	0.59	0.1294	c("Misin01G031800.1", "Misin08G202400.1")	stem
+"725"	GO:0019563	glycerol catabolic process	10	1	0.14	0.12955	Misin03G235900.1	stem
+"726"	GO:0046482	para-aminobenzoic acid metabolic process	10	1	0.14	0.12955	Misin13G198400.1	stem
+"727"	GO:0006522	alanine metabolic process	93	3	1.28	0.1372	c("Misin01G050700.1", "Misin02G034300.1", "Misin14G007100.1")	stem
+"728"	GO:0006531	aspartate metabolic process	93	3	1.28	0.1372	c("Misin01G050700.1", "Misin02G034300.1", "Misin14G007100.1")	stem
+"729"	GO:0006541	glutamine metabolic process	94	3	1.3	0.14036	c("Misin01G050700.1", "Misin02G034300.1", "Misin14G007100.1")	stem
+"730"	GO:0009854	oxidative photosynthetic carbon pathway	11	1	0.15	0.14155	Misin12G201000.1	stem
+"731"	GO:0031054	pre-miRNA processing	11	1	0.15	0.14155	Misin19G049800.1	stem
+"732"	GO:1902626	assembly of large subunit precursor of p...	11	1	0.15	0.14155	Misin17G180500.1	stem
+"733"	GO:0006086	acetyl-CoA biosynthetic process from pyr...	11	1	0.15	0.14155	Misin18G109800.1	stem
+"734"	GO:0042256	mature ribosome assembly	11	1	0.15	0.14155	Misin13G000200.1	stem
+"735"	GO:0070588	calcium ion transmembrane transport	50	2	0.69	0.15109	c("Misin05G216900.1", "Misin12G223700.1")	stem
+"736"	GO:0009851	auxin biosynthetic process	25	2	0.34	0.15311	c("Misin01G055200.1", "Misin03G235900.1")	stem
+"737"	GO:0019249	lactate biosynthetic process	12	1	0.17	0.15338	Misin06G022300.1	stem
+"738"	GO:0001193	maintenance of transcriptional fidelity ...	12	1	0.17	0.15338	Misin09G210800.1	stem
+"739"	GO:0048579	negative regulation of long-day photoper...	12	1	0.17	0.15338	Misin01G031800.1	stem
+"740"	GO:0001172	transcription, RNA-templated	12	1	0.17	0.15338	Misin08G280700.1	stem
+"741"	GO:0006694	steroid biosynthetic process	267	7	3.68	0.15529	c("Misin02G115800.1", "Misin09G018700.1", "Misin10G040500.1", "Misin12G229900.1", "Misin12G236300.1", "Misin17G216100.1", "MisinT029700.1")	stem
+"742"	GO:0019748	secondary metabolic process	824	19	11.35	0.15699	c("Misin01G158200.1", "Misin01G390800.1", "Misin02G286600.1", "Misin02G293100.1", "Misin03G032400.1", "Misin05G333300.1", "Misin07G345300.1", "Misin09G192700.1", "Misin10G081900.1", "Misin11G115400.1", "Misin12G095900.1", "Misin13G159000.1", "Misin14G075500.1", "Misin15G165600.1", "MisinT014600.1", "MisinT014900.1", "MisinT029700.1", "MisinT258000.1", "MisinT404400.1")	stem
+"743"	GO:0006165	nucleoside diphosphate phosphorylation	341	8	4.7	0.16418	c("Misin02G341300.1", "Misin03G235900.1", "Misin05G156500.1", "Misin08G171900.1", "Misin10G020200.1", "Misin12G113600.1", "Misin17G216100.1", "Misin18G109800.1")	stem
+"744"	GO:0015867	ATP transport	13	1	0.18	0.16505	Misin08G087500.1	stem
+"745"	GO:0009684	indoleacetic acid biosynthetic process	13	1	0.18	0.16505	Misin03G235900.1	stem
+"746"	GO:0006183	GTP biosynthetic process	13	1	0.18	0.16505	Misin08G171900.1	stem
+"747"	GO:0006177	GMP biosynthetic process	13	1	0.18	0.16505	Misin07G028600.1	stem
+"748"	GO:0019048	modulation by virus of host morphology o...	13	1	0.18	0.16505	Misin12G201000.1	stem
+"749"	GO:0045487	gibberellin catabolic process	13	1	0.18	0.16505	MisinT339800.1	stem
+"750"	GO:0006228	UTP biosynthetic process	13	1	0.18	0.16505	Misin08G171900.1	stem
+"751"	GO:0048577	negative regulation of short-day photope...	13	1	0.18	0.16505	Misin01G031800.1	stem
+"752"	GO:0016558	protein import into peroxisome matrix	53	2	0.73	0.1656	c("MisinT078900.1", "MisinT167900.1")	stem
+"753"	GO:0006000	fructose metabolic process	156	4	2.15	0.16919	c("Misin02G490600.1", "Misin03G235900.1", "Misin12G113600.1", "Misin17G174300.1")	stem
+"754"	GO:0046487	glyoxylate metabolic process	176	5	2.42	0.17116	c("Misin02G107500.1", "Misin11G015800.1", "Misin11G121200.1", "Misin18G018200.1", "MisinT505500.1")	stem
+"755"	GO:0034645	cellular macromolecule biosynthetic proc...	6245	63	86.04	0.17304	c("Misin01G020500.1", "Misin01G032900.1", "Misin01G036200.1", "Misin01G036800.1", "Misin01G042900.1", "Misin01G053500.1", "Misin01G072900.1", "Misin01G150200.1", "Misin01G356500.1", "Misin02G022300.1", "Misin02G188000.1", "Misin02G343000.1", "Misin02G490400.1", "Misin05G228300.1", "Misin05G245900.1", "Misin05G295500.1", "Misin05G328000.1", "Misin06G022300.1", "Misin06G200900.1", "Misin06G257300.1", "Misin07G320300.1", "Misin07G351600.1", "Misin07G352300.1", "Misin07G363100.1", "Misin07G365600.1", 
+"Misin07G375900.1", "Misin08G106400.1", "Misin08G171900.1", "Misin08G202400.1", "Misin08G217900.1", "Misin08G222000.1", "Misin08G324500.1", "Misin09G210700.1", "Misin09G210800.1", "Misin10G036900.1", "Misin10G037100.1", "Misin10G037700.1", "Misin12G016000.1", "Misin12G108200.1", "Misin12G202900.1", "Misin13G077800.1", "Misin13G183300.1", "Misin14G005900.1", "Misin15G128300.1", "Misin16G212300.1", "Misin16G261200.1", "Misin17G122200.1", "Misin17G163800.1", "Misin17G168000.1", "Misin17G180500.1", "Misin17G238500.1", 
+"Misin17G242400.1", "Misin17G255500.1", "Misin18G005600.1", "Misin18G056300.1", "Misin18G228700.1", "Misin18G276400.1", "Misin19G055900.1", "Misin19G100900.1", "MisinT115400.1", "MisinT241800.1", "MisinT263300.1", "MisinT553500.1")	stem
+"756"	GO:0030150	protein import into mitochondrial matrix	55	2	0.76	0.17541	c("Misin01G378600.1", "Misin17G021400.1")	stem
+"757"	GO:0015868	purine ribonucleotide transport	29	2	0.4	0.17626	c("Misin07G086900.1", "Misin08G087500.1")	stem
+"758"	GO:0051503	adenine nucleotide transport	29	2	0.4	0.17626	c("Misin07G086900.1", "Misin08G087500.1")	stem
+"759"	GO:0051259	protein complex oligomerization	32	2	0.44	0.17628	c("Misin02G069000.1", "Misin05G079800.1")	stem
+"760"	GO:0015947	methane metabolic process	14	1	0.19	0.17655	MisinT505500.1	stem
+"761"	GO:0015866	ADP transport	14	1	0.19	0.17655	Misin08G087500.1	stem
+"762"	GO:0015858	nucleoside transport	14	1	0.19	0.17655	Misin07G086900.1	stem
+"763"	GO:0070301	cellular response to hydrogen peroxide	14	1	0.19	0.17655	Misin06G022300.1	stem
+"764"	GO:0009682	induced systemic resistance	14	1	0.19	0.17655	Misin18G179300.1	stem
+"765"	GO:0080022	primary root development	14	1	0.19	0.17655	Misin03G235900.1	stem
+"766"	GO:0006283	transcription-coupled nucleotide-excisio...	14	1	0.19	0.17655	Misin09G210800.1	stem
+"767"	GO:0032504	multicellular organism reproduction	181	3	2.49	0.17666	c("Misin03G235900.1", "Misin10G020200.1", "Misin14G086000.1")	stem
+"768"	GO:0045037	protein import into chloroplast stroma	15	1	0.21	0.1879	Misin17G021400.1	stem
+"769"	GO:0009911	positive regulation of flower developmen...	15	1	0.21	0.1879	Misin09G018700.1	stem
+"770"	GO:0006471	protein ADP-ribosylation	15	1	0.21	0.1879	Misin07G351600.1	stem
+"771"	GO:0006152	purine nucleoside catabolic process	15	1	0.21	0.1879	Misin04G126800.1	stem
+"772"	GO:0051103	DNA ligation involved in DNA repair	15	1	0.21	0.1879	Misin07G351600.1	stem
+"773"	GO:0034654	nucleobase-containing compound biosynthe...	4599	51	63.36	0.19388	c("Misin01G020500.1", "Misin01G032900.1", "Misin01G036800.1", "Misin01G053500.1", "Misin02G022300.1", "Misin02G341300.1", "Misin02G343000.1", "Misin02G490400.1", "Misin02G490600.1", "Misin03G030000.1", "Misin03G235900.1", "Misin04G180100.1", "Misin05G156500.1", "Misin05G228300.1", "Misin05G245900.1", "Misin05G295500.1", "Misin06G022300.1", "Misin06G200900.1", "Misin06G257300.1", "Misin07G028600.1", "Misin07G365600.1", "Misin08G106400.1", "Misin08G171900.1", "Misin08G202400.1", "Misin08G222000.1", 
+"Misin08G280700.1", "Misin09G210700.1", "Misin09G210800.1", "Misin10G020200.1", "Misin10G036900.1", "Misin10G037100.1", "Misin12G108200.1", "Misin12G113600.1", "Misin12G202900.1", "Misin13G077800.1", "Misin13G183300.1", "Misin15G128300.1", "Misin16G212300.1", "Misin17G163800.1", "Misin17G168000.1", "Misin17G216100.1", "Misin17G238500.1", "Misin18G005600.1", "Misin18G056300.1", "Misin18G109800.1", "Misin18G228700.1", "Misin19G055900.1", "MisinT241800.1", "MisinT263300.1", "MisinT278900.1", "MisinT553500.1"
+)	stem
+"774"	GO:0010109	regulation of photosynthesis	34	3	0.47	0.19838	c("Misin12G201000.1", "Misin18G102100.1", "Misin19G100700.1")	stem
+"775"	GO:0070534	protein K63-linked ubiquitination	16	1	0.22	0.1991	Misin02G094500.1	stem
+"776"	GO:0034641	cellular nitrogen compound metabolic pro...	10412	124	143.44	0.19957	c("Misin01G012100.1", "Misin01G012200.1", "Misin01G020100.1", "Misin01G020500.1", "Misin01G032000.1", "Misin01G032900.1", "Misin01G036200.1", "Misin01G036800.1", "Misin01G050700.1", "Misin01G053500.1", "Misin01G055200.1", "Misin01G072900.1", "Misin01G074800.1", "Misin01G150200.1", "Misin01G242200.1", "Misin01G356500.1", "Misin01G390800.1", "Misin01G393400.1", "Misin02G022300.1", "Misin02G034300.1", "Misin02G094500.1", "Misin02G188000.1", "Misin02G229900.1", "Misin02G282600.1", "Misin02G286600.1", 
+"Misin02G293100.1", "Misin02G341300.1", "Misin02G343000.1", "Misin02G490400.1", "Misin02G490600.1", "Misin03G006600.1", "Misin03G010100.1", "Misin03G030000.1", "Misin03G050400.1", "Misin03G235900.1", "Misin04G126800.1", "Misin04G180100.1", "Misin04G230700.1", "Misin05G156500.1", "Misin05G228300.1", "Misin05G245900.1", "Misin05G295500.1", "Misin05G324900.1", "Misin05G333300.1", "Misin06G022300.1", "Misin06G200900.1", "Misin06G257300.1", "Misin06G286000.1", "Misin06G324900.1", "Misin06G405300.1", "Misin06G405400.1", 
+"Misin07G028600.1", "Misin07G208000.1", "Misin07G317800.1", "Misin07G320300.1", "Misin07G351600.1", "Misin07G357000.1", "Misin07G363100.1", "Misin07G365600.1", "Misin07G375900.1", "Misin07G398000.1", "Misin07G428500.1", "Misin08G106400.1", "Misin08G171900.1", "Misin08G202400.1", "Misin08G217900.1", "Misin08G222000.1", "Misin08G280700.1", "Misin08G324500.1", "Misin09G210700.1", "Misin09G210800.1", "Misin10G020200.1", "Misin10G036900.1", "Misin10G037100.1", "Misin10G037700.1", "Misin11G031500.1", "Misin11G099200.1", 
+"Misin11G116500.1", "Misin12G016000.1", "Misin12G108200.1", "Misin12G113600.1", "Misin12G202900.1", "Misin13G000200.1", "Misin13G077800.1", "Misin13G183300.1", "Misin13G198800.1", "Misin14G005900.1", "Misin14G007100.1", "Misin14G126400.1", "Misin14G145400.1", "Misin15G067300.1", "Misin15G128300.1", "Misin15G135500.1", "Misin15G149100.1", "Misin16G078300.1", "Misin16G212300.1", "Misin17G084900.1", "Misin17G122200.1", "Misin17G163800.1", "Misin17G168000.1", "Misin17G180500.1", "Misin17G216100.1", "Misin17G238500.1", 
+"Misin17G242400.1", "Misin18G005600.1", "Misin18G056300.1", "Misin18G109800.1", "Misin18G228700.1", "Misin19G049800.1", "Misin19G055900.1", "Misin19G191900.1", "Misin19G206300.1", "Misin19G236400.1", "MisinT029700.1", "MisinT115400.1", "MisinT226600.1", "MisinT226900.1", "MisinT241800.1", "MisinT258000.1", "MisinT263300.1", "MisinT278900.1", "MisinT364200.1", "MisinT404400.1", "MisinT553500.1")	stem
+"777"	GO:0006662	glycerol ether metabolic process	60	2	0.83	0.20029	c("Misin02G358800.1", "Misin19G218600.1")	stem
+"778"	GO:0006119	oxidative phosphorylation	239	5	3.29	0.20429	c("Misin05G324900.1", "Misin06G324900.1", "Misin14G126400.1", "Misin15G135500.1", "Misin19G206300.1")	stem
+"779"	GO:0000271	polysaccharide biosynthetic process	454	7	6.25	0.20561	c("Misin02G069000.1", "Misin05G328000.1", "Misin07G352300.1", "Misin17G255500.1", "Misin18G276400.1", "Misin19G100900.1", "MisinT029700.1")	stem
+"780"	GO:0006096	glycolytic process	328	7	4.52	0.20948	c("Misin02G341300.1", "Misin03G235900.1", "Misin05G156500.1", "Misin10G020200.1", "Misin12G113600.1", "Misin17G216100.1", "Misin18G109800.1")	stem
+"781"	GO:0007568	aging	45	2	0.62	0.20987	c("Misin12G120700.1", "Misin16G079400.1")	stem
+"782"	GO:0010118	stomatal movement	51	2	0.7	0.20991	c("Misin02G069000.1", "Misin18G179300.1")	stem
+"783"	GO:0009910	negative regulation of flower developmen...	17	1	0.23	0.21014	Misin13G077800.1	stem
+"784"	GO:0006517	protein deglycosylation	17	1	0.23	0.21014	Misin10G115700.1	stem
+"785"	GO:0042343	indole glucosinolate metabolic process	17	1	0.23	0.21014	Misin05G333300.1	stem
+"786"	GO:0009867	jasmonic acid mediated signaling pathway	102	4	1.41	0.21435	c("Misin04G180100.1", "Misin16G079400.1", "Misin16G261200.1", "Misin18G179300.1")	stem
+"787"	GO:0034314	Arp2/3 complex-mediated actin nucleation	18	1	0.25	0.22102	Misin01G006900.1	stem
+"788"	GO:0055074	calcium ion homeostasis	18	1	0.25	0.22102	Misin08G105700.1	stem
+"789"	GO:0032880	regulation of protein localization	18	1	0.25	0.22102	Misin03G235900.1	stem
+"790"	GO:0009115	xanthine catabolic process	18	1	0.25	0.22102	Misin01G055200.1	stem
+"791"	GO:0009269	response to desiccation	18	1	0.25	0.22102	Misin05G015300.1	stem
+"792"	GO:0051260	protein homooligomerization	18	1	0.25	0.22102	Misin02G069000.1	stem
+"793"	GO:0001510	RNA methylation	171	4	2.36	0.22216	c("Misin03G006600.1", "Misin07G398000.1", "Misin10G020200.1", "Misin19G236400.1")	stem
+"794"	GO:0000165	MAPK cascade	85	3	1.17	0.23007	c("Misin01G390800.1", "Misin16G261200.1", "Misin18G257200.1")	stem
+"795"	GO:0043067	regulation of programmed cell death	101	4	1.39	0.23089	c("Misin02G229900.1", "Misin07G163600.1", "Misin16G261200.1", "Misin18G102100.1")	stem
+"796"	GO:0006499	N-terminal protein myristoylation	19	1	0.26	0.23176	Misin16G261200.1	stem
+"797"	GO:0031053	primary miRNA processing	19	1	0.26	0.23176	Misin19G049800.1	stem
+"798"	GO:0006097	glyoxylate cycle	19	1	0.26	0.23176	Misin11G121200.1	stem
+"799"	GO:0042128	nitrate assimilation	19	1	0.26	0.23176	Misin06G374400.1	stem
+"800"	GO:0008380	RNA splicing	465	4	6.41	0.23847	c("Misin04G230700.1", "Misin07G208000.1", "Misin07G428500.1", "Misin14G145400.1")	stem
+"801"	GO:0010268	brassinosteroid homeostasis	68	2	0.94	0.24082	c("Misin02G115800.1", "Misin09G018700.1")	stem
+"802"	GO:0006561	proline biosynthetic process	20	1	0.28	0.24235	Misin17G216100.1	stem
+"803"	GO:0006564	L-serine biosynthetic process	20	1	0.28	0.24235	MisinT505500.1	stem
+"804"	GO:0035999	tetrahydrofolate interconversion	20	1	0.28	0.24235	Misin01G032000.1	stem
+"805"	GO:0061088	regulation of sequestering of zinc ion	20	1	0.28	0.24235	Misin06G070000.1	stem
+"806"	GO:0019637	organophosphate metabolic process	2030	28	27.97	0.24271	c("Misin01G074800.1", "Misin02G341300.1", "Misin02G490600.1", "Misin03G010100.1", "Misin03G030000.1", "Misin03G042300.1", "Misin03G235900.1", "Misin04G126800.1", "Misin05G081700.1", "Misin05G156500.1", "Misin05G324900.1", "Misin06G324900.1", "Misin07G028600.1", "Misin07G309100.1", "Misin08G171900.1", "Misin10G020200.1", "Misin11G031500.1", "Misin12G113600.1", "Misin14G126400.1", "Misin15G135500.1", "Misin16G213000.1", "Misin17G216100.1", "Misin18G109800.1", "Misin19G206300.1", "MisinT029700.1", "MisinT227600.1", 
+"MisinT278900.1", "MisinT360600.1")	stem
+"807"	GO:0051716	cellular response to stimulus	3552	49	48.94	0.24272	c("Misin01G032900.1", "Misin01G066800.1", "Misin01G242200.1", "Misin01G390800.1", "Misin02G094500.1", "Misin02G358800.1", "Misin02G374600.1", "Misin03G010100.1", "Misin04G180100.1", "Misin05G081700.1", "Misin06G022300.1", "Misin06G286000.1", "Misin06G405400.1", "Misin07G163600.1", "Misin07G266600.1", "Misin07G320300.1", "Misin07G351600.1", "Misin07G375900.1", "Misin08G202400.1", "Misin09G019800.1", "Misin09G210800.1", "Misin10G033300.1", "Misin10G036800.1", "Misin11G099200.1", "Misin11G116500.1", 
+"Misin11G118600.1", "Misin11G270000.1", "Misin12G281500.1", "Misin13G154100.1", "Misin13G154200.1", "Misin15G054100.1", "Misin15G067300.1", "Misin15G128300.1", "Misin15G149100.1", "Misin16G078300.1", "Misin16G079400.1", "Misin16G208700.1", "Misin16G261200.1", "Misin17G084900.1", "Misin17G269000.1", "Misin18G179300.1", "Misin18G257200.1", "Misin19G049800.1", "Misin19G218600.1", "MisinT167900.1", "MisinT226600.1", "MisinT227600.1", "MisinT263300.1", "MisinT478600.1")	stem
+"808"	GO:0010951	negative regulation of endopeptidase act...	124	3	1.71	0.24427	c("Misin03G315100.1", "Misin16G009200.1", "Misin17G012500.1")	stem
+"809"	GO:0035725	sodium ion transmembrane transport	21	1	0.29	0.2528	Misin08G105700.1	stem
+"810"	GO:0044238	primary metabolic process	19852	250	273.5	0.25996	c("Misin01G012100.1", "Misin01G012200.1", "Misin01G020100.1", "Misin01G020500.1", "Misin01G025700.1", "Misin01G032000.1", "Misin01G032900.1", "Misin01G036200.1", "Misin01G036800.1", "Misin01G042900.1", "Misin01G050700.1", "Misin01G053500.1", "Misin01G055200.1", "Misin01G072900.1", "Misin01G074800.1", "Misin01G110800.1", "Misin01G145100.1", "Misin01G150200.1", "Misin01G191300.1", "Misin01G309200.1", "Misin01G356500.1", "Misin01G358800.1", "Misin01G382100.1", "Misin01G390800.1", "Misin01G393400.1", 
+"Misin01G394400.1", "Misin02G017100.1", "Misin02G022300.1", "Misin02G034300.1", "Misin02G069000.1", "Misin02G094500.1", "Misin02G098000.1", "Misin02G115300.1", "Misin02G115800.1", "Misin02G188000.1", "Misin02G205400.1", "Misin02G282600.1", "Misin02G341300.1", "Misin02G343000.1", "Misin02G374600.1", "Misin02G447300.1", "Misin02G490400.1", "Misin02G490600.1", "Misin02G503700.1", "Misin03G006600.1", "Misin03G010100.1", "Misin03G030000.1", "Misin03G042300.1", "Misin03G047700.1", "Misin03G050400.1", "Misin03G086800.1", 
+"Misin03G103300.1", "Misin03G195400.1", "Misin03G235900.1", "Misin03G315100.1", "Misin04G126800.1", "Misin04G180100.1", "Misin04G215400.1", "Misin04G230700.1", "Misin04G312400.1", "Misin04G319100.1", "Misin05G003400.1", "Misin05G054700.1", "Misin05G081700.1", "Misin05G156500.1", "Misin05G209300.1", "Misin05G227800.1", "Misin05G228300.1", "Misin05G245900.1", "Misin05G273100.1", "Misin05G295500.1", "Misin05G304300.1", "Misin05G324900.1", "Misin05G328000.1", "Misin05G335800.1", "Misin06G022300.1", "Misin06G200900.1", 
+"Misin06G250900.1", "Misin06G253000.1", "Misin06G257300.1", "Misin06G286000.1", "Misin06G324900.1", "Misin06G405300.1", "Misin06G405400.1", "Misin07G023900.1", "Misin07G028600.1", "Misin07G205700.1", "Misin07G208000.1", "Misin07G230300.1", "Misin07G271500.1", "Misin07G309100.1", "Misin07G316900.1", "Misin07G317800.1", "Misin07G320300.1", "Misin07G332200.1", "Misin07G339800.1", "Misin07G348300.1", "Misin07G351600.1", "Misin07G352300.1", "Misin07G357000.1", "Misin07G363100.1", "Misin07G365600.1", "Misin07G365700.1", 
+"Misin07G375900.1", "Misin07G398000.1", "Misin07G419100.1", "Misin07G428500.1", "Misin07G472900.1", "Misin07G474200.1", "Misin07G491100.1", "Misin07G506400.1", "Misin08G022200.1", "Misin08G106400.1", "Misin08G141500.1", "Misin08G171900.1", "Misin08G202400.1", "Misin08G217900.1", "Misin08G222000.1", "Misin08G260300.1", "Misin08G280700.1", "Misin08G304400.1", "Misin08G324500.1", "Misin09G018700.1", "Misin09G080800.1", "Misin09G081000.1", "Misin09G165900.1", "Misin09G166100.1", "Misin09G181500.1", "Misin09G184300.1", 
+"Misin09G194100.1", "Misin09G205400.1", "Misin09G210700.1", "Misin09G210800.1", "Misin10G020200.1", "Misin10G033300.1", "Misin10G034300.1", "Misin10G036800.1", "Misin10G036900.1", "Misin10G037100.1", "Misin10G037700.1", "Misin10G040500.1", "Misin10G046900.1", "Misin10G064900.1", "Misin10G070300.1", "Misin10G115700.1", "Misin10G181000.1", "Misin11G007600.1", "Misin11G016000.1", "Misin11G031500.1", "Misin11G067200.1", "Misin11G099200.1", "Misin11G116400.1", "Misin11G116500.1", "Misin11G121200.1", "Misin11G126600.1", 
+"Misin11G139700.1", "Misin11G142000.1", "Misin11G153100.1", "Misin11G205100.1", "Misin12G016000.1", "Misin12G095900.1", "Misin12G108200.1", "Misin12G113600.1", "Misin12G120700.1", "Misin12G147300.1", "Misin12G202900.1", "Misin12G229900.1", "Misin12G236300.1", "Misin12G267200.1", "Misin13G000200.1", "Misin13G077800.1", "Misin13G183300.1", "Misin13G198400.1", "Misin13G198800.1", "Misin14G005900.1", "Misin14G007100.1", "Misin14G075500.1", "Misin14G126400.1", "Misin14G145400.1", "Misin15G034600.1", "Misin15G088700.1", 
+"Misin15G128300.1", "Misin15G135500.1", "Misin16G009200.1", "Misin16G207000.1", "Misin16G208700.1", "Misin16G212300.1", "Misin16G213000.1", "Misin16G239400.1", "Misin16G243200.1", "Misin16G261200.1", "Misin17G010600.1", "Misin17G012500.1", "Misin17G034300.1", "Misin17G122200.1", "Misin17G131000.1", "Misin17G142700.1", "Misin17G163800.1", "Misin17G168000.1", "Misin17G174300.1", "Misin17G180500.1", "Misin17G216100.1", "Misin17G238500.1", "Misin17G242400.1", "Misin17G245600.1", "Misin17G248600.1", "Misin17G255500.1", 
+"Misin18G005600.1", "Misin18G018200.1", "Misin18G054800.1", "Misin18G056300.1", "Misin18G077700.1", "Misin18G102100.1", "Misin18G106000.1", "Misin18G109800.1", "Misin18G228700.1", "Misin18G257200.1", "Misin18G276400.1", "Misin19G040400.1", "Misin19G049800.1", "Misin19G055900.1", "Misin19G057300.1", "Misin19G100700.1", "Misin19G100900.1", "Misin19G109800.1", "Misin19G191900.1", "Misin19G206300.1", "Misin19G236400.1", "MisinT029700.1", "MisinT050600.1", "MisinT067200.1", "MisinT078900.1", "MisinT115400.1", 
+"MisinT167900.1", "MisinT182000.1", "MisinT226600.1", "MisinT226900.1", "MisinT227600.1", "MisinT241800.1", "MisinT244700.1", "MisinT263300.1", "MisinT278900.1", "MisinT339800.1", "MisinT344300.1", "MisinT360600.1", "MisinT393000.1", "MisinT497600.1", "MisinT505500.1", "MisinT552400.1", "MisinT553500.1")	stem
+"811"	GO:0045737	positive regulation of cyclin-dependent ...	22	1	0.3	0.2631	Misin08G106400.1	stem
+"812"	GO:0009646	response to absence of light	22	1	0.3	0.2631	Misin14G007100.1	stem
+"813"	GO:1901409	positive regulation of phosphorylation o...	22	1	0.3	0.2631	Misin08G106400.1	stem
+"814"	GO:0042026	protein refolding	22	1	0.3	0.2631	Misin16G001700.1	stem
+"815"	GO:0008643	carbohydrate transport	329	9	4.53	0.26336	c("Misin01G306100.1", "Misin02G271400.1", "Misin02G339300.1", "Misin04G119700.1", "Misin04G190300.1", "Misin12G131100.1", "Misin16G145700.1", "MisinT147900.1", "MisinT250900.1")	stem
+"816"	GO:0009611	response to wounding	130	3	1.79	0.26645	c("Misin04G180100.1", "Misin16G009200.1", "Misin17G012500.1")	stem
+"817"	GO:0006084	acetyl-CoA metabolic process	48	3	0.66	0.27237	c("Misin01G074800.1", "Misin18G109800.1", "MisinT029700.1")	stem
+"818"	GO:0042981	regulation of apoptotic process	23	1	0.32	0.27326	Misin18G102100.1	stem
+"819"	GO:0033609	oxalate metabolic process	75	2	1.03	0.27656	c("Misin02G107500.1", "Misin11G015800.1")	stem
+"820"	GO:0034599	cellular response to oxidative stress	129	3	1.78	0.28143	c("Misin02G358800.1", "Misin06G022300.1", "Misin19G218600.1")	stem
+"821"	GO:0000027	ribosomal large subunit assembly	76	2	1.05	0.28167	c("Misin02G343000.1", "Misin17G180500.1")	stem
+"822"	GO:0006546	glycine catabolic process	24	1	0.33	0.28328	Misin03G235900.1	stem
+"823"	GO:0034605	cellular response to heat	24	1	0.33	0.28328	Misin16G208700.1	stem
+"824"	GO:0009657	plastid organization	339	6	4.67	0.29277	c("Misin03G235900.1", "Misin12G267200.1", "Misin16G001700.1", "Misin17G180500.1", "Misin18G102100.1", "Misin19G100700.1")	stem
+"825"	GO:0042752	regulation of circadian rhythm	25	1	0.34	0.29316	Misin08G202400.1	stem
+"826"	GO:0010286	heat acclimation	25	1	0.34	0.29316	Misin14G086000.1	stem
+"827"	GO:0006273	lagging strand elongation	25	1	0.34	0.29316	Misin07G351600.1	stem
+"828"	GO:0071423	malate transmembrane transport	25	1	0.34	0.29316	Misin19G218600.1	stem
+"829"	GO:0050896	response to stimulus	6334	115	87.26	0.29432	c("Misin01G031800.1", "Misin01G032900.1", "Misin01G066800.1", "Misin01G242200.1", "Misin01G390800.1", "Misin02G069000.1", "Misin02G094500.1", "Misin02G229900.1", "Misin02G286600.1", "Misin02G293100.1", "Misin02G315100.1", "Misin02G358800.1", "Misin02G360000.1", "Misin02G369800.1", "Misin02G374600.1", "Misin03G010100.1", "Misin03G047700.1", "Misin03G228600.1", "Misin03G235900.1", "Misin03G315100.1", "Misin04G180100.1", "Misin04G268000.1", "Misin04G268700.1", "Misin05G015300.1", "Misin05G079700.1", 
+"Misin05G079800.1", "Misin05G081700.1", "Misin05G133800.1", "Misin05G156500.1", "Misin05G216900.1", "Misin05G245900.1", "Misin05G333300.1", "Misin05G335800.1", "Misin06G022300.1", "Misin06G070000.1", "Misin06G182100.1", "Misin06G257300.1", "Misin06G286000.1", "Misin06G298800.1", "Misin06G405300.1", "Misin06G405400.1", "Misin07G137500.1", "Misin07G137600.1", "Misin07G163600.1", "Misin07G208000.1", "Misin07G266600.1", "Misin07G320300.1", "Misin07G344400.1", "Misin07G351600.1", "Misin07G366300.1", "Misin07G375900.1", 
+"Misin07G507700.1", "Misin08G087500.1", "Misin08G202400.1", "Misin08G280700.1", "Misin08G301900.1", "Misin09G018700.1", "Misin09G019800.1", "Misin09G165900.1", "Misin09G166100.1", "Misin09G205400.1", "Misin09G210800.1", "Misin10G033300.1", "Misin10G036800.1", "Misin10G046900.1", "Misin11G067200.1", "Misin11G099200.1", "Misin11G116500.1", "Misin11G118600.1", "Misin11G270000.1", "Misin12G016000.1", "Misin12G120700.1", "Misin12G281500.1", "Misin13G154100.1", "Misin13G154200.1", "Misin14G007100.1", "Misin14G086000.1", 
+"Misin15G054100.1", "Misin15G067300.1", "Misin15G128300.1", "Misin15G149100.1", "Misin16G009200.1", "Misin16G071400.1", "Misin16G078300.1", "Misin16G079400.1", "Misin16G096400.1", "Misin16G185400.1", "Misin16G208700.1", "Misin16G261200.1", "Misin17G012500.1", "Misin17G034300.1", "Misin17G084900.1", "Misin17G174300.1", "Misin17G219000.1", "Misin17G269000.1", "Misin18G102100.1", "Misin18G179300.1", "Misin18G257200.1", "Misin19G049800.1", "Misin19G100700.1", "Misin19G218600.1", "MisinT011200.1", "MisinT029700.1", 
+"MisinT078900.1", "MisinT167900.1", "MisinT226600.1", "MisinT226900.1", "MisinT227600.1", "MisinT258000.1", "MisinT263300.1", "MisinT339800.1", "MisinT404400.1", "MisinT478600.1", "MisinT515400.1", "MisinT528600.1")	stem
+"830"	GO:0000103	sulfate assimilation	81	2	1.12	0.30713	c("Misin02G358800.1", "Misin19G218600.1")	stem
+"831"	GO:0050794	regulation of cellular process	6569	65	90.5	0.30775	c("Misin01G006900.1", "Misin01G020500.1", "Misin01G032900.1", "Misin01G036200.1", "Misin01G036800.1", "Misin01G390800.1", "Misin02G022300.1", "Misin02G069000.1", "Misin02G229900.1", "Misin02G343000.1", "Misin02G358800.1", "Misin02G374600.1", "Misin03G315100.1", "Misin04G180100.1", "Misin05G054700.1", "Misin05G081700.1", "Misin05G228300.1", "Misin05G245900.1", "Misin05G295500.1", "Misin06G022300.1", "Misin06G070000.1", "Misin06G200900.1", "Misin06G257300.1", "Misin07G163600.1", "Misin07G266600.1", 
+"Misin07G365600.1", "Misin07G428500.1", "Misin08G106400.1", "Misin08G202400.1", "Misin08G222000.1", "Misin09G019800.1", "Misin10G033300.1", "Misin10G034300.1", "Misin10G036800.1", "Misin10G037100.1", "Misin11G118600.1", "Misin12G016000.1", "Misin12G108200.1", "Misin12G201000.1", "Misin13G154100.1", "Misin13G154200.1", "Misin14G005900.1", "Misin15G054100.1", "Misin16G009200.1", "Misin16G079400.1", "Misin16G212300.1", "Misin16G261200.1", "Misin17G012500.1", "Misin17G122200.1", "Misin17G163800.1", "Misin17G168000.1", 
+"Misin17G269000.1", "Misin18G005600.1", "Misin18G102100.1", "Misin18G179300.1", "Misin18G228700.1", "Misin18G257200.1", "Misin19G040400.1", "Misin19G049800.1", "Misin19G100700.1", "Misin19G218600.1", "MisinT167900.1", "MisinT227600.1", "MisinT263300.1", "MisinT553500.1")	stem
+"832"	GO:0006526	arginine biosynthetic process	27	1	0.37	0.31251	Misin01G309200.1	stem
+"833"	GO:0009414	response to water deprivation	101	3	1.39	0.31655	c("Misin05G015300.1", "Misin05G335800.1", "Misin18G179300.1")	stem
+"834"	GO:0009060	aerobic respiration	220	8	3.03	0.31933	c("Misin05G156500.1", "Misin05G273100.1", "Misin06G253000.1", "Misin07G271500.1", "Misin11G121200.1", "Misin14G126400.1", "Misin15G135500.1", "Misin18G018200.1")	stem
+"835"	GO:0006094	gluconeogenesis	337	6	4.64	0.32085	c("Misin02G341300.1", "Misin03G235900.1", "Misin10G020200.1", "Misin12G113600.1", "Misin17G216100.1", "Misin18G109800.1")	stem
+"836"	GO:0009825	multidimensional cell growth	28	1	0.39	0.32199	MisinT029700.1	stem
+"837"	GO:0010150	leaf senescence	28	1	0.39	0.32199	Misin16G079400.1	stem
+"838"	GO:0080163	regulation of protein serine/threonine p...	28	1	0.39	0.32199	Misin02G374600.1	stem
+"839"	GO:0009688	abscisic acid biosynthetic process	28	1	0.39	0.32199	Misin01G055200.1	stem
+"840"	GO:0034765	regulation of ion transmembrane transpor...	84	2	1.16	0.32233	c("Misin05G216900.1", "Misin19G114000.1")	stem
+"841"	GO:0006470	protein dephosphorylation	424	7	5.84	0.32687	c("Misin02G374600.1", "Misin02G447300.1", "Misin07G506400.1", "Misin11G016000.1", "Misin17G248600.1", "Misin18G077700.1", "MisinT244700.1")	stem
+"842"	GO:0006769	nicotinamide metabolic process	29	1	0.4	0.33134	Misin04G126800.1	stem
+"843"	GO:0006635	fatty acid beta-oxidation	86	2	1.18	0.33242	c("MisinT078900.1", "MisinT167900.1")	stem
+"844"	GO:0006206	pyrimidine nucleobase metabolic process	212	4	2.92	0.33481	c("Misin01G020100.1", "Misin04G126800.1", "Misin08G171900.1", "Misin09G210800.1")	stem
+"845"	GO:0010043	response to zinc ion	30	1	0.41	0.34056	Misin06G070000.1	stem
+"846"	GO:0043090	amino acid import	30	1	0.41	0.34056	Misin07G151000.1	stem
+"847"	GO:0007015	actin filament organization	108	4	1.49	0.3484	c("Misin01G006900.1", "Misin02G012800.1", "Misin18G106000.1", "Misin19G040400.1")	stem
+"848"	GO:0048653	anther development	47	2	0.65	0.34915	c("Misin09G018700.1", "MisinT029700.1")	stem
+"849"	GO:0045595	regulation of cell differentiation	31	1	0.43	0.34966	Misin07G163600.1	stem
+"850"	GO:0015074	DNA integration	31	1	0.43	0.34966	Misin03G050400.1	stem
+"851"	GO:0006241	CTP biosynthetic process	31	1	0.43	0.34966	Misin08G171900.1	stem
+"852"	GO:0030042	actin filament depolymerization	32	1	0.44	0.35863	Misin02G012800.1	stem
+"853"	GO:0019253	reductive pentose-phosphate cycle	32	1	0.44	0.35863	Misin03G235900.1	stem
+"854"	GO:0005982	starch metabolic process	758	17	10.44	0.36112	c("Misin01G358800.1", "Misin02G205400.1", "Misin03G030000.1", "Misin03G195400.1", "Misin04G215400.1", "Misin04G312400.1", "Misin05G328000.1", "Misin07G352300.1", "Misin11G067200.1", "Misin15G034600.1", "Misin17G010600.1", "Misin17G255500.1", "Misin18G276400.1", "Misin19G100900.1", "MisinT029700.1", "MisinT393000.1", "MisinT552400.1")	stem
+"855"	GO:0006568	tryptophan metabolic process	237	4	3.27	0.3624	c("Misin01G055200.1", "Misin13G198800.1", "Misin17G216100.1", "Misin19G191900.1")	stem
+"856"	GO:0019482	beta-alanine metabolic process	92	2	1.27	0.3624	c("Misin11G099200.1", "Misin17G216100.1")	stem
+"857"	GO:0007052	mitotic spindle organization	33	1	0.45	0.36747	Misin07G248700.1	stem
+"858"	GO:0006260	DNA replication	375	4	5.17	0.37045	c("Misin07G320300.1", "Misin07G351600.1", "Misin07G375900.1", "Misin15G128300.1")	stem
+"859"	GO:0009694	jasmonic acid metabolic process	34	1	0.47	0.37619	Misin06G411400.1	stem
+"860"	GO:0010119	regulation of stomatal movement	34	1	0.47	0.37619	Misin02G069000.1	stem
+"861"	GO:0046686	response to cadmium ion	34	1	0.47	0.37619	Misin05G156500.1	stem
+"862"	GO:0019216	regulation of lipid metabolic process	34	1	0.47	0.37619	Misin05G003400.1	stem
+"863"	GO:0010467	gene expression	6867	65	94.61	0.38343	c("Misin01G012100.1", "Misin01G020500.1", "Misin01G032900.1", "Misin01G036800.1", "Misin01G072900.1", "Misin01G150200.1", "Misin01G356500.1", "Misin02G022300.1", "Misin02G188000.1", "Misin02G343000.1", "Misin02G490400.1", "Misin03G006600.1", "Misin04G230700.1", "Misin05G228300.1", "Misin05G245900.1", "Misin05G295500.1", "Misin06G022300.1", "Misin06G200900.1", "Misin06G257300.1", "Misin07G208000.1", "Misin07G357000.1", "Misin07G363100.1", "Misin07G365600.1", "Misin07G398000.1", "Misin07G428500.1", 
+"Misin08G106400.1", "Misin08G171900.1", "Misin08G202400.1", "Misin08G217900.1", "Misin08G222000.1", "Misin08G280700.1", "Misin08G324500.1", "Misin09G210700.1", "Misin09G210800.1", "Misin10G036900.1", "Misin10G037100.1", "Misin10G037700.1", "Misin11G205100.1", "Misin12G016000.1", "Misin12G108200.1", "Misin12G202900.1", "Misin13G000200.1", "Misin13G077800.1", "Misin13G183300.1", "Misin14G005900.1", "Misin14G145400.1", "Misin16G212300.1", "Misin16G239400.1", "Misin17G122200.1", "Misin17G163800.1", "Misin17G168000.1", 
+"Misin17G180500.1", "Misin17G238500.1", "Misin17G242400.1", "Misin17G245600.1", "Misin18G005600.1", "Misin18G056300.1", "Misin18G228700.1", "Misin19G049800.1", "Misin19G055900.1", "Misin19G236400.1", "MisinT115400.1", "MisinT241800.1", "MisinT263300.1", "MisinT553500.1")	stem
+"864"	GO:0006555	methionine metabolic process	109	2	1.5	0.38481	c("Misin01G032000.1", "Misin14G145400.1")	stem
+"865"	GO:0019344	cysteine biosynthetic process	98	2	1.35	0.39186	c("Misin03G235900.1", "MisinT029700.1")	stem
+"866"	GO:0045493	xylan catabolic process	36	1	0.5	0.39328	Misin03G047700.1	stem
+"867"	GO:0006629	lipid metabolic process	2135	31	29.41	0.39625	c("Misin01G055200.1", "Misin01G074800.1", "Misin01G110800.1", "Misin01G382100.1", "Misin02G098000.1", "Misin02G115800.1", "Misin02G282600.1", "Misin03G042300.1", "Misin03G235900.1", "Misin05G003400.1", "Misin05G081700.1", "Misin07G309100.1", "Misin07G332200.1", "Misin07G365700.1", "Misin09G018700.1", "Misin10G040500.1", "Misin11G139700.1", "Misin12G229900.1", "Misin12G236300.1", "Misin12G267200.1", "Misin16G243200.1", "Misin17G142700.1", "Misin17G174300.1", "Misin17G216100.1", "MisinT029700.1", "MisinT078900.1", 
+"MisinT167900.1", "MisinT182000.1", "MisinT227600.1", "MisinT339800.1", "MisinT360600.1")	stem
+"868"	GO:0046939	nucleotide phosphorylation	378	9	5.21	0.39928	c("Misin02G341300.1", "Misin03G010100.1", "Misin03G235900.1", "Misin05G156500.1", "Misin08G171900.1", "Misin10G020200.1", "Misin12G113600.1", "Misin17G216100.1", "Misin18G109800.1")	stem
+"869"	GO:0006334	nucleosome assembly	100	2	1.38	0.40155	c("Misin04G131200.1", "Misin18G015700.1")	stem
+"870"	GO:0006397	mRNA processing	488	5	6.72	0.40467	c("Misin01G012100.1", "Misin02G490400.1", "Misin04G230700.1", "Misin07G428500.1", "Misin19G236400.1")	stem
+"871"	GO:0009734	auxin-activated signaling pathway	235	4	3.24	0.40638	c("Misin01G032900.1", "Misin07G266600.1", "Misin13G154100.1", "Misin13G154200.1")	stem
+"872"	GO:0046497	nicotinate nucleotide metabolic process	38	1	0.52	0.4099	Misin04G126800.1	stem
+"873"	GO:0042432	indole biosynthetic process	38	1	0.52	0.4099	Misin02G282600.1	stem
+"874"	GO:0051788	response to misfolded protein	38	1	0.52	0.4099	Misin05G156500.1	stem
+"875"	GO:1903507	negative regulation of nucleic acid-temp...	273	2	3.76	0.41152	c("Misin04G180100.1", "Misin05G295500.1")	stem
+"876"	GO:0006144	purine nucleobase metabolic process	333	7	4.59	0.41596	c("Misin01G055200.1", "Misin04G126800.1", "Misin07G028600.1", "Misin08G171900.1", "Misin08G280700.1", "Misin09G210800.1", "Misin14G145400.1")	stem
+"877"	GO:0046916	cellular transition metal ion homeostasi...	225	6	3.1	0.41636	c("Misin05G216600.1", "Misin06G070000.1", "Misin12G160100.1", "Misin16G239400.1", "Misin17G245600.1", "MisinT349300.1")	stem
+"878"	GO:0043069	negative regulation of programmed cell d...	45	2	0.62	0.41738	c("Misin07G163600.1", "Misin16G261200.1")	stem
+"879"	GO:0009932	cell tip growth	39	1	0.54	0.41804	MisinT029700.1	stem
+"880"	GO:0061615	glycolytic process through fructose-6-ph...	39	1	0.54	0.41804	Misin12G113600.1	stem
+"881"	GO:0009696	salicylic acid metabolic process	39	1	0.54	0.41804	Misin06G411400.1	stem
+"882"	GO:0060255	regulation of macromolecule metabolic pr...	4306	39	59.32	0.41847	c("Misin01G020500.1", "Misin01G032900.1", "Misin01G036200.1", "Misin01G036800.1", "Misin01G390800.1", "Misin02G022300.1", "Misin02G343000.1", "Misin02G374600.1", "Misin03G315100.1", "Misin04G180100.1", "Misin05G054700.1", "Misin05G228300.1", "Misin05G245900.1", "Misin05G295500.1", "Misin06G022300.1", "Misin06G200900.1", "Misin06G257300.1", "Misin07G365600.1", "Misin07G428500.1", "Misin08G106400.1", "Misin08G202400.1", "Misin08G222000.1", "Misin08G280700.1", "Misin10G037100.1", "Misin12G016000.1", 
+"Misin12G108200.1", "Misin13G077800.1", "Misin14G005900.1", "Misin16G009200.1", "Misin16G212300.1", "Misin17G012500.1", "Misin17G122200.1", "Misin17G163800.1", "Misin17G168000.1", "Misin18G005600.1", "Misin18G228700.1", "Misin19G049800.1", "MisinT263300.1", "MisinT553500.1")	stem
+"883"	GO:0001101	response to acid chemical	625	11	8.61	0.42462	c("Misin02G374600.1", "Misin04G180100.1", "Misin05G015300.1", "Misin05G245900.1", "Misin05G335800.1", "Misin06G257300.1", "Misin14G086000.1", "Misin16G079400.1", "Misin16G185400.1", "Misin16G261200.1", "Misin18G179300.1")	stem
+"884"	GO:0019260	1,2-dichloroethane catabolic process	40	1	0.55	0.42607	Misin17G216100.1	stem
+"885"	GO:0006007	glucose catabolic process	40	1	0.55	0.42607	Misin02G341300.1	stem
+"886"	GO:0006310	DNA recombination	299	4	4.12	0.42797	c("Misin01G012200.1", "Misin01G053500.1", "Misin07G320300.1", "Misin07G375900.1")	stem
+"887"	GO:0006915	apoptotic process	129	3	1.78	0.42937	c("Misin18G102100.1", "MisinT011200.1", "MisinT323700.1")	stem
+"888"	GO:0006020	inositol metabolic process	41	1	0.56	0.43399	Misin03G235900.1	stem
+"889"	GO:0050826	response to freezing	41	1	0.56	0.43399	Misin02G360000.1	stem
+"890"	GO:0000741	karyogamy	41	1	0.56	0.43399	Misin10G020200.1	stem
+"891"	GO:0006974	cellular response to DNA damage stimulus	666	12	9.18	0.43996	c("Misin02G094500.1", "Misin03G010100.1", "Misin06G286000.1", "Misin06G405400.1", "Misin07G320300.1", "Misin07G351600.1", "Misin07G375900.1", "Misin09G210800.1", "Misin11G116500.1", "Misin15G128300.1", "MisinT226600.1", "MisinT478600.1")	stem
+"892"	GO:0006449	regulation of translational termination	42	1	0.58	0.44179	Misin17G122200.1	stem
+"893"	GO:0046251	limonene catabolic process	42	1	0.58	0.44179	Misin17G216100.1	stem
+"894"	GO:0006687	glycosphingolipid metabolic process	153	3	2.11	0.44372	c("Misin05G081700.1", "Misin17G142700.1", "MisinT227600.1")	stem
+"895"	GO:0042221	response to chemical	2534	50	34.91	0.45216	c("Misin01G032900.1", "Misin01G066800.1", "Misin01G242200.1", "Misin01G390800.1", "Misin02G286600.1", "Misin02G293100.1", "Misin02G358800.1", "Misin02G369800.1", "Misin02G374600.1", "Misin03G228600.1", "Misin04G180100.1", "Misin04G268000.1", "Misin04G268700.1", "Misin05G015300.1", "Misin05G133800.1", "Misin05G156500.1", "Misin05G245900.1", "Misin05G335800.1", "Misin06G022300.1", "Misin06G070000.1", "Misin06G182100.1", "Misin06G257300.1", "Misin06G405300.1", "Misin06G405400.1", "Misin07G208000.1", 
+"Misin07G266600.1", "Misin07G344400.1", "Misin07G507700.1", "Misin08G087500.1", "Misin11G099200.1", "Misin11G270000.1", "Misin12G281500.1", "Misin13G154100.1", "Misin13G154200.1", "Misin14G086000.1", "Misin15G067300.1", "Misin15G149100.1", "Misin16G078300.1", "Misin16G079400.1", "Misin16G096400.1", "Misin16G185400.1", "Misin16G261200.1", "Misin17G084900.1", "Misin17G219000.1", "Misin18G179300.1", "Misin19G218600.1", "MisinT167900.1", "MisinT226900.1", "MisinT258000.1", "MisinT404400.1")	stem
+"896"	GO:0001575	globoside metabolic process	44	1	0.61	0.45709	Misin17G142700.1	stem
+"897"	GO:0006002	fructose 6-phosphate metabolic process	44	1	0.61	0.45709	Misin12G113600.1	stem
+"898"	GO:0006012	galactose metabolic process	182	3	2.51	0.45934	c("Misin03G086800.1", "Misin12G113600.1", "Misin17G174300.1")	stem
+"899"	GO:0006554	lysine catabolic process	113	2	1.56	0.46258	c("Misin07G316900.1", "Misin17G216100.1")	stem
+"900"	GO:0006699	bile acid biosynthetic process	45	1	0.62	0.46458	Misin17G216100.1	stem

@@ -17,19 +17,19 @@ knit: (function(input_file, encoding) {
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8, fig.path='figure_')
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE, fig.width=12, fig.height=8, fig.path='figures/')
 ```
 
 #SUMMARY
 
-Miscanthus is a commercial lignocellulosic biomass crop owing to its high biomass productivity and low chemical input requirements. In previous work, we have shown that interspecific Miscanthus hybrids with high biomass yield had low concentrations of starch and sucrose in the stem, and high ratio of sucrose to starch, which were consistent across years and growing sites. Here, we have performed a transcriptional RNA¬-seq analysis between selected Miscanthus hybrids with contrasting values in these phenotypes to clarify how these phenotypes are genetically controlled. We observed that the carbohydrate and secondary metabolism, and the generation of related precursor metabolites and energy, were significantly enriched among differentially expressed genes. Particularly, genes directly involved in the synthesis of starch (AGP, SS2/3, SBE2) and sucrose (SPS5), and degradation of starch (AMY3, ISA3, SEX4, BAM1) and sucrose (SUS) were down¬-regulated in the stem of the hybrids with low starch concentrations and high biomass yielding, while triose phosphates exporting (TIM, PFK2) was not. Our results support that the gene expression of crucial enzymatic genes in specific genotypes would allow for high metabolic rates and low non-structural carbohydrates accumulation leading to high biomass production. Our work shows the strong interconnectivity between genotype, chemotype and complex phenotypes.
+Miscanthus is a commercial lignocellulosic biomass crop owing to its high biomass productivity and low chemical input requirements. In previous work, we have shown that interspecific Miscanthus hybrids with high biomass yield had low concentrations of starch and sucrose in the stem, and high ratio of sucrose to starch, which were consistent across years and growing sites. Here, we have performed a transcriptional RNA¬-seq analysis between selected Miscanthus hybrids with contrasting values in these phenotypes to clarify how these phenotypes are genetically controlled. Our results support that the gene expression of crucial enzymatic genes in specific genotypes would allow for high metabolic rates and low non-structural carbohydrates accumulation leading to high biomass production. Our work shows the strong interconnectivity between genotype, chemotype and complex phenotypes.
 
 
 ```{r load environment, message=FALSE, warning=FALSE}
 library(DESeq2,quietly = T)
 library(dplyr,quietly = T)
 
-setwd("~/analysis/miscanthus-rnaseq-Msin/kallisto/deseq2-kallisto")
+setwd("~/analysis/miscanthus-rnaseq-Msin/miscanthus_starch_rnaseq")
 ```
 
 
@@ -47,7 +47,7 @@ Kallisto count files, one from each of the 23 libraries, were imported in R usin
 #names(files) <- unlist(samples)
 #files
 #mytxi <- tximport(files, type = "kallisto", txOut = TRUE)
-#save(mytxi,file="../txi_import.R")
+#save(mytxi,file="txi_import.R")
 
 ```
 
@@ -55,14 +55,14 @@ Kallisto count files, one from each of the 23 libraries, were imported in R usin
 ```{r import the inputs}
 
 #####INPUTS
-load("../txi_import.R") #this loads the object 'mytxi' from the tximport step
+load("input/txi_import.R") #this loads the object 'mytxi' from the tximport step
 dim(mytxi$counts) 
 #View(mytxi$counts)
 counts <- as.data.frame(mytxi$counts)
 #write.csv(counts,file="txi_counts.csv")
 #write.csv(mytxi$abundance,file="txi_abundance.csv")
 
-pheno <- read.delim("../../pheno.txt", header = T, sep = '\t')
+pheno <- read.delim("input/pheno.txt", header = T, sep = '\t')
 rownames(pheno) <- pheno$id
 pheno
 
@@ -448,8 +448,8 @@ library(data.table,quietly = T)
 
 #SLIM ANNOT IN HYBRIDS
 allgenes <- rownames(counts)
-topgo.file <- read.delim("../../Msin_b2go/slim_annot_TOPGO.annot", header = F)
-geneID2GO <- readMappings(file = "../../Msin_b2go/slim_annot_TOPGO.annot")
+topgo.file <- read.delim("Msin_b2go/slim_annot_TOPGO.annot", header = F)
+geneID2GO <- readMappings(file = "Msin_b2go/slim_annot_TOPGO.annot")
 
 slim_BP.leaf_few_many.05 <- run.topgo.pipeline.BP(leaf_few_many.05$rownames)
 slim_MF.leaf_few_many.05 <- run.topgo.pipeline.MF(leaf_few_many.05$rownames)
@@ -463,8 +463,8 @@ slim_MF.stem_few_many.05 <- run.topgo.pipeline.MF(stem_few_many.05$rownames)
 
 #FULL GO ANNOTATION
 allgenes <- rownames(counts)
-topgo.file <- read.delim("../../Msin_b2go/full_annot_TOPGO.annot", header = F)
-geneID2GO <- readMappings(file = "../../Msin_b2go/full_annot_TOPGO.annot")
+topgo.file <- read.delim("Msin_b2go/full_annot_TOPGO.annot", header = F)
+geneID2GO <- readMappings(file = "Msin_b2go/full_annot_TOPGO.annot")
 
 full_BP.leaf_few_many.05 <- full.topgo.pipeline.BP(leaf_few_many.05$rownames)
 full_MF.leaf_few_many.05 <- full.topgo.pipeline.MF(leaf_few_many.05$rownames)
@@ -706,8 +706,8 @@ library(data.table,quietly = T)
 
 #SLIM ANNOT IN HYBRIDS
 allgenes <- rownames(counts)
-topgo.file <- read.delim("../../Msin_b2go/slim_annot_TOPGO.annot", header = F)
-geneID2GO <- readMappings(file = "../../Msin_b2go/slim_annot_TOPGO.annot")
+topgo.file <- read.delim("Msin_b2go/slim_annot_TOPGO.annot", header = F)
+geneID2GO <- readMappings(file = "Msin_b2go/slim_annot_TOPGO.annot")
 
 slim_BP.leaf_heterosis2.05 <- run.topgo.pipeline.BP(leaf_hyb_both)
 slim_MF.leaf_heterosis2.05 <- run.topgo.pipeline.MF(leaf_hyb_both)
@@ -721,8 +721,8 @@ slim_MF.stem_heterosis2.05 <- run.topgo.pipeline.MF(stem_hyb_both)
 
 #FULL GO ANNOTATION
 allgenes <- rownames(counts)
-topgo.file <- read.delim("../../Msin_b2go/full_annot_TOPGO.annot", header = F)
-geneID2GO <- readMappings(file = "../../Msin_b2go/full_annot_TOPGO.annot")
+topgo.file <- read.delim("Msin_b2go/full_annot_TOPGO.annot", header = F)
+geneID2GO <- readMappings(file = "Msin_b2go/full_annot_TOPGO.annot")
 
 full_BP.leaf_heterosis2.05 <- full.topgo.pipeline.BP(leaf_hyb_both)
 full_MF.leaf_heterosis2.05 <- full.topgo.pipeline.MF(leaf_hyb_both)
