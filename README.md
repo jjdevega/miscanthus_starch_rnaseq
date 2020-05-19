@@ -1,3 +1,8 @@
+
+
+[![DOI](https://zenodo.org/badge/264660086.svg)](https://zenodo.org/badge/latestdoi/264660086)
+
+
 # Transcriptional differences between Miscanthus hybrids with contrasting starch and sucrose concentrations and biomass production
 
 This repository contains the code of the RNA-seq analysis from our paper on transcriptional differences between Miscanthus hybrids with contrasting starch and sucrose concentrations and biomass production. A preprint of the paper is available in X.
