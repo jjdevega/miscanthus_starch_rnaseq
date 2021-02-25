@@ -1,7 +1,4 @@
-
-
 [![DOI](https://zenodo.org/badge/264660086.svg)](https://zenodo.org/badge/latestdoi/264660086)
-
 
 # R code: RNA-seq analysis on the transcriptional differences between Miscanthus hybrids with contrasting starch and sucrose concentrations and biomass production
 
